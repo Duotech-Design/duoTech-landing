@@ -10,13 +10,13 @@ import image from "../assets/growth.png";
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 
-interface FeatureProps {
+interface ServiciosProps {
   title: string;
   description: string;
   image: string;
 }
 
-const features: FeatureProps[] = [
+const features: ServiciosProps[] = [
   {
     title: "Responsive Design",
     description:
@@ -37,7 +37,7 @@ const features: FeatureProps[] = [
   },
 ];
 
-const featureList: string[] = [
+const serviciosList: string[] = [
   "Dark/Light theme",
   "Reviews",
   "Features",
@@ -56,14 +56,14 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        NUESTROS {" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          SERVICIOS
         </span>
       </h2>
 
       <div className="flex flex-wrap md:justify-center gap-4">
-        {featureList.map((feature: string) => (
+        {serviciosList.map((feature: string) => (
           <div key={feature}>
             <Badge
               variant="secondary"
@@ -76,7 +76,7 @@ export const Features = () => {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map(({ title, description, image }: FeatureProps) => (
+        {features.map(({ title, description, image }: ServiciosProps) => (
           <Card key={title}>
             <CardHeader>
               <CardTitle>{title}</CardTitle>
