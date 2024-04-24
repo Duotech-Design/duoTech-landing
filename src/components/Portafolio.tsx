@@ -7,14 +7,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-interface TestimonialProps {
+interface PortafolioProps {
   image: string;
   name: string;
   userName: string;
   comment: string;
 }
 
-const testimonials: TestimonialProps[] = [
+const testimonials: PortafolioProps[] = [
   {
     image: "https://github.com/shadcn.png",
     name: "John Doe React",
@@ -59,10 +59,10 @@ const testimonials: TestimonialProps[] = [
   },
 ];
 
-export const Testimonials = () => {
+export const Portafolio = () => {
   return (
     <section
-      id="testimonials"
+      id="portafolio"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
@@ -81,7 +81,7 @@ export const Testimonials = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
-          ({ image, name, userName, comment }: TestimonialProps) => (
+          ({ image, name, userName, comment }: PortafolioProps) => (
             <Card
               key={userName}
               className="max-w-md md:break-inside-avoid overflow-hidden"

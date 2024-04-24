@@ -15,7 +15,7 @@ enum PopularPlanType {
   YES = 1,
 }
 
-interface PricingProps {
+interface ContactoProps {
   title: string;
   popular: PopularPlanType;
   price: number;
@@ -24,7 +24,7 @@ interface PricingProps {
   benefitList: string[];
 }
 
-const pricingList: PricingProps[] = [
+const pricingList: ContactoProps[] = [
   {
     title: "Free",
     popular: 0,
@@ -72,10 +72,10 @@ const pricingList: PricingProps[] = [
   },
 ];
 
-export const Pricing = () => {
+export const Contacto = () => {
   return (
     <section
-      id="pricing"
+      id="contacto"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
@@ -91,7 +91,7 @@ export const Pricing = () => {
         reiciendis.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {pricingList.map((pricing: PricingProps) => (
+        {pricingList.map((pricing: ContactoProps) => (
           <Card
             key={pricing.title}
             className={

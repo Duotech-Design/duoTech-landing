@@ -1,18 +1,18 @@
 import { About } from "./components/About";
 import { Cta } from "./components/Cta";
 import { FAQ } from "./components/FAQ";
-import { Features } from "./components/Features";
+import {  Servicios } from "./components/Servicios";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
 import { Navbar } from "./components/Navbar";
 import { Newsletter } from "./components/Newsletter";
-import { Pricing } from "./components/Pricing";
+import { Contacto } from "./components/Contacto";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
-import { Testimonials } from "./components/Testimonials";
+import { Portafolio } from "./components/Portafolio";
 import "./App.css";
 
 function App() {
@@ -23,12 +23,12 @@ function App() {
       <Sponsors />
       <About />
       <HowItWorks />
-      <Features />
+      <Servicios />
       <Services />
       <Cta />
-      <Testimonials />
+      <Portafolio />
       <Team />
-      <Pricing />
+      <Contacto />
       <Newsletter />
       <FAQ />
       <Footer />

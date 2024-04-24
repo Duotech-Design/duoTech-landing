@@ -49,7 +49,7 @@ const serviciosList: string[] = [
   "Minimalist",
 ];
 
-export const Features = () => {
+export const Servicios = () => {
   return (
     <section
       id="features"
