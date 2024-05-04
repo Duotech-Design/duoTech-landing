@@ -70,7 +70,10 @@
 /* *=========== Green theme =========== */
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 49.091, 24%, 91%;
+    --section-uno: 225, 4%, 18%;
+    --section-dos: 51, 3%, 44%;
+    --section-tres: 203.684, 19%, 60%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
