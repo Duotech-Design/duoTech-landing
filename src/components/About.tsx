@@ -18,16 +18,19 @@ export const About = () => {
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  About{" "}
+                  Sobre{" "}
                 </span>
-                Company
+              nosotros
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+              En Duotech, somos expertos en diseño web y desarrollo de soluciones digitales a medida para empresas de todos los tamaños. Con más de una década de experiencia en el mercado, nos hemos especializado en crear páginas web personalizadas que no solo impresionan visualmente, sino que también optimizan los procesos internos de tu empresa.
+
+Sabemos que cada negocio es único, por eso nos enfocamos en comprender a fondo tus necesidades y objetivos para diseñar una estrategia digital que se adapte perfectamente a ti. 
+<span>Ya sea que necesites una página web orientada a la venta, herramientas de automatización para simplificar tus operaciones o una plataforma de e-commerce eficiente, estamos aquí para hacerlo posible.
+
+Nuestro equipo de profesionales altamente capacitados combina habilidades técnicas con un enfoque creativo para ofrecerte soluciones que marcan la diferencia. Nos comprometemos a trabajar de cerca contigo, desde la conceptualización hasta la implementación, para garantizar que tu presencia en línea sea efectiva y exitosa.
+Trabajando juntos, podemos impulsar tu negocio hacia nuevas alturas en el mundo digital.
+  </span>
               </p>
             </div>
 

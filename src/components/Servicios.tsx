@@ -18,7 +18,7 @@ interface ServiciosProps {
 
 const features: ServiciosProps[] = [
   {
-    title: "Responsive Design",
+    title: "Landing Page",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image4,
@@ -30,7 +30,7 @@ const features: ServiciosProps[] = [
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "CRM",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
     image: image,
@@ -38,9 +38,9 @@ const features: ServiciosProps[] = [
 ];
 
 const serviciosList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
+  "Responsivos",
+  "Personalizados",
+  "Eficaces",
   "Pricing",
   "Contact form",
   "Our team",

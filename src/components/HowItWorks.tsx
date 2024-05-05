@@ -10,25 +10,24 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accesibility",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+    title: "Diseño Web",
+    description: "Nos enfocamos en crear sitios web efectivos que no solo son atractivos, sino que también generan resultados reales. Desde la optimización para motores de búsqueda hasta herramientas personalizadas, cada detalle está diseñado para potenciar tu presencia en línea.",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "Posicionamiento Web",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Desarrollamos estrategias efectivas para mejorar el posicionamiento orgánico de tu sitio en Google, atrayendo más visitantes y aumentando tus conversiones.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "Páginas Web Administrables",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Creamos sitios web administrables con  o Wordpress ®, adaptados a las posibilidades y necesidades especificas de cada cliente.",
   },
   {
     icon: <GiftIcon />,
-    title: "Gamification",
+    title: "PENDIENTE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
