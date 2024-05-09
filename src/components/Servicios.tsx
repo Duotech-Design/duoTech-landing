@@ -10,7 +10,7 @@ import image from "../assets/growth.png";
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
-import { buttonVariants } from "./ui/button";
+//import { buttonVariants } from "./ui/button";
 
 interface ServiciosProps {
   title: string;
@@ -91,18 +91,18 @@ export const Servicios = () => {
             </CardHeader>
 
             <CardContent>{description}</CardContent>
-            <div className="space-y-4 md:space-y-0 md:space-x-4">
+            <div className="flex justify-center">
           <GenericButton2/>
          {/*} <Button className="w-full md:w-1/3">Get Started</Button>
 */}
-          <a
+          {/*<a
             href="https://github.com/leoMirandaa/shadcn-landing-page.git"
             target="_blank"
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",
             })}`}
           >
-          </a>
+          </a>*/ }
         </div>
             <CardFooter>
               <img
