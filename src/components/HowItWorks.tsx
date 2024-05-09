@@ -27,7 +27,7 @@ const features: FeatureProps[] = [
   },
   {
     icon: <GiftIcon />,
-    title: "PENDIENTE",
+    title: "Envio de correos ??",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
   },
