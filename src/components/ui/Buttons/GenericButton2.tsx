@@ -1,23 +1,25 @@
 
+import "./style.css";
 
 const GenericButton2 = () => {
-    return (
-        <button
-        className="bg-[#202326] hover:bg-[#191c1e] text-white font-bold py-3 px-20 rounded-full"
-      style={{
-        background: 'linear-gradient(195.95deg, #202326 2.7%, #191c1e 97.41%)',
-        display: 'flex',
-        justifyContent: 'space-between',
-        overflow: 'hidden',
-        position: 'relative',
-        border: '1px solid #ffffff', // Cambia el color del borde a blanco
-        fontFamily: 'Helvetica, Arial, sans-serif', // Cambia el tipo de fuente del texto
-      }}
-      >
-        Cotiza 
-      </button>
-  
-    );
-  };
-  export default GenericButton2 ;
+  return (
+   
+    <section className="buttonsB">
+      <div className="containerB">
+        <a className="btn btn-1" href="#" title="borde animado SVG">
+          {/* <svg>
+            <rect x="0" y="0" fill="none" width="100%" height="100%" />
+          </svg> */}
+          <svg>
+            <rect x="0" y="0" width="100%" height="100%" rx="25" ry="25" fill="none" stroke="black"/>
+          </svg>
+          Cotiza 
+        </a>
+      </div>
+    </section>
+    
+  );
+};
+
+export default GenericButton2;
   
