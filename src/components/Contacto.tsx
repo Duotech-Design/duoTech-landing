@@ -1,74 +1,46 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Check } from "lucide-react";
-
-enum PopularPlanType {
-  NO = 0,
-  YES = 1,
-}
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 interface ContactoProps {
-  title: string;
-  popular: PopularPlanType;
-  price: number;
-  description: string;
-  buttonText: string;
-  benefitList: string[];
+  question: string;
+  answer: string;
+  value: string;
 }
 
-const pricingList: ContactoProps[] = [
+const ContactoList: ContactoProps[] = [
   {
-    title: "Free",
-    popular: 0,
-    price: 0,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
-    benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
-    ],
+    question: "Is this template free?",
+    answer: "Yes. It is a free ChadcnUI template.",
+    value: "item-1",
   },
   {
-    title: "Premium",
-    popular: 1,
-    price: 5,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
-    benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
+    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    value: "item-2",
   },
   {
-    title: "Enterprise",
-    popular: 0,
-    price: 40,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
-    benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
-    ],
+    question:
+      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+    answer:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+    value: "item-3",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
+    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    value: "item-4",
+  },
+  {
+    question:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    value: "item-5",
   },
 ];
 
@@ -78,70 +50,41 @@ export const Contacto = () => {
       id="contacto"
       className="container py-24 sm:py-32"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        otro texto parecido con animacion {" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          {" "}
-          Unlimited{" "}
+          Contactanos
         </span>
-        Access
       </h2>
-      <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
-      </h3>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {pricingList.map((pricing: ContactoProps) => (
-          <Card
-            key={pricing.title}
-            className={
-              pricing.popular === PopularPlanType.YES
-                ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10"
-                : ""
-            }
+
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full AccordionRoot"
+      >
+        {ContactoList.map(({ question, answer, value }: ContactoProps) => (
+          <AccordionItem
+            key={value}
+            value={value}
           >
-            <CardHeader>
-              <CardTitle className="flex item-center justify-between">
-                {pricing.title}
-                {pricing.popular === PopularPlanType.YES ? (
-                  <Badge
-                    variant="secondary"
-                    className="text-sm text-primary"
-                  >
-                    Most popular
-                  </Badge>
-                ) : null}
-              </CardTitle>
-              <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
-              </div>
+            <AccordionTrigger className="text-left">
+              {question}
+            </AccordionTrigger>
 
-              <CardDescription>{pricing.description}</CardDescription>
-            </CardHeader>
-
-            <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
-            </CardContent>
-
-            <hr className="w-4/5 m-auto mb-4" />
-
-            <CardFooter className="flex">
-              <div className="space-y-4">
-                {pricing.benefitList.map((benefit: string) => (
-                  <span
-                    key={benefit}
-                    className="flex"
-                  >
-                    <Check className="text-green-500" />{" "}
-                    <h3 className="ml-2">{benefit}</h3>
-                  </span>
-                ))}
-              </div>
-            </CardFooter>
-          </Card>
+            <AccordionContent>{answer}</AccordionContent>
+          </AccordionItem>
         ))}
-      </div>
+      </Accordion>
+
+      <h3 className="font-medium mt-4">
+        Still have questions?{" "}
+        <a
+          href="#"
+          className="text-primary transition-all border-primary hover:border-b-2"
+        >
+          Contact us
+        </a>
+      </h3>
     </section>
   );
 };
