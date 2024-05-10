@@ -33,12 +33,17 @@ const routeList: RouteProps[] = [
     label: "Portafolio",
   },
   {
+    href: "#cotizacion",
+    label: "Cotizacion",
+  },
+  {
     href: "#contacto",
     label: "Contacto",
   },
-  {
-    href: "#faq",
-    label: "FAQ",
+  { 
+    href: "#English",
+    label: "English",
+
   },
 ];
 

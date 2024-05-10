@@ -10,21 +10,27 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Aumenta tu visivilidad en línea",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Un diseño web optimizado puede mejorar el posicionamiento en los motores de búsqueda, lo que aumenta la visibilidad de la empresa y atrae más tráfico orgámico.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Mejora la imagen de la empresa: ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      " Un diseño web profesional y atractivo puede generar una buena impresión inicial en los visitantes, lo que aumenta la credibilidad y confianza en la empresa.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Atrae y retiene a los clientes",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Un sitio web atractivo y fácil de usar puede captar la atención de los visitantes y mantenerlos interesados, aumentando las posibilidades de convertirlos en clientes leales.",
+    icon: <MagnifierIcon />,
+  },
+  {
+    title: "Proporciona una mejor experiencia de usuario",
+    description:
+      "Un diseño web bien estructurado y fácil de navegar mejora la experiencia del usuario, lo que fomenta el compromiso y contribuye a una mayor tasa de conversión.",
     icon: <MagnifierIcon />,
   },
 ];
@@ -36,14 +42,13 @@ export const Services = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Beneficio {" "}
             </span>
-            Services
+            de nuestros servicios
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Atrae mas clientes con una paginas que represente la esencia de tu negocio.
           </p>
 
           <div className="flex flex-col gap-8">
