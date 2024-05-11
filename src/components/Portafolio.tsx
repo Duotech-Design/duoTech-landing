@@ -66,12 +66,12 @@ export const Portafolio = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+       Seccion de portafolio qeu no sabemos si se va a 
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          Borrar {" "}
         </span>
-        This Landing Page
+        
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">

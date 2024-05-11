@@ -21,16 +21,16 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
       <About />
-      <HowItWorks />
+      {/*<HowItWorks /> */ }
       <Servicios />
+      <Sponsors />
       <Services />
       <Cta />
       <Portafolio />
-      <Team />
+     {/* <Team />*/ }
      
-      <Newsletter />
+       {/*<Newsletter />*/ }
       <Cotiza/>
       <Contacto />
       <Footer />

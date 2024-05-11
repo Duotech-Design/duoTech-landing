@@ -39,8 +39,7 @@ const features: ServiciosProps[] = [
   },
   {
     title: "Envio de correos??",
-    description:
-      "???.",
+    description: "???.",
     image: image,
   },
 ];
@@ -49,22 +48,18 @@ const serviciosList: string[] = [
   "Responsivos",
   "Personalizados",
   "Eficaces",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
+  "E-commerce",
+  "Optimización SEO",
+  "Dinamico",
+
   "Minimalist",
 ];
 
 export const Servicios = () => {
   return (
-    <section
-      id="servicios"
-      className="container py-24 sm:py-32 space-y-8"
-    >
+    <section id="servicios" className="container py-24 sm:py-32 space-y-8">
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-       CONOCE NUESTROS {" "}
+        CONOCE NUESTROS{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           SERVICIOS
         </span>
@@ -73,10 +68,7 @@ export const Servicios = () => {
       <div className="flex flex-wrap md:justify-center gap-4">
         {serviciosList.map((feature: string) => (
           <div key={feature}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
+            <Badge variant="secondary" className="text-sm">
               {feature}
             </Badge>
           </div>
@@ -92,25 +84,24 @@ export const Servicios = () => {
 
             <CardContent>{description}</CardContent>
             <div className="flex justify-center">
-          <GenericButton2/>
-         {/*} <Button className="w-full md:w-1/3">Get Started</Button>
-*/}
-          {/*<a
+              <GenericButton2 />
+              {/*} <Button className="w-full md:w-1/3">Get Started</Button>
+               */}
+              {/*<a
             href="https://github.com/leoMirandaa/shadcn-landing-page.git"
             target="_blank"
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",
             })}`}
           >
-          </a>*/ }
-        </div>
+          </a>*/}
+            </div>
             <CardFooter>
               <img
                 src={image}
                 alt="About feature"
                 className="w-[200px] lg:w-[300px] mx-auto"
               />
-             
             </CardFooter>
           </Card2>
         ))}
