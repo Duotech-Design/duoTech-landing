@@ -72,10 +72,10 @@ const pricingList: CotizacionProps[] = [
   },
 ];
 
-export const Cotizacion = () => {
+export const Cotiza = () => {
   return (
     <section
-      id="cotizacion"
+      id="cotiza"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
