@@ -128,12 +128,7 @@ export const Footer = () => {
           </div>
 
           <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
-            </a>
+          
           </div>
         </div>
       </section>
@@ -146,7 +141,7 @@ export const Footer = () => {
             href="https://github.com/leoMirandaa"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            DuoTech Design
           </a>
         </h3>
       </section>

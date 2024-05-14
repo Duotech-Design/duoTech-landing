@@ -7,7 +7,6 @@ import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
 import { Navbar } from "./components/Navbar";
 import { Newsletter } from "./components/Newsletter";
-import { Cotiza } from "./components/Cotizacion";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
@@ -15,6 +14,7 @@ import { Team } from "./components/Team";
 import { Portafolio } from "./components/Portafolio";
 import "./App.css";
 import { Contacto } from "./components/Contacto";
+import Cotiza from "./components/Cotizacion";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
      {/* <Team />*/ }
      
        {/*<Newsletter />*/ }
-      <Cotiza/>
+      < Cotiza />
       <Contacto />
       <Footer />
       <ScrollToTop />

@@ -62,10 +62,10 @@ export const Servicios = () => {
         </span>
       </h2>
       <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      Escoge la mejor opcion para tu negocio.
+      Escoge la mejor opció n para tu negocio.
         </p>
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-        No sabes por donde empezar, contactanos.
+        No sabes por dónde empezar, contáctanos.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
