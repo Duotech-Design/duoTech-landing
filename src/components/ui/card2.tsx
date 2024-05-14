@@ -12,7 +12,7 @@ const Card2= React.forwardRef<
       "rounded-lg border bg-card text-card-foreground shadow-sm",
       className
     )}
-    style={{ backgroundColor: "#25282C" }} // Agrega esta línea para cambiar el color de fondo
+    style={{ backgroundColor: "#25282C",  }} // Agrega esta línea para cambiar el color de fondo
     {...props}
   />
 ))

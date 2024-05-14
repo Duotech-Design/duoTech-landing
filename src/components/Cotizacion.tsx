@@ -26,33 +26,41 @@ interface CotizacionProps {
 
 const pricingList: CotizacionProps[] = [
   {
-    title: "Free",
+    title: "One page website",
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Una pag. con efecto parallax. Solución web eficiente que condensa toda la información esencial de tu negocio en una única página, ideal para proyectos y promociones puntuales, ofreciendo una experiencia de navegación directa y concisa para tus visitantes.",
     buttonText: "Get Started",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
+        
+      "Propuesta de diseño.",
+      " Diseño responsivo (Desktop, tablet y celular).",
       "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Formulario de contacto personalizado.",
+      "Secciones personalizadas.",
+    "Links a redes sociales",
+      " Links de Whatsapp.",
+      "Codigo QR de tu pag,"
     ],
   },
   {
-    title: "Premium",
+    title: "Landing Page",
     popular: 1,
     price: 5,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
     buttonText: "Start Free Trial",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "  Pag. con 10 secciones.",
+      "Propuesta de diseño.",
+     
+      " Diseño responsivo (Desktop, tablet y celular).",
+      "Formulario de contacto personalizado. ",
+      "Secciones personalizadas ",
+      "Links a redes sociales",
+      " Links de Whatsapp.",
+      "Codigo QR de tu pag,"
     ],
   },
   {
@@ -132,7 +140,8 @@ export const Cotiza = () => {
                     key={benefit}
                     className="flex"
                   >
-                    <Check className="text-green-500" />{" "}
+                    {/* NO CAMBIO EL COLOR   */}
+                    <Check className="text-#879EAD" />{" "}
                     <h3 className="ml-2">{benefit}</h3>
                   </span>
                 ))}

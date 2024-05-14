@@ -6,49 +6,46 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card2";
-import image from "../assets/growth.png";
+//import image from "../assets/growth.png";
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
+import GenericButton from "./ui/Buttons/GenericButton";
 //import { buttonVariants } from "./ui/button";
 
 interface ServiciosProps {
   title: string;
   description: string;
+
   image: string;
 }
 
 const features: ServiciosProps[] = [
   {
-    title: "Landing Page",
+    title: "One page website",
     description:
-      "Nos diferenciamos por nuestro enfoque personalizado y orientado a resultados en la creación de landing pages. Cada página que diseñamos es única y totalmente adaptada a las necesidades y metas específicas de nuestros clientes. Desde el diseño hasta el contenido y las llamadas a la acción, nos aseguramos de que cada elemento refleje la identidad y la propuesta de valor de tu negocio de manera efectiva.",
+      "Una pag. con efecto parallax. Propuesta de diseño. Diseño responsivo (Desktop, tablet y celular). Formulario de contacto personalizado. Secciones personalizadas (links a redes sociales, contenido de la empresa, imagenes, servicios, info. de contacto, codigo QR de tu pag, etc.). Links de Whatsapp.  ",
     image: image4,
   },
   {
     title: "Páginas Web Administrables",
     description:
-      "Páginas web administrables ideales para aquellos que desean ofrecer servicios de venta en línea. Creamos o editamos páginas en plataformas como WordPress, Squarespace y Shopify, asegurando que cada aspecto sea completamente personalizable. Nuestro enfoque se centra en alinear la página web lo más posible con la identidad de la empresa, con el objetivo de atraer más clientes y potenciar las ventas.",
+      "Pag. con 10 secciones. Propuesta de diseño. Diseño responsivo (Desktop, tablet y celular). Formulario de contacto personalizado. Secciones personalizadas (links a redes sociales, contenido de la empresa, imagenes, servicios, info. de contacto, codigo QR de tu pag, etc.). Links de Whatsapp. ",
     image: image3,
   },
-  {
+  /*{
     title: "Páginas Web Empresariales",
     description:
       "Ofrecemos servicios de páginas web empresariales diseñadas para optimizar procesos según las necesidades de cada negocio. Nuestro enfoque es crear páginas que ayuden a eficientizar operaciones internas y mejorar la productividad de la empresa, todo de manera personalizada para adaptarse a cada requerimiento específico.",
     image: image,
-  },
-  {
-    title: "Envio de correos??",
-    description: "???.",
-    image: image,
-  },
+  },*/ 
 ];
 
 const serviciosList: string[] = [
   "Responsivos",
   "Personalizados",
   "Eficaces",
-  "E-commerce",
+  /*"E-commerce",*/
   "Optimización SEO",
   "Dinamico",
 
@@ -64,7 +61,19 @@ export const Servicios = () => {
           SERVICIOS
         </span>
       </h2>
+      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+      Escoge la mejor opcion para tu negocio.
+        </p>
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+        No sabes por donde empezar, contactanos.
+        </p>
 
+        <div className="space-y-4 md:space-y-0 md:space-x-4">
+          <GenericButton/>
+         {/*} <Button className="w-full md:w-1/3">Get Started</Button>
+*/}
+          
+        </div>
       <div className="flex flex-wrap md:justify-center gap-4">
         {serviciosList.map((feature: string) => (
           <div key={feature}>
