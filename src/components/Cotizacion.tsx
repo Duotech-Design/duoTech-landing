@@ -159,7 +159,7 @@ const Cotiza = () => {
           <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div className="mb-4">
               <label htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">
-                Username
+                Nombre completo 
               </label>
               <input
                 id="username"
@@ -170,7 +170,7 @@ const Cotiza = () => {
             </div>
             <div className="mb-6">
               <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
-                Password
+                Email 
               </label>
               <input
                 id="password"
@@ -179,6 +179,12 @@ const Cotiza = () => {
                 className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
               />
               <p className="text-red-500 text-xs italic">Please choose a password.</p>
+              <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
+                Teléfono  
+              </label>
+              <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
+                Mensaje   
+              </label>
             </div>
             <div className="flex items-center justify-between">
               <button
