@@ -35,8 +35,8 @@ const pricingList: CotizacionProps[] = [
     benefitList: [
         
       "Propuesta de diseño.",
-      " Diseño responsivo (Desktop, tablet y celular).",
-      "Upto 4 pages",
+      " Diseño responsivo (Desktop, tablet y mobile).",
+      "Hasta 4 paginas",
       "Formulario de contacto personalizado.",
       "Secciones personalizadas.",
     "Links a redes sociales",
@@ -55,7 +55,7 @@ const pricingList: CotizacionProps[] = [
       "  Pag. con 10 secciones.",
       "Propuesta de diseño.",
      
-      " Diseño responsivo (Desktop, tablet y celular).",
+      " Diseño responsivo (Desktop, tablet y mobile).",
       "Formulario de contacto personalizado. ",
       "Secciones personalizadas ",
       "Links a redes sociales",
