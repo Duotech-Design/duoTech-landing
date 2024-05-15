@@ -5,7 +5,7 @@ html {
 /* HeroCards background shadow */
 .shadow {
   position: absolute;
-  background: hsl(var(--primary) / 0%);
+  background: #879EAD;
   border-radius: 24px;
   rotate: 35deg;
 
