@@ -35,13 +35,14 @@ export const Hero = () => {
          
         </div>
       </div>
-
-      {/* Hero cards sections 
-      <div className="z-10">
+   
+   
+   
+   {/*  <div className="z-10">
         <HeroCards />
       </div>
 */}
-      {/* Shadow effect */}
+      
       <div className="shadow"></div>
     </section>
   );
