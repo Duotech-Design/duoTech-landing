@@ -78,13 +78,16 @@ export const Footer = () => {
         </div>
   */}
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Contacto</h3>
+        <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
+      STATUS 
+      </h3>
+        
           <div>
             <a
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              4444-
+             MONTERREY, MX.     7:30:45 PM 
             </a>
           </div>
 
@@ -93,28 +96,21 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-             4444-
+            CURRENTLY : OFF - DUTY 
             </a>
           </div>
 
-          <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-             ---@duotechdesign.com
-            </a>
-          </div>
+         
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow us </h3>
+          <h3 className="font-bold text-lg">CONTACTO  </h3>
           <div>
             <a
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Instagram 
+              DESIGN@DUOTECH.COM 
             </a>
           </div>
 
@@ -123,7 +119,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              + 51 444 ------ 
             </a>
           </div>
 
