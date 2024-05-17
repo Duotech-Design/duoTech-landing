@@ -170,7 +170,7 @@ Contáctanos hoy mismo, conoce al equipo y veamos si somos la opción ideal para
                 id="username"
                 type="text"
                 placeholder="Username"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className=" border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
             <div className="mb-6">
@@ -181,15 +181,27 @@ Contáctanos hoy mismo, conoce al equipo y veamos si somos la opción ideal para
                 id="password"
                 type="password"
                 placeholder="******************"
-                className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                className=" border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
               />
               <p className="text-red-500 text-xs italic">Please choose a password.</p>
               <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
                 Teléfono  
               </label>
+              <input
+                id="password"
+                type="password"
+                placeholder="******************"
+                className=" border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+              />
               <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
                 Mensaje   
               </label>
+              <input
+                id="password"
+                type="password"
+                placeholder="******************"
+                className=" border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+              />
             </div>
             <div className="flex items-center justify-between">
               <button
