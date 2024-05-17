@@ -24,9 +24,10 @@ function App() {
       <About />
       {/*<HowItWorks /> */ }
       <Servicios />
+      <Services />
       <Portafolio />
       {/*<Sponsors />
-      <Services />
+     
       <Cta />
     */ }
      {/* <Team />*/ }

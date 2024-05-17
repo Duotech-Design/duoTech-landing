@@ -99,7 +99,7 @@ export const Servicios = () => {
         </p>
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
       
-      CREAR MEMORQBILIDAD 
+      CREAR MEMORABILIDAD 
       
       
         </p>
@@ -118,7 +118,7 @@ export const Servicios = () => {
       
         </p>
         <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-       Te ayudamos a destacar para que no teas como los demás.  {" "}
+       Te ayudamos a destacar para que no veas como los demás.  {" "}
         
       </h2>
       <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
