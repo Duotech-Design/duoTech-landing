@@ -1,23 +1,15 @@
 
 
+
 const GenericButton2 = () => {
-    return (
-        <button
-        className="bg-[#202326] hover:bg-[#191c1e] text-white font-bold py-3 px-20 rounded-full"
-      style={{
-        background: 'linear-gradient(195.95deg, #202326 2.7%, #191c1e 97.41%)',
-        display: 'flex',
-        justifyContent: 'space-between',
-        overflow: 'hidden',
-        position: 'relative',
-        border: '1px solid #ffffff', // Cambia el color del borde a blanco
-        fontFamily: 'Helvetica, Arial, sans-serif', // Cambia el tipo de fuente del texto
-      }}
-      >
-        Cotiza 
-      </button>
-  
-    );
-  };
-  export default GenericButton2 ;
-  
+  return (
+    <button className="bg-black flex justify-center text-[#F5F5F5] font-semibold py-2 px-4 border border-[#252525] rounded-full hover:bg-transparent hover:text-[#879EAD] hover:border-[#879EAD]">
+      Ponte en contacto
+      <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  );
+};
+
+export default GenericButton2;

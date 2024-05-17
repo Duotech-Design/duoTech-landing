@@ -17,20 +17,11 @@ export const About = () => {
           <div className="bg-green-0 flex flex-col justify-between">
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
-                <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  Sobre{" "}
-                </span>
-              nosotros
+               
+              Nosotros
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-              En Duotech, somos expertos en diseño web y desarrollo de soluciones digitales a medida para empresas de todos los tamaños. Con más de una década de experiencia en el mercado, nos hemos especializado en crear páginas web personalizadas que no solo impresionan visualmente, sino que también optimizan los procesos internos de tu empresa.
-
-Sabemos que cada negocio es único, por eso nos enfocamos en comprender a fondo tus necesidades y objetivos para diseñar una estrategia digital que se adapte perfectamente a ti. 
-<span>Ya sea que necesites una página web orientada a la venta, herramientas de automatización para simplificar tus operaciones o una plataforma de e-commerce eficiente, estamos aquí para hacerlo posible.
-
-Nuestro equipo de profesionales altamente capacitados combina habilidades técnicas con un enfoque creativo para ofrecerte soluciones que marcan la diferencia. Nos comprometemos a trabajar de cerca contigo, desde la conceptualización hasta la implementación, para garantizar que tu presencia en línea sea efectiva y exitosa.
-Trabajando juntos, podemos impulsar tu negocio hacia nuevas alturas en el mundo digital.
-  </span>
+              Nos especializamos en diseño web y desarrollo de soluciones digitales a medida, enfocándonos exclusivamente en la creación de páginas web. Además, construimos todo el ecosistema de tu marca para mejorar la percepción y experiencia de tu audiencia, diferenciándote de la competencia, aumentando la satisfacción del usuario, fomentando la lealtad del cliente y fortaleciendo el valor de tu marca.
               </p>
             </div>
 

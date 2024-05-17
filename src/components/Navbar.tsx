@@ -12,7 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -21,6 +20,7 @@ import { LogoIcon } from "./Icons";
 interface RouteProps {
   href: string;
   label: string;
+  icon?: JSX.Element;
 }
 
 const routeList: RouteProps[] = [
@@ -40,10 +40,26 @@ const routeList: RouteProps[] = [
     href: "#contacto",
     label: "Contacto",
   },
-  { 
+  {
     href: "#English",
     label: "English",
-
+    icon: (
+      <svg
+        width="800px"
+        height="800px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="24" height="24" fill="white" />
+        <path
+          d="M12 6L12 18M12 18L17 13M12 18L7 13"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    ),
   },
 ];
 
@@ -54,10 +70,7 @@ export const Navbar = () => {
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
-            <a
-              href="/"
-              className="ml-2 font-bold text-xl flex"
-            >
+            <a href="/" className="ml-2 font-bold text-xl flex">
               <LogoIcon />
               LOGO AQUI
             </a>
@@ -67,10 +80,7 @@ export const Navbar = () => {
           <span className="flex md:hidden">
             <ModeToggle />
 
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
@@ -87,7 +97,7 @@ export const Navbar = () => {
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label }: RouteProps) => (
+                  {routeList.map(({ href, label, icon }: RouteProps) => (
                     <a
                       key={label}
                       href={href}
@@ -95,9 +105,11 @@ export const Navbar = () => {
                       className={buttonVariants({ variant: "ghost" })}
                     >
                       {label}
+                      {icon && <span className="ml-1">{icon}</span>}
                     </a>
                   ))}
-                 {/* <a
+
+                  {/* <a
                     href="https://github.com/leoMirandaa/shadcn-landing-page.git"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
@@ -128,7 +140,7 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-           {/* <a
+            {/* <a
               href="https://github.com/leoMirandaa/shadcn-landing-page.git"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}

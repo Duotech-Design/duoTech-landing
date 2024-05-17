@@ -1,4 +1,4 @@
-import { Badge } from "./ui/badge";
+
 import {
   Card2,
   CardContent,
@@ -10,7 +10,7 @@ import {
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
-import GenericButton from "./ui/Buttons/GenericButton";
+
 //import { buttonVariants } from "./ui/button";
 
 interface ServiciosProps {
@@ -40,40 +40,44 @@ const features: ServiciosProps[] = [
     image: image,
   },*/ 
 ];
-
+{/* 
 const serviciosList: string[] = [
   "Responsivos",
   "Personalizados",
   "Eficaces",
-  /*"E-commerce",*/
+  /*"E-commerce",
   "Optimización SEO",
   "Dinamico",
 
   "Minimalist",
 ];
-
+*/}
 export const Servicios = () => {
   return (
     <section id="servicios" className="container py-24 sm:py-32 space-y-8">
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        CONOCE NUESTROS{" "}
+       Construyes negocios, juntos los {" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          SERVICIOS
+          transformamos.
         </span>
       </h2>
       <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      Escoge la mejor opció n para tu negocio.
+      No sabes por dónde empezar, contáctanos.
+      
         </p>
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-        No sabes por dónde empezar, contáctanos.
-        </p>
+       
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <GenericButton/>
+          <GenericButton2/>
          {/*} <Button className="w-full md:w-1/3">Get Started</Button>
+         CAMBIAR TEXTO DE BOTON A ---> PONTE EN CONTACTO. 
 */}
           
         </div>
+      { /* 
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+        No sabes por dónde empezar, contáctanos.
+        </p>
       <div className="flex flex-wrap md:justify-center gap-4">
         {serviciosList.map((feature: string) => (
           <div key={feature}>
@@ -83,7 +87,44 @@ export const Servicios = () => {
           </div>
         ))}
       </div>
-
+      */}
+      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+      TE AYUDAMOS 
+      
+        </p>
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+      GENERAR CONFIANZA 
+       
+      
+        </p>
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+      
+      CREAR MEMORQBILIDAD 
+      
+      
+        </p>
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+      
+       
+      DISRUPTIR CATEGORÍAS 
+      
+      
+        </p>
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+      
+       
+       
+      AUMENTAR VISIBILIDAD 
+      
+        </p>
+        <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
+       Te ayudamos a destacar para que no teas como los demás.  {" "}
+        
+      </h2>
+      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+     Escoge la mejor opcion para tu negocio. 
+      
+        </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: ServiciosProps) => (
           <Card2 key={title}>

@@ -93,13 +93,18 @@ const Cotiza = () => {
         
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Cotiza{" "}
+          EMPECEMOS {" "}
         </span>
-        tu proyecto
+       A CONSTRUIR UN NEGOCIO QUE IMPACTE 
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-      Cuentanos mas sobre tu proyecto y nos pondremos en contacto para empezar. 
+      CONTACTÁNOS  
       </h3>
+      <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
+      Con tantos diseñadores y estudios para elegir, te encuentras ante un dilema de opciones. Elegir uno es difícil, seleccionar el adecuado es aún más complicado. Queremos asegurarnos de que tomes la decisión correcta desde el principio.
+
+
+Contáctanos hoy mismo, conoce al equipo y veamos si somos la opción ideal para lo que quieres hacer y a dónde quieres llegar.      </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: CotizacionProps) => (
           <Card

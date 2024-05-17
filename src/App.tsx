@@ -24,10 +24,11 @@ function App() {
       <About />
       {/*<HowItWorks /> */ }
       <Servicios />
-      <Sponsors />
+      <Portafolio />
+      {/*<Sponsors />
       <Services />
       <Cta />
-      <Portafolio />
+    */ }
      {/* <Team />*/ }
      
        {/*<Newsletter />*/ }
