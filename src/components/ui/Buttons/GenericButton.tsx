@@ -13,9 +13,11 @@ const GenericButton = () => {
     >
    
     Cotiza tu proyecto
-     <svg  width="25px" height="25px" viewBox="0 0 24 24" fill="#FFF" xmlns="http://www.w3.org/2000/svg">
+     <svg 
+     className=" text-currentColor " 
+     width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </motion.button>
 
