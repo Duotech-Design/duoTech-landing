@@ -76,9 +76,9 @@ export const Servicios = () => {
         </div>
       </div>
 
-      <div className="flex flex-col ">
-        <div className="w-2/4 "></div>
-        <div className=" grid grid-cols-2 py-8 px-3">
+      <div className="flex flex-col! ">
+        <div className="w-2/4"></div>
+        <div className="w-full grid grid-cols-2 py-8 px-3">
           <div>
             {" "}
             <span>DIGITAL </span>
@@ -91,6 +91,7 @@ export const Servicios = () => {
             <div>STRATEGY</div>
           </div>
         </div>
+        <div className="w-3/4"></div>
       </div>
 
       <div>
