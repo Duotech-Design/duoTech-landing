@@ -2,12 +2,12 @@ import heroImage from "/heroImage.png";
 
 export const Us = () => {
   return (
-    <section className="w-full grid grid-cols-3 py-24 sm:py-8 gap-4">
-      <div className="px-8  col-span-1 ">
+    <section className="container flex flex-col! py-24 sm:py-8">
+      <div className="w-2/4">
         <h1> NOSOTROS </h1>
       </div>
-      <div className="col-span-1  ">
-        <div>
+      <div className="w-full ">
+        <div className="px-3">
           <p>
             {" "}
             Nos especializamos en diseño web y desarrollo de soluciones
@@ -19,18 +19,22 @@ export const Us = () => {
             marca.
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 ">
+        <div className="w-full grid grid-cols-2 py-8 px-3">
           <div>
             {" "}
             <span>DIGITAL </span>
           </div>
-          <div>
-            <span>WEB DESIGN</span>
+          <div className="flex flex-wrap w-1/4">
+            <div>WEB DESIGN</div>
+            <div>IDENTITY</div>
+            <div>PROTOTYPING</div>
+            <div>DEVELOPMENT</div>
+            <div>STRATEGY</div>
           </div>
         </div>
       </div>
-      <div className=" col-span-1  ">
-        <img src={heroImage} className="object-cover h-[300px] w-auto "></img>
+      <div className="w-3/4">
+        <img src={heroImage} className="object-cover h-[400px] w-auto "></img>
       </div>
     </section>
   );
