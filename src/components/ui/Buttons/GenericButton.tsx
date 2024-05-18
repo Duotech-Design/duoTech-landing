@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
 const GenericButton = () => {
   return (
     <motion.button
-    whileHover={{ scale : 1.2}}
-    className="bg-transparent flex justify-center text-[#73726C]  font-semibold hover:text-[#879EAD] py-2 px-4 border border-[#73726C] hover:border-[#879EAD] rounded-full"
+     whileHover={{ scale : 1.2}}
+    className="bg-[#F5F5F5] flex justify-center text-[#73726C]  font-semibold hover:text-[#879EAD] py-2 px-4 border border-[#73726C] hover:border-[#879EAD] rounded-full"
     >
    
     Cotiza tu proyecto
-     <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <svg  width="25px" height="25px" viewBox="0 0 24 24" fill="#FFF" xmlns="http://www.w3.org/2000/svg">
 
-<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </motion.button>
 
