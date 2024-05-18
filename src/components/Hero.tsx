@@ -6,16 +6,16 @@ import GenericButton from "./ui/Buttons/GenericButton";
 
 export const Hero = () => {
   return (
-    <section className="flex  justify-center h-96">
+    <section className="flex  justify-center h-[700px]">
       <div className=" flex flex-col justify-center items-center ">
         <main className="mt-96 text-center space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold">
+          <h1 className="text-5xl md:text-7xl font-bold">
             <span className="inline bg-gradient-to-r from-[#d4d3d4]  to-[#879EAD] text-transparent bg-clip-text">
               TECNOLOGIA 
             </span>{" "}
             
           </h1>
-          <h1 className="text-5xl md:text-6xl font-bold">
+          <h1 className="text-5xl md:text-7xl font-bold">
             <span className="inline bg-gradient-to-r from-[#d4d3d4] via-[#879EAD] to-[#879EAD] text-transparent bg-clip-text">
              &  DISEÑO
             </span>{" "}
