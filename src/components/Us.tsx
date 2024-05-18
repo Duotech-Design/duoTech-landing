@@ -2,11 +2,11 @@ import heroImage from "/heroImage.png";
 
 export const Us = () => {
   return (
-    <section className="w-full grid grid-cols-3 gap-4 py-24 sm:py-8">
-      <div className="px-8  ">
+    <section className="w-full grid grid-cols-3 py-24 sm:py-8 gap-4">
+      <div className="px-8  col-span-1 ">
         <h1> NOSOTROS </h1>
       </div>
-      <div className="  ">
+      <div className="col-span-1  ">
         <div>
           <p>
             {" "}
@@ -19,7 +19,7 @@ export const Us = () => {
             marca.
           </p>
         </div>
-        <div className="w-full grid grid-cols-2">
+        <div className="w-full grid grid-cols-2 ">
           <div>
             {" "}
             <span>DIGITAL </span>
@@ -29,8 +29,8 @@ export const Us = () => {
           </div>
         </div>
       </div>
-      <div className="  ">
-        <img src={heroImage} className="object-cover h-[600px] w-auto "></img>
+      <div className=" col-span-1  ">
+        <img src={heroImage} className="object-cover h-[300px] w-auto "></img>
       </div>
     </section>
   );
