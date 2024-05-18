@@ -2,11 +2,11 @@ import heroImage from "/heroImage.png";
 
 export const Us = () => {
   return (
-    <section  className="w-full flex flex-col  py-24 sm:py-8">
-      <div className=" flex-1 ">
+    <section className="w-full grid grid-cols-3 gap-4 py-24 sm:py-8">
+      <div className="px-8  ">
         <h1> NOSOTROS </h1>
       </div>
-      <div className=" flex-1 ">
+      <div className="  ">
         <div>
           <p>
             {" "}
@@ -19,15 +19,17 @@ export const Us = () => {
             marca.
           </p>
         </div>
-        <div>
-          {" "}
-          <span>DIGITAL </span>
-        </div>
-        <div>
-          <span>WEB DESIGN</span>
+        <div className="w-full grid grid-cols-2">
+          <div>
+            {" "}
+            <span>DIGITAL </span>
+          </div>
+          <div>
+            <span>WEB DESIGN</span>
+          </div>
         </div>
       </div>
-      <div className=" flex-1 ">
+      <div className="  ">
         <img src={heroImage} className="object-cover h-[600px] w-auto "></img>
       </div>
     </section>
