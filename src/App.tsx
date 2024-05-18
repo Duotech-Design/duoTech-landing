@@ -15,6 +15,7 @@ import { Portafolio } from "./components/Portafolio";
 import "./App.css";
 import { Contacto } from "./components/Contacto";
 import Cotiza from "./components/Cotizacion";
+import { Us } from "./components/Us";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Us/>
       {/*<HowItWorks /> */ }
       <Servicios />
       <Services />
