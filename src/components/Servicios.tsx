@@ -1,4 +1,3 @@
-
 import {
   Card2,
   CardContent,
@@ -10,6 +9,7 @@ import {
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
+import heroImage from "/heroImage.png";
 
 //import { buttonVariants } from "./ui/button";
 
@@ -38,9 +38,10 @@ const features: ServiciosProps[] = [
     description:
       "Ofrecemos servicios de páginas web empresariales diseñadas para optimizar procesos según las necesidades de cada negocio. Nuestro enfoque es crear páginas que ayuden a eficientizar operaciones internas y mejorar la productividad de la empresa, todo de manera personalizada para adaptarse a cada requerimiento específico.",
     image: image,
-  },*/ 
+  },*/
 ];
-{/* 
+{
+  /* 
 const serviciosList: string[] = [
   "Responsivos",
   "Personalizados",
@@ -51,110 +52,49 @@ const serviciosList: string[] = [
 
   "Minimalist",
 ];
-*/}
+*/
+}
 export const Servicios = () => {
   return (
     <section id="servicios" className="container py-24 sm:py-32 space-y-8">
-      <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-       Construye negocios, juntos los {" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          transformamos.
-        </span>
-      </h2>
-      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      No sabes por dónde empezar, contáctanos.
-      
-        </p>
-       
-
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <GenericButton2/>
-         {/*} <Button className="w-full md:w-1/3">Get Started</Button>
-         CAMBIAR TEXTO DE BOTON A ---> PONTE EN CONTACTO. 
-*/}
-          
-        </div>
-      { /* 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-        No sabes por dónde empezar, contáctanos.
-        </p>
-      <div className="flex flex-wrap md:justify-center gap-4">
-        {serviciosList.map((feature: string) => (
-          <div key={feature}>
-            <Badge variant="secondary" className="text-sm">
-              {feature}
-            </Badge>
+      <div className="flex flex-col! justify-between">
+        <div className="flex flex-col  justify-start gap-3">
+          <h1 className="text-5xl">
+            {" "}
+            Construyes negocios, juntos los transformamos.{" "}
+          </h1>
+          <h2 className="text-3xl">
+            {" "}
+            No sabes por donde empezar, te ayudamos.{" "}
+          </h2>
+          <div>
+            <GenericButton2 />
           </div>
-        ))}
+        </div>
+        <div>
+          <img src={heroImage} className="object-cover h-[200px] w-auto "></img>
+        </div>
       </div>
-      */}
-      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      TE AYUDAMOS 
-      
-        </p>
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      GENERAR CONFIANZA 
-       
-      
-        </p>
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      
-      CREAR MEMORABILIDAD 
-      
-      
-        </p>
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      
-       
-      DISRUPTIR CATEGORÍAS 
-      
-      
-        </p>
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-      
-       
-       
-      AUMENTAR VISIBILIDAD 
-      
-        </p>
-        <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-       Te ayudamos a destacar para que no veas como los demás.  {" "}
-        
-      </h2>
-      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-     Escoge la mejor opcion para tu negocio. 
-      
-        </p>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map(({ title, description, image }: ServiciosProps) => (
-          <Card2 key={title}>
-            <CardHeader>
-              <CardTitle>{title}</CardTitle>
-            </CardHeader>
 
-            <CardContent>{description}</CardContent>
-            <div className="flex justify-center">
-              <GenericButton2 />
-              {/*} <Button className="w-full md:w-1/3">Get Started</Button>
-               */}
-              {/*<a
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
-          >
-          </a>*/}
-            </div>
-            <CardFooter>
-              <img
-                src={image}
-                alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
-              />
-            </CardFooter>
-          </Card2>
-        ))}
+      <div className="flex flex-col ">
+        <div className="w-2/4 "></div>
+        <div className=" grid grid-cols-2 py-8 px-3">
+          <div>
+            {" "}
+            <span>DIGITAL </span>
+          </div>
+          <div className="flex flex-wrap w-1/4">
+            <div>WEB DESIGN</div>
+            <div>IDENTITY</div>
+            <div>PROTOTYPING</div>
+            <div>DEVELOPMENT</div>
+            <div>STRATEGY</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Te ayudamos a destacar para que no te veas como los demás.</h1>
       </div>
     </section>
   );
