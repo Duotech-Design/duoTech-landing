@@ -6,10 +6,10 @@ import GenericButton from "./ui/Buttons/GenericButton";
 
 export const Hero = () => {
   return (
-    <section className="container grid place-items-center py-20 md:py-32 gap-10 ">
-      <div className="flex flex-col justify-center items-center h-full">
-        <main className="text-center space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold">
+    <section className="container  flex  justify-center h-96 items-end">
+      <div className=" flex flex-col justify-center items-center ">
+        <main className=" text-center space-y-6">
+          <h1 className="mt-32 text-5xl md:text-6xl font-bold">
             <span className="inline bg-gradient-to-r from-[#d4d3d4]  to-[#879EAD] text-transparent bg-clip-text">
               TECNOLOGIA 
             </span>{" "}
@@ -42,7 +42,7 @@ export const Hero = () => {
       </div>
 */}
       
-      <div className="shadow"></div>
+     <div className="shadow"></div> 
     </section>
   );
 };
