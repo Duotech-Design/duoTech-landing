@@ -1,8 +1,7 @@
-
 import { motion } from "framer-motion";
 
-import imageCard2 from "/imageCard2.png"
-import imageCard from "/imageCard.png"
+import imageCard2 from "/imageCard2.png";
+import imageCard from "/imageCard.png";
 //import GenericButton2 from "./ui/Buttons/GenericButton2";
 
 // Interface de propiedades de servicios
@@ -26,7 +25,6 @@ const features: ServiciosProps[] = [
       "Proporcionamos a tu negocio un lenguaje gráfico unificado y auténtico que conecta con tu audiencia en todos los puntos de contacto.",
     image: imageCard2,
   },
- 
 ];
 
 export const ServiciosCards = () => {
@@ -43,6 +41,11 @@ export const ServiciosCards = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img className="w-full" src={feature.image} alt={feature.title} />
+            {feature.title === "LANDING PAGE" && (
+              <div className="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-2 py-1 m-2 rounded-sm">
+                Popular
+              </div>
+            )}
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{feature.title}</div>
               <p className="text-gray-700 text-base">{feature.description}</p>
@@ -55,23 +58,5 @@ export const ServiciosCards = () => {
 };
 
 // Código del componente principal
-import { StrictMode, useState } from "react";
-import * as ReactDOMClient from "react-dom/client";
 
-function AppWithUI() {
-  const [count, setCount] = useState(0);
 
-  return (
-    <StrictMode>
-      <App key={count} />
-      <Footer
-        title="Press/tap animations"
-        url="https://www.framer.com/docs/gestures/#hover"
-      />
-    </StrictMode>
-  );
-}
-
-const rootElement = document.getElementById("root");
-const root = ReactDOMClient.createRoot(rootElement);
-root.render(<AppWithUI />);
