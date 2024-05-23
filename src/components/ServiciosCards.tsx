@@ -1,8 +1,8 @@
 
 import { motion } from "framer-motion";
 
-import imageCard2 from "../../public/imageCard2.png"
-import imageCard from "../../public/imageCard.png"
+import imageCard2 from "/imageCard2.png"
+import imageCard from "/imageCard.png"
 //import GenericButton2 from "./ui/Buttons/GenericButton2";
 
 // Interface de propiedades de servicios

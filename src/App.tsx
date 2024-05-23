@@ -17,6 +17,7 @@ import { Contacto } from "./components/Contacto";
 import Cotiza from "./components/Cotizacion";
 import { Us } from "./components/Us";
 import { ServiciosCards } from "./components/ServiciosCards";
+import { Proyectos } from "./components/Proyectos";
 
 function App() {
   return (
@@ -28,9 +29,11 @@ function App() {
       {/*<HowItWorks /> */ }
       <Servicios />
       <ServiciosCards/>
+      <Proyectos />
       <Services />
+      {/*
       <Portafolio />
-      {/*<Sponsors />
+      <Sponsors />
      
       <Cta />
     */ }
