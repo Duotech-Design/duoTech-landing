@@ -63,20 +63,29 @@ export const ServiciosCards = () => {
         <img
           className="w-full"
           src="/imageCard.png"
-          alt="Sunset in the mountains"
+          alt="One page website"
         />
 
         <div className="px-6 py-4">
          
           <p className="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
+          La primera impresión es crucial.  Nuestro servicio de one page web garantiza una presentación impactante y efectiva desde el primer vistazo.
           </p>
           <div className="font-bold text-xl mb-2">ONE PAGE WEBSITE</div>
         </div>
        
       </div>
+      <div className="max-w-sm rounded overflow-hidden shadow-lg">
+  <img className="w-full" src="/imageCard2.png" alt="Landing page"/>
+  <div className="px-6 py-4">
+   
+    <p className="text-gray-700 text-base">
+    Proporcionamos a tu negocio un lenguaje gráfico unificado y auténtico que conecta con tu audiencia en todos los puntos de contacto.
+    </p>
+    <div className="font-bold text-xl mb-2">LANDING PAGE</div>
+  </div>
+ 
+</div>
     </section>
   );
 };
