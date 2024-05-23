@@ -9,7 +9,6 @@ import {
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
-import heroImage from "/heroImage.png";
 
 //import { buttonVariants } from "./ui/button";
 
@@ -54,50 +53,29 @@ const serviciosList: string[] = [
 ];
 */
 }
-export const Servicios = () => {
+export const ServiciosCards = () => {
   return (
-    <section id="servicios" className="container space-y-8">
-      <div className="flex flex-col! justify-between">
-        <div className="flex flex-col  justify-start gap-3">
-          <h1 className="text-5xl">
-            {" "}
-            Construyes negocios, juntos los transformamos.{" "}
-          </h1>
-          <p>
-            {" "}
-            No sabes por donde empezar, te ayudamos.{" "}
+    <section id="servicios" className="container py-6 space-y-8">
+      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+        Escoge la mejor opcion para tu negocio.
+      </p>
+      <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          className="w-full"
+          src="/imageCard.png"
+          alt="Sunset in the mountains"
+        />
+
+        <div className="px-6 py-4">
+         
+          <p className="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
           </p>
-          <div>
-            <GenericButton2 />
-          </div>
+          <div className="font-bold text-xl mb-2">ONE PAGE WEBSITE</div>
         </div>
-        <div>
-          <img src={heroImage} className="object-cover h-[200px] w-auto rounded-sm"></img>
-        </div>
-      </div>
-
-      <div className="flex flex-col! ">
-        <div className="w-2/4"></div>
-        <div className="w-full grid grid-cols-2 py-8 px-3">
-          <div>
-            {" "}
-            <span>TE AYUDAMOS A </span>
-          </div>
-          <div className="flex flex-wrap w-3/4">
-            <div>GENERAR CONFIANZA </div>
-            <div>CREAR MEMORABILIDAD</div>
-            <div>DISRUPTIR CATEGORÍAS</div>
-            <div>AUMENTAR VISIBILIDAD</div>
-           
-          </div>
-        </div>
-        <div className="w-3/4"></div>
-      </div>
-
-      <div>
-        <h1 className="text-5xl">
-        Te ayudamos a destacar para que no te veas como los demás.
-        </h1>
+       
       </div>
     </section>
   );

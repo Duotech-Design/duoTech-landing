@@ -2,7 +2,7 @@ import heroImage from "/heroImage.png";
 
 export const Us = () => {
   return (
-    <section className="container flex flex-col! py-24 sm:py-8">
+    <section className="container flex flex-col! py-24 sm:py-24">
       <div className="w-2/4">
         <h1> NOSOTROS </h1>
       </div>
@@ -34,7 +34,7 @@ export const Us = () => {
         </div>
       </div>
       <div className="w-3/4">
-        <img src={heroImage} className="object-cover h-[400px] w-auto "></img>
+        <img src={heroImage} className="object-cover h-[400px] w-auto  rounded-sm"></img>
       </div>
     </section>
   );

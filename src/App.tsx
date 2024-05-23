@@ -16,6 +16,7 @@ import "./App.css";
 import { Contacto } from "./components/Contacto";
 import Cotiza from "./components/Cotizacion";
 import { Us } from "./components/Us";
+import { ServiciosCards } from "./components/ServiciosCards";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Us/>
       {/*<HowItWorks /> */ }
       <Servicios />
+      <ServiciosCards/>
       <Services />
       <Portafolio />
       {/*<Sponsors />
