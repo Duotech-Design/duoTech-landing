@@ -80,7 +80,7 @@ const pricingList: CotizacionProps[] = [
     ],
   },
 ];
-const Cotiza = () => {
+const Cotizacion2  = () => {
 
 
   return (
@@ -218,4 +218,4 @@ Contáctanos hoy mismo, conoce al equipo y veamos si somos la opción ideal para
   );
 };
 
-export default Cotiza;
+export default Cotizacion2;

@@ -1,4 +1,6 @@
+import GenericButton from "./ui/Buttons/GenericButton";
 import proyectosImage from "/proyectosImage.png";
+
 
 export const Proyectos = () => {
   return (
@@ -13,8 +15,12 @@ export const Proyectos = () => {
           className="object-cover h-[600px] w-auto  rounded-sm"
           alt="Nuestros Proyectos"
         ></img>
-        <div className="absolute bottom-0 left-0 mb-4 ml-4 bg-black bg-opacity-50 text-white px-2 py-1 rounded-sm">
-          <p className="text-sm">PAG. WEB EMPRESARIAL / 2024</p>
+       <div className="flex items-center mt-6">
+          <div className="flex-grow">
+            <p className="text-sm">PAG. WEB EMPRESARIAL / 2024</p>
+            <p className="text-sm mt-4">WE ONE</p>
+          </div>
+          < GenericButton />
         </div>
       </div>
     </section>

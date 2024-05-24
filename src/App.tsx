@@ -14,7 +14,7 @@ import { Team } from "./components/Team";
 import { Portafolio } from "./components/Portafolio";
 import "./App.css";
 import { Contacto } from "./components/Contacto";
-import Cotiza from "./components/Cotizacion";
+import { Cotiza } from "./components/Cotiza";
 import { Us } from "./components/Us";
 import { ServiciosCards } from "./components/ServiciosCards";
 import { Proyectos } from "./components/Proyectos";
@@ -25,22 +25,24 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Us/>
-      {/*<HowItWorks /> */ }
+      <Us />
+      {/*<HowItWorks /> */}
       <Servicios />
-      <ServiciosCards/>
+      <ServiciosCards />
       <Proyectos />
+ <Cotiza/>
+
       <Services />
       {/*
       <Portafolio />
       <Sponsors />
      
       <Cta />
-    */ }
-     {/* <Team />*/ }
+    */}
+      {/* <Team />*/}
+
+      {/*<Newsletter />*/}
      
-       {/*<Newsletter />*/ }
-      < Cotiza />
       <Contacto />
       <Footer />
       <ScrollToTop />
