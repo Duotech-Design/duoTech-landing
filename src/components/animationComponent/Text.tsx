@@ -30,6 +30,7 @@ export default function Text( {fullText = "Duo Tech"}: {fullText: string}) {
         top: 50,
         left: 50,
         fontSize: "4rem",
+        color: "white",
         writingMode: "horizontal-tb",
         transform: "rotate(0deg)",
       }}
