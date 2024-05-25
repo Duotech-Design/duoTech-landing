@@ -1,41 +1,26 @@
-import { About } from "./components/About";
-import { Cta } from "./components/Cta";
-//import { FAQ } from "./components/Contacto";
-import { Servicios } from "./components/Servicios";
-import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { HowItWorks } from "./components/HowItWorks";
-import { Navbar } from "./components/Navbar";
-import { Newsletter } from "./components/Newsletter";
-import { Cotizacion } from "./components/Cotizacion";
-import { ScrollToTop } from "./components/ScrollToTop";
-import { Services } from "./components/Services";
-import { Sponsors } from "./components/Sponsors";
-import { Team } from "./components/Team";
-import { Portafolio } from "./components/Portafolio";
-import "./App.css";
-import { Contacto } from "./components/Contacto";
-
+import { useState, useEffect } from 'react';
+import RosslerComponent from './components/rossler/RosslerAttractor';
+import './App.css';
 function App() {
+  const [text, setText] = useState('');
+  const fullText = 'Tecnología y diseño';
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setText((prevText) => fullText.slice(0, prevText.length + 1));
+    }, 100); // Ajusta la velocidad de la animación aquí
+
+    // Limpia el temporizador al desmontar
+    return () => clearTimeout(timer);
+  }, [text]);
+
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Sponsors />
-      <About />
-      <HowItWorks />
-      <Servicios />
-      <Services />
-      <Cta />
-      <Portafolio />
-      <Team />
-     
-      <Newsletter />
-      <Cotizacion />
-      <Contacto />
-      <Footer />
-      <ScrollToTop />
-    </>
+    <div style={{ position: 'relative' }}>
+      <RosslerComponent />
+      <h1 style={{ position: "absolute", top: "50%", left: "40%", fontSize:"76px" }}>DuoTech</h1>
+      <h1 style={{ position: 'absolute', top: '22%', left: '35%', fontSize: '36px', writingMode: 'vertical-lr', transform: 'rotate(180deg)' }}>{text}</h1>
+      {/* Resto de tu código */}
+    </div>
   );
 }
 
