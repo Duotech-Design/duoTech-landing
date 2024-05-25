@@ -31,9 +31,9 @@ function App() {
       <ServiciosCards />
       <Proyectos />
  <Cotiza/>
-
+{/*
       <Services />
-      {/*
+      
       <Portafolio />
       <Sponsors />
      
