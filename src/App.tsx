@@ -5,7 +5,7 @@ function App() {
   return (
     <div style={{ position: "relative" }}>
       <RosslerComponent />
-      <Text fullText="Duo Tech" />
+      {/* <Text fullText="Duo Tech" /> */}
     </div>
   );
 }
