@@ -1,4 +1,3 @@
-import Text from "./components/animationComponent/Text";
 import RosslerComponent from "./components/rossler/RosslerAttractor";
 import "./App.css";
 function App() {
