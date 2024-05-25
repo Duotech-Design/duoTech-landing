@@ -130,7 +130,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #fff;
   position: relative;
 }
 .title {

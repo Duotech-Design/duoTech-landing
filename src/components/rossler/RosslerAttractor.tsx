@@ -95,7 +95,7 @@ function RosslerAttractor() {
 
   return (
     <primitive object={new THREE.Line()} ref={lineRef}>
-      <lineBasicMaterial attach="material" color="0xffffff" linewidth={2} />
+      <lineBasicMaterial attach="material" color="#000000" linewidth={2} />
     </primitive>
   );
 }
