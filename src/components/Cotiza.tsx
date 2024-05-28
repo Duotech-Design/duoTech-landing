@@ -2,6 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import heroImage from "/heroImage.png";
 import GenereicButton2 from "../components/ui/Buttons/GenericButton2";
 
@@ -22,11 +24,21 @@ export const Cotiza = () => {
 
   const onSubmit = data => {
     console.log(data);
+    toast.success("¡Gracias por contarnos sobre tu proyecto! Nos pondremos en contacto contigo muy pronto!  ", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     reset();
   };
 
   return (
     <section className="container flex flex-col py-24 bg-[#2D2E31] relative">
+      <ToastContainer />
       <h2 className="text-3xl text-white mb-3">
         EMPECEMOS A CONSTRUIR UN NEGOCIO DURADERO
       </h2>
