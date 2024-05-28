@@ -45,19 +45,12 @@ const routeList: RouteProps[] = [
     label: "English",
     icon: (
       <svg
-        width="800px"
-        height="800px"
-        viewBox="0 0 24 24"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
       >
-        <rect width="24" height="24" fill="white" />
-        <path
-          d="M12 6L12 18M12 18L17 13M12 18L7 13"
-          stroke="#000000"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
+        <path d="M12 16c-.3 0-.5-.1-.7-.3l-7-7c-.4-.4-.4-1 0-1.4s1-.4 1.4 0L12 13.6l6.3-6.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-7 7c-.2.2-.4.3-.7.3z" />
       </svg>
     ),
   },
@@ -68,13 +61,10 @@ export const Navbar = () => {
   return (
     <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a href="/" className="font-bold text-xl flex">
-              
-           
-            <RosslerComponent />
-            
+              <RosslerComponent />
             </a>
           </NavigationMenuItem>
 
@@ -110,17 +100,6 @@ export const Navbar = () => {
                       {icon && <span className="ml-1">{icon}</span>}
                     </a>
                   ))}
-
-                  {/* <a
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                    target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
-                      variant: "secondary",
-                    })}`}
-                  >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
-                  </a> */}
                 </nav>
               </SheetContent>
             </Sheet>
@@ -137,20 +116,12 @@ export const Navbar = () => {
                 })}`}
               >
                 {route.label}
+                {route.icon && <span className="ml-1">{route.icon}</span>}
               </a>
             ))}
           </nav>
 
           <div className="hidden md:flex gap-2">
-            {/* <a
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-              */}
             <ModeToggle />
           </div>
         </NavigationMenuList>

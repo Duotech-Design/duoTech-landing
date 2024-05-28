@@ -13,18 +13,7 @@ export const Contacto = () => {
           </span>
         </div>
       </div>
-      <div>
-        <h3 className="font-medium mt-4">MONTERREY, MX.</h3>
-        <h3 className="font-medium mt-4">
-          CURRENTLY:
-          <a
-            href="#"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            OFF - DUTY
-          </a>
-        </h3>
-      </div>
+      
     </section>
   );
 };

@@ -2,129 +2,67 @@ import { LogoIcon } from "./Icons";
 
 export const Footer = () => {
   return (
-    <footer id="footer">
+    <footer id="footer" >
       <hr className="w-11/12 mx-auto" />
 
-      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-        <div className="col-span-full xl:col-span-2">
-          <a
-            href="/"
-            className="font-bold text-xl flex"
-          >
-            <LogoIcon />
-            ShadcnUI/React
-          </a>
-        </div>
-{/*}
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+      <section className="container py-20 grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-8">
+        <div className="flex flex-col justify-between">
           <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Github
-            </a>
+            <h3 className="text-xs text-gray-400">STATUS</h3>
+            <h3 className="font-medium mt-4">MONTERREY, MX ➔ 7:30:35 PM</h3>
+            <h3 className="font-medium mt-4">
+              CURRENTLY: <span className="text-red-500">●</span> OFF - DUTY
+            </h3>
           </div>
-
-          <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
+          <div className="mt-8">
+            <a href="/" className="font-bold text-4xl flex flex-col leading-none">
+              LO
+              <br />
+              GO
             </a>
           </div>
         </div>
-  */}
-  {/*}
+
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
+          <h3 className="text-xs text-gray-400">CONTACTO</h3>
           <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
+            <a href="mailto:design@duotech.com" className="opacity-60 hover:opacity-100">
+              DESIGN@DUOTECH.COM
             </a>
           </div>
-
           <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
+            <a href="tel:+51444" className="opacity-60 hover:opacity-100">
+              +51 444 ------
             </a>
           </div>
-
           <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+            <a href="tel:+5244" className="opacity-60 hover:opacity-100">
+              44- --------
+            </a>
+          </div>
+          <div>
+            <a href="mailto:__@duptechdesign.com" className="opacity-60 hover:opacity-100">
+              __@duptechdesign.com
             </a>
           </div>
         </div>
-  */}
-        <div className="flex flex-col gap-2">
-        <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-      STATUS 
-      </h3>
-        
-          <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-             MONTERREY, MX.     7:30:45 PM 
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-            CURRENTLY : OFF - DUTY 
-            </a>
-          </div>
-
-         
-        </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">CONTACTO  </h3>
+          <h3 className="text-xs text-gray-400">LINKS</h3>
           <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              DESIGN@DUOTECH.COM 
+            <a href="#" className="opacity-60 hover:opacity-100">
+              INSTAGRAM
             </a>
           </div>
-
           <div>
-            <a
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              + 51 444 ------ 
+            <a href="#" className="opacity-60 hover:opacity-100">
+              PINTEREST
             </a>
           </div>
-
           <div>
-          
+            <a href="#" className="opacity-60 hover:opacity-100">
+              DUO-TECH SHOP
+            </a>
           </div>
         </div>
       </section>

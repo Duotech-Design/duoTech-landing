@@ -39,16 +39,17 @@ export const Cotiza = () => {
   return (
     <section className="container flex flex-col py-24 bg-[#2D2E31] relative">
       <ToastContainer />
-      <h2 className="text-3xl text-white mb-3">
-        EMPECEMOS A CONSTRUIR UN NEGOCIO DURADERO
-      </h2>
-      <div className="w-2/4">
+      <div className="w-2/4 mb-8">
         <h1 className="text-white">CONTACTANOS</h1>
       </div>
+      <h2 className="text-5xl text-white ">
+        EMPECEMOS A CONSTRUIR UN NEGOCIO DURADERO
+      </h2>
+     
 
       <div className="container mx-auto flex flex-col lg:flex-row items-start mt-12 lg:mt-0">
         <div className="flex flex-col w-full lg:w-1/2 pr-8">
-          <p className="text-white mt-4">
+          <p className="text-white mt-4 roboto-Font">
             Con tantos diseñadores y estudios para elegir, te encuentras ante un
             dilema de opciones. Elegir uno es difícil, seleccionar el adecuado
             es aún más complicado. Queremos asegurarnos de que tomes la decisión

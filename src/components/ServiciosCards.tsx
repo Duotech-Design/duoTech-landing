@@ -30,7 +30,7 @@ const features: ServiciosProps[] = [
 export const ServiciosCards = () => {
   return (
     <section id="servicios" className="container py-6 space-y-8">
-      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 text-center">
+      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 text-center roboto-Font">
         Escoge la mejor opción para tu negocio.
       </p>
       <div className="flex justify-center space-x-8">
@@ -48,7 +48,7 @@ export const ServiciosCards = () => {
             )}
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{feature.title}</div>
-              <p className="text-gray-700 text-base">{feature.description}</p>
+              <p className="text-gray-700 roboto-Font">{feature.description}</p>
             </div>
           </motion.div>
         ))}
