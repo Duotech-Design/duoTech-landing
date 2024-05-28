@@ -23,7 +23,7 @@ export const Hero = () => {
           </h1>
         </main>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 roboto-Font ">
         Transformando ideas en experiencias digitales.  Donde el diseño encuentra la tecnología.
         </p>
 
