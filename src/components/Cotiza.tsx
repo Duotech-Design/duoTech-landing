@@ -1,22 +1,28 @@
+import React from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as Yup from "yup";
 import heroImage from "/heroImage.png";
-import React, { useState } from "react";
 import GenereicButton2 from "../components/ui/Buttons/GenericButton2";
 
+// Definir el esquema de validación con Yup
+const validationSchema = Yup.object().shape({
+  name: Yup.string().required("El nombre es obligatorio"),
+  email: Yup.string().email("Ingresa un correo válido").required("El email es obligatorio"),
+  phone: Yup.string()
+    .matches(/^[0-9]{10}$/, "El teléfono debe ser numérico y de 10 dígitos")
+    .required("El teléfono es obligatorio"),
+  message: Yup.string().required("El mensaje es obligatorio"),
+});
+
 export const Cotiza = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+    resolver: yupResolver(validationSchema)
+  });
 
-  const handleSubmit = (event: React.SyntheticEvent) => {
-    event.preventDefault();
-    console.log({ name, email, phone, message });
-
-    // Reset form fields
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
+  const onSubmit = data => {
+    console.log(data);
+    reset();
   };
 
   return (
@@ -49,43 +55,43 @@ export const Cotiza = () => {
             className="absolute inset-0 object-cover h-full w-full opacity-30"
           />
           <form
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit(onSubmit)}
             className="relative bg-opacity-80 p-8 rounded-md shadow-lg w-full lg:w-3/4"
           >
             <div className="mb-4">
               <input
                 type="text"
                 placeholder="Nombre completo"
-                value={name}
-                onChange={(event) => setName(event.target.value)}
+                {...register("name")}
                 className="mt-2 px-4 py-2 bg-white text-black border border-gray-300 rounded-md w-full"
               />
+              <p className="text-red-500">{errors.name?.message}</p>
             </div>
             <div className="mb-4">
               <input
                 type="email"
                 placeholder="Email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
+                {...register("email")}
                 className="mt-2 px-4 py-2 bg-white text-black border border-gray-300 rounded-md w-full"
               />
+              <p className="text-red-500">{errors.email?.message}</p>
             </div>
             <div className="mb-4">
               <input
                 type="text"
                 placeholder="Teléfono"
-                value={phone}
-                onChange={(event) => setPhone(event.target.value)}
+                {...register("phone")}
                 className="mt-2 px-4 py-2 bg-white text-black border border-gray-300 rounded-md w-full"
               />
+              <p className="text-red-500">{errors.phone?.message}</p>
             </div>
             <div className="mb-4">
               <textarea
                 placeholder="Cuéntanos sobre tu proyecto"
-                value={message}
-                onChange={(event) => setMessage(event.target.value)}
+                {...register("message")}
                 className="mt-2 px-4 py-2 bg-white text-black border border-gray-300 rounded-md w-full h-24"
               />
+              <p className="text-red-500">{errors.message?.message}</p>
             </div>
             <GenereicButton2 />
           </form>

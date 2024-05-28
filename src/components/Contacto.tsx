@@ -1,10 +1,4 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import GenericButton from "./ui/Buttons/GenericButton";
+
 
 export const Contacto = () => {
   return (

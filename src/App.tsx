@@ -30,8 +30,8 @@ function App() {
       <Servicios />
       <ServiciosCards />
       <Proyectos />
- <Cotiza/>
-{/*
+      <Cotiza />
+      {/*
       <Services />
       
       <Portafolio />
@@ -42,7 +42,7 @@ function App() {
       {/* <Team />*/}
 
       {/*<Newsletter />*/}
-     
+
       <Contacto />
       <Footer />
       <ScrollToTop />
