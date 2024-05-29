@@ -1,4 +1,39 @@
+import React, { useState, useEffect } from 'react';
+
 export const Footer = () => {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer); // Cleanup interval on component unmount
+  }, []);
+
+  const formatTime = (date) => {
+    const options = {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+      hour12: true,
+      timeZone: 'America/Monterrey'
+    };
+    return new Intl.DateTimeFormat('en-US', options).format(date);
+  };
+
+  const isOnDuty = (date) => {
+    const options = { hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'America/Monterrey' };
+    const timeString = new Intl.DateTimeFormat('en-US', options).format(date);
+    const [hour, minute] = timeString.split(':').map(Number);
+    
+    const currentMinutes = hour * 60 + minute;
+    const startMinutes = 9 * 60; // 9:00 AM in minutes
+    const endMinutes = 18 * 60 + 30; // 6:30 PM in minutes
+
+    return currentMinutes >= startMinutes && currentMinutes < endMinutes;
+  };
+
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
@@ -7,9 +42,11 @@ export const Footer = () => {
         <div className="flex flex-col justify-between">
           <div>
             <h3 className="text-xs text-gray-400">STATUS</h3>
-            <h3 className="font-medium mt-4">MONTERREY, MX ➔ 7:30:35 PM</h3>
             <h3 className="font-medium mt-4">
-              CURRENTLY: <span className="text-red-500">●</span> OFF - DUTY
+              MONTERREY, MX ➔ {formatTime(time)}
+            </h3>
+            <h3 className="font-medium mt-4">
+              CURRENTLY: <span className={`text-${isOnDuty(time) ? 'green' : 'red'}-500 blink`}>●</span> {isOnDuty(time) ? 'ON-DUTY' : 'OFF-DUTY'}
             </h3>
           </div>
           <div className="mt-8">
@@ -74,7 +111,7 @@ export const Footer = () => {
           &copy; 2024 Landing page made by{" "}
           <a
             target="_blank"
-            href="duotechdesign.com"
+            href="https://github.com/leoMirandaa"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
             DuoTech Design
