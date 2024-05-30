@@ -19,7 +19,7 @@ export const Servicios = () => {
             No sabes por donde empezar, te ayudamos.{" "}
           </p>
           <div>
-            <GenericButton2 />
+            <GenericButton2 title="Ponte en contacto" />
           </div>
         </div>
         <div>

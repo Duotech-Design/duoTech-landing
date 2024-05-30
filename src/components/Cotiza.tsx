@@ -106,7 +106,7 @@ export const Cotiza = () => {
               />
               <p className="text-red-500">{errors.message?.message}</p>
             </div>
-            <GenereicButton2 />
+            <GenereicButton2 title="ENVIAR" />
           </form>
         </div>
       </div>

@@ -22,7 +22,7 @@ export const Proyectos = () => {
             <p className="text-sm">PAG. WEB EMPRESARIAL / 2024</p>
             <p className="text-sm mt-4">WE ONE</p>
           </div>
-          <GenericButton />
+          <GenericButton title="Ver proyecto" />
         </div>
       </div>
     </section>
