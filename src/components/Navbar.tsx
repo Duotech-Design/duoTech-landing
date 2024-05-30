@@ -29,8 +29,8 @@ const routeList: RouteProps[] = [
     label: "Servicios",
   },
   {
-    href: "#portafolio",
-    label: "Portafolio",
+    href: "#proyectos",
+    label: "Proyectos",
   },
   {
     href: "#cotiza",
@@ -49,8 +49,9 @@ const routeList: RouteProps[] = [
         viewBox="0 0 24 24"
         width="24"
         height="24"
+        
       >
-        <path d="M12 16c-.3 0-.5-.1-.7-.3l-7-7c-.4-.4-.4-1 0-1.4s1-.4 1.4 0L12 13.6l6.3-6.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-7 7c-.2.2-.4.3-.7.3z" />
+       <path d="M12 6L12 18M12 18L17 13M12 18L7 13" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     ),
   },

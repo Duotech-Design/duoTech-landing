@@ -37,7 +37,7 @@ export const Cotiza = () => {
   };
 
   return (
-    <section className="container flex flex-col py-24 bg-[#2D2E31] relative">
+    <section id="cotiza" className="container flex flex-col py-24 bg-[#2D2E31] relative">
       <ToastContainer />
       <div className="w-2/4 mb-8">
         <h1 className="text-white">CONTACTANOS</h1>
