@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 export const Footer = () => {
   const [time, setTime] = useState(new Date());
@@ -111,7 +111,7 @@ export const Footer = () => {
           &copy; 2024 Landing page made by{" "}
           <a
             target="_blank"
-            href="https://github.com/leoMirandaa"
+            href="duotechdesign.com"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
             DuoTech Design

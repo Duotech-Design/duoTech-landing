@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 import imageCard2 from "/imageCard2.png";
 import imageCard from "/imageCard.png";
-//import GenericButton2 from "./ui/Buttons/GenericButton2";
 
 // Interface de propiedades de servicios
 interface ServiciosProps {
@@ -16,7 +15,7 @@ const features: ServiciosProps[] = [
   {
     title: "ONE PAGE WEBSITE",
     description:
-      " La primera impresión es crucial.  Nuestro servicio de one page web garantiza una presentación impactante y efectiva desde el primer vistazo.",
+      "La primera impresión es crucial. Nuestro servicio de one page web garantiza una presentación impactante y efectiva desde el primer vistazo.",
     image: imageCard,
   },
   {
@@ -37,12 +36,12 @@ export const ServiciosCards = () => {
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="max-w-sm rounded overflow-hidden shadow-lg"
+            className="max-w-sm rounded overflow-hidden shadow-lg relative group"
             whileHover={{ scale: 1.05 }}
           >
             <img className="w-full" src={feature.image} alt={feature.title} />
             {feature.title === "LANDING PAGE" && (
-              <div className="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-2 py-1 m-2 rounded-sm">
+              <div className="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-2 py-1 m-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Popular
               </div>
             )}
@@ -56,7 +55,3 @@ export const ServiciosCards = () => {
     </section>
   );
 };
-
-// Código del componente principal
-
-
