@@ -7,18 +7,18 @@ export const Hero: React.FC = () => {
     <section className="flex justify-center h-[700px]">
       <div className="flex flex-col justify-center items-center">
         <main className="mt-96 text-center space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold">
+          <h1 className="text-5xl md:text-7xl ">
             <span className="inline bg-gradient-to-r from-[#d4d3d4] to-[#879EAD] text-transparent bg-clip-text">
               TECNOLOGÍA
             </span>
           </h1>
-          <h1 className="text-5xl md:text-7xl font-bold">
+          <h1 className="text-5xl md:text-7xl ">
             <span className="inline bg-gradient-to-r from-[#d4d3d4] via-[#879EAD] to-[#879EAD] text-transparent bg-clip-text">
               & DISEÑO
             </span>
           </h1>
         </main>
-        <span>
+        <span className="mt-3">
           Transformando <Messenger text="ideas" /> en experiencias{" "}
           <Messenger text="digitales." />
         </span>
@@ -26,8 +26,8 @@ export const Hero: React.FC = () => {
           Donde el <Messenger text="diseño" /> encuentra la{" "}
           <Messenger text="tecnología." />
         </span>
-        <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center">
-          <GenericButton title="Cotiza tu proyecto" />
+        <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center mt-3">
+          <GenericButton  title="Cotiza tu proyecto" />
         </div>
       </div>
       <div className="shadow"></div>

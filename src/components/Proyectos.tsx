@@ -20,7 +20,9 @@ export const Proyectos = () => {
         <div className="flex items-center mt-6">
           <div className="flex-grow">
             <p className="text-sm">PAG. WEB EMPRESARIAL / 2024</p>
+            
             <p className="text-sm mt-4">WE ONE</p>
+            
           </div>
           <GenericButton title="Ver proyecto" />
         </div>
