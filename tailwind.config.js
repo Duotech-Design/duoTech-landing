@@ -17,7 +17,7 @@ export const theme = {
   extend: {
     colors: {
       border: "hsl(var(--border))",
-      alison: "#879EAD",
+      alison: "#EEECE3",
       ring: "hsl(var(--ring))",
       background: "hsl(var(--background))",
       foreground: "hsl(var(--foreground))",
