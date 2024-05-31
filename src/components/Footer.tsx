@@ -1,7 +1,9 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import MessengerHover from "./MessengerHover";
 
 export const Footer = () => {
   const [time, setTime] = useState(new Date());
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null); // Define hoveredItem
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -13,20 +15,25 @@ export const Footer = () => {
 
   const formatTime = (date) => {
     const options = {
-      hour: 'numeric',
-      minute: 'numeric',
-      second: 'numeric',
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
       hour12: true,
-      timeZone: 'America/Monterrey'
+      timeZone: "America/Monterrey",
     };
-    return new Intl.DateTimeFormat('en-US', options).format(date);
+    return new Intl.DateTimeFormat("en-US", options).format(date);
   };
 
   const isOnDuty = (date) => {
-    const options = { hour: 'numeric', minute: 'numeric', hour12: false, timeZone: 'America/Monterrey' };
-    const timeString = new Intl.DateTimeFormat('en-US', options).format(date);
-    const [hour, minute] = timeString.split(':').map(Number);
-    
+    const options = {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: false,
+      timeZone: "America/Monterrey",
+    };
+    const timeString = new Intl.DateTimeFormat("en-US", options).format(date);
+    const [hour, minute] = timeString.split(":").map(Number);
+
     const currentMinutes = hour * 60 + minute;
     const startMinutes = 9 * 60; // 9:00 AM in minutes
     const endMinutes = 18 * 60 + 30; // 6:30 PM in minutes
@@ -46,11 +53,20 @@ export const Footer = () => {
               MONTERREY, MX ➔ {formatTime(time)}
             </h3>
             <h3 className="font-medium mt-4">
-              CURRENTLY: <span className={`text-${isOnDuty(time) ? 'green' : 'red'}-500 blink`}>●</span> {isOnDuty(time) ? 'ON-DUTY' : 'OFF-DUTY'}
+              CURRENTLY:{" "}
+              <span
+                className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}
+              >
+                ●
+              </span>{" "}
+              {isOnDuty(time) ? "ON-DUTY" : "OFF-DUTY"}
             </h3>
           </div>
           <div className="mt-8">
-            <a href="/" className="font-bold text-4xl flex flex-col leading-none">
+            <a
+              href="/"
+              className="font-bold text-4xl flex flex-col leading-none"
+            >
               LO
               <br />
               GO
@@ -63,23 +79,55 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <h3 className="text-xs text-gray-400">CONTACTO</h3>
               <div>
-                <a href="mailto:design@duotech.com" className="opacity-60 hover:opacity-100">
-                  DESIGN@DUOTECH.COM
+                <a
+                  href="mailto:design@duotech.com"
+                  className="opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("DESIGN@DUOTECH.COM")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
+                  <MessengerHover
+                    text="DESIGN@DUOTECH.COM"
+                    isHovered={hoveredItem === "DESIGN@DUOTECH.COM"}
+                  />
                 </a>
               </div>
               <div>
-                <a href="tel:+51444" className="opacity-60 hover:opacity-100">
-                  +51 444 ------
+                <a
+                  href="tel:+51444"
+                  className="opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("+51 444 4-----")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
+                  <MessengerHover
+                    text="+51 444 4-----"
+                    isHovered={hoveredItem === "+51 444 4-----"}
+                  />
                 </a>
               </div>
               <div>
-                <a href="tel:+5244" className="opacity-60 hover:opacity-100">
-                  44- --------
+                <a
+                  href="tel:+5244"
+                  className="opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("+51 444 ------")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
+                  <MessengerHover
+                    text="+51 444 ------"
+                    isHovered={hoveredItem === "+51 444 ------"}
+                  />
                 </a>
               </div>
               <div>
-                <a href="mailto:__@duptechdesign.com" className="opacity-60 hover:opacity-100">
-                  __@duotechdesign.com
+                <a
+                  href="mailto:__@duptechdesign.com"
+                  className="opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("__@duotechdesign.com")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
+                  <MessengerHover
+                    text="__@duotechdesign.com"
+                    isHovered={hoveredItem === "__@duotechdesign.com"}
+                  />
                 </a>
               </div>
             </div>
@@ -87,18 +135,38 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <h3 className="text-xs text-gray-400">LINKS</h3>
               <div>
-                <a href="#" className="opacity-60 hover:opacity-100">
-                  INSTAGRAM
+                <a
+                  href="#"
+                  className="opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("INSTAGRAM")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
+                  <MessengerHover
+                    text="INSTAGRAM"
+                    isHovered={hoveredItem === "INSTAGRAM"}
+                  />
                 </a>
               </div>
               <div>
-                <a href="#" className="opacity-60 hover:opacity-100">
-                  PINTEREST
+                <a
+                  href="#"
+                  className="opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("PINTEREST")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
+                  <MessengerHover
+                    text="PINTEREST"
+                    isHovered={hoveredItem === "PINTEREST"}
+                  />
                 </a>
               </div>
               <div>
-                <a href="#" className="opacity-60 hover:opacity-100">
-                  DUO-TECH SHOP
+                <a href="#" className="opacity-60 hover:opacity-100"  onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
+                  onMouseLeave={() => setHoveredItem(null)}>
+                  <MessengerHover
+                    text="DUO-TECH SHOP"
+                    isHovered={hoveredItem === "DUO-TECH SHOP"}
+                  />
                 </a>
               </div>
             </div>
@@ -111,7 +179,7 @@ export const Footer = () => {
           &copy; 2024 Landing page made by{" "}
           <a
             target="_blank"
-            href="duotechdesign.com"
+            href="https://www.duotechdesign.com/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
             DuoTech Design
