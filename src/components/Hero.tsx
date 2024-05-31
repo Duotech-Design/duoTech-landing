@@ -18,12 +18,14 @@ export const Hero: React.FC = () => {
             </span>
           </h1>
         </main>
-        <span>Transformando <Messenger text="ideas"/> en experiencias <Messenger text="digitales."/> </span>
-        <span>Donde el  <Messenger text="diseño"/>  encuentra la  <Messenger text="tecnología."/> </span>
-        {/* <Messenger text={"Transformando ideas en experiencias digitales. "} />
-        <Messenger text={"Donde el diseño encuentra la tecnología. "} />
-        <Messenger text={" Innovación y creatividad en cada proyecto "} /> */}
-
+        <span>
+          Transformando <Messenger text="ideas" /> en experiencias{" "}
+          <Messenger text="digitales." />
+        </span>
+        <span>
+          Donde el <Messenger text="diseño" /> encuentra la{" "}
+          <Messenger text="tecnología." />
+        </span>
         <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center">
           <GenericButton title="Cotiza tu proyecto" />
         </div>
