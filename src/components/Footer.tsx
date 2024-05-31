@@ -136,7 +136,7 @@ export const Footer = () => {
               <h3 className="text-xs text-gray-400">LINKS</h3>
               <div>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/duotechdesign/"
                   className="opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("INSTAGRAM")}
                   onMouseLeave={() => setHoveredItem(null)}
@@ -161,7 +161,7 @@ export const Footer = () => {
                 </a>
               </div>
               <div>
-                <a href="#" className="opacity-60 hover:opacity-100"  onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
+                <a href="https://www.duotechdesign.com/" className="opacity-60 hover:opacity-100"  onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
                   onMouseLeave={() => setHoveredItem(null)}>
                   <MessengerHover
                     text="DUO-TECH SHOP"
