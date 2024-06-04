@@ -30,7 +30,7 @@ const MessengerHover: React.FC<TextScramblerProps> = ({ text, isHovered }) => {
         }
       };
 
-      interval = setInterval(scramble, 20);
+      interval = setInterval(scramble, 40);
 
       return () => clearInterval(interval);
     } else {

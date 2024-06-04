@@ -11,7 +11,7 @@ export const Proyectos = () => {
         <h1> PROYECTOS </h1>
       </div>
 
-      <div className="relative w-3/4">
+      <div className="relative ">
         <img
           src={proyectosImage}
           className="object-cover h-[600px] w-auto  rounded-sm"
