@@ -8,12 +8,12 @@ export const Hero: React.FC = () => {
       <div className="flex flex-col justify-center items-center">
         <main className="mt-96 text-center space-y-6">
           <h1 className="text-5xl md:text-7xl ">
-            <span className="inline bg-gradient-to-r from-[#d4d3d4] to-[#879EAD] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
               TECNOLOGÍA
             </span>
           </h1>
           <h1 className="text-5xl md:text-7xl ">
-            <span className="inline bg-gradient-to-r from-[#d4d3d4] via-[#879EAD] to-[#879EAD] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] text-transparent bg-clip-text">
               & DISEÑO
             </span>
           </h1>
