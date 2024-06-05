@@ -1,6 +1,7 @@
 import imageCard2 from "/imageCard2.png";
 import imageCard from "/imageCard.png";
 import GenericButton from "./ui/Buttons/GenericButton";
+import GenericButton2 from "./ui/Buttons/GenericButton2";
 
 // Interface de propiedades de servicios
 interface ServiciosProps {
@@ -96,12 +97,15 @@ export const ServiciosCards = () => {
                 <div className="flip-card-back p-6 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg">
                   <h1 className="text-xl font-bold mb-4">{pricing?.title}</h1>
                   <p className="mb-4">{pricing?.description}</p>
-                  <ul className="list-disc list-inside mb-4">
+                  <ul className="list-none mb-4">
                     {pricing?.benefitList.map((benefit, idx) => (
-                      <li key={idx}>{benefit}</li>
+                      <li key={idx} className="flex items-start">
+                        <img src="/checkmark.svg" alt="checkmark" className="w-4 h-4 mr-2 mt-1" />
+                        <span>{benefit}</span>
+                      </li>
                     ))}
                   </ul>
-                  < GenericButton title="Contáctanos" />
+                  <GenericButton2 title="Contáctanos" />
                 </div>
               </div>
             </div>

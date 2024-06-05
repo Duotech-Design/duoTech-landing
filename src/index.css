@@ -139,8 +139,8 @@ body {
 .flip-card {
   background-color: transparent;
   perspective: 1000px;
-  width: 400px;
-  height: 450px; /* Ajusta la altura para que sea responsive */
+  width: 450px;
+  height: 500px; /* Ajusta la altura para que sea responsive */
   border-radius: 10px; /* Borde redondeado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
 }
@@ -177,7 +177,7 @@ body {
 }
 
 .flip-card-back {
-  background-color: #73726C;
+  background-color: #EDECE2;
   color: black;
   transform: rotateY(180deg);
   display: flex;
