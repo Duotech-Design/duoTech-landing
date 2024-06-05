@@ -13,7 +13,7 @@ export const Servicios = () => {
             No sabes por donde empezar, te ayudamos.
           </p>
           <div>
-            <GenericButton2 title="Ponte en contacto" />
+            <GenericButton2 title="PONTE EN CONTACTO" />
           </div>
         </div>
         <div>

@@ -9,7 +9,7 @@ const GenericButton2 = ({ title }: { title: string }) => {
     <motion.button
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="bg-black flex justify-center text-[#F5F5F5] font-semibold py-2 px-4 border border-[#252525] rounded-full hover:bg-[#879EAD] hover:text-white hover:border-[#879EAD]"
+      className="bg-black flex justify-center font-roboto-Font text-[#F5F5F5] font-semibold py-2 px-4 border border-[#252525] rounded-full hover:bg-[#879EAD] hover:text-white hover:border-[#879EAD]"
     >
       <MessengerHover text={title} isHovered={isHovered} />
       <svg

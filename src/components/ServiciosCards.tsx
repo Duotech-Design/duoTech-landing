@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import imageCard2 from "/imageCard2.png";
 import imageCard from "/imageCard.png";
 
@@ -34,22 +32,20 @@ export const ServiciosCards = () => {
       </p>
       <div className="flex justify-center space-x-8">
         {features.map((feature, index) => (
-          <motion.div
-            key={index}
-            className="max-w-sm rounded overflow-hidden shadow-lg relative group"
-            whileHover={{ scale: 1.05 }}
-          >
-            <img className="w-full" src={feature.image} alt={feature.title} />
-            {feature.title === "LANDING PAGE" && (
-              <div className="absolute top-0 left-0 bg-black bg-opacity-50 text-white px-2 py-1 m-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Popular
+          <div key={index} className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front bg-white">
+                <img className="w-full h-64 object-cover rounded-t-lg" src={feature.image} alt={feature.title} />
+                <div className="px-6 py-4 text-left">
+                  <div className="font-bold text-xl mb-2">{feature.title}</div>
+                  <p className="text-gray-700 roboto-Font">{feature.description}</p>
+                </div>
               </div>
-            )}
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{feature.title}</div>
-              <p className="text-gray-700 roboto-Font">{feature.description}</p>
+              <div className="flip-card-back p-6 flex justify-center items-center">
+                <h1 className="text-xl font-bold text-white">{feature.title}</h1>
+              </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>
