@@ -16,6 +16,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import RosslerComponent from "./rossler/RosslerAttractor";
+import MessengerHover from "./MessengerHover"; // Importa el componente MessengerHover
 
 interface RouteProps {
   href: string;
@@ -49,9 +50,13 @@ const routeList: RouteProps[] = [
         viewBox="0 0 24 24"
         width="20"
         height="20"
-        
       >
-       <path d="M12 6L12 18M12 18L17 13M12 18L7 13" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+        <path
+          d="M12 6L12 18M12 18L17 13M12 18L7 13"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
     ),
   },
@@ -59,6 +64,8 @@ const routeList: RouteProps[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
@@ -90,14 +97,17 @@ export const Navbar = () => {
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label, icon }: RouteProps) => (
+                  {routeList.map(({ href, label, icon }: RouteProps, i) => (
                     <a
                       key={label}
                       href={href}
                       onClick={() => setIsOpen(false)}
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                      {label}
+                      <MessengerHover
+                        text={label}
+                        isHovered={hoveredIndex === i}
+                      />
                       {icon && <span className="ml-1">{icon}</span>}
                     </a>
                   ))}
@@ -115,8 +125,13 @@ export const Navbar = () => {
                 className={`text-[17px] ${buttonVariants({
                   variant: "ghost",
                 })}`}
+                onMouseEnter={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
               >
-                {route.label}
+                <MessengerHover
+                  text={route.label}
+                  isHovered={hoveredIndex === i}
+                />
                 {route.icon && <span className="ml-1">{route.icon}</span>}
               </a>
             ))}

@@ -1,4 +1,5 @@
-import heroImage from "/heroImage.png";
+import Messenger from "./Messenger";
+import imageUs from "/imageUs.png"
 
 
 
@@ -27,16 +28,16 @@ export const Us = () => {
             <span>DIGITAL </span>
           </div>
           <div className="flex flex-wrap w-1/4">
-            <div>WEB DESIGN</div>
+            <div><Messenger text="WEB DESIGN" /> </div>
             <div>IDENTITY</div>
             <div>PROTOTYPING</div>
-            <div>DEVELOPMENT</div>
+            <div><Messenger text="DEVELOPMENT" /></div>
             <div>STRATEGY</div>
           </div>
         </div>
       </div>
       <div className="w-3/4">
-        <img src={heroImage} className="object-cover h-[400px] w-auto  rounded-sm"></img>
+        <img src={imageUs} className="object-cover h-[400px] w-auto  rounded-sm"></img>
       </div>
     </section>
   );
