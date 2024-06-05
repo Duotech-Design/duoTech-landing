@@ -27,8 +27,8 @@ export const Us = () => {
             {" "}
             <span>DIGITAL </span>
           </div>
-          <div className="flex flex-wrap w-1/4">
-            <div><Messenger text="WEB DESIGN" /> </div>
+          <div className="flex flex-wrap w-2/4 flex-col ">
+            <div><Messenger text="WEB DESIGN" /></div>
             <div>IDENTITY</div>
             <div>PROTOTYPING</div>
             <div><Messenger text="DEVELOPMENT" /></div>
