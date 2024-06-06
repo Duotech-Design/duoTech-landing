@@ -78,14 +78,14 @@ const pricingList: CotizacionProps[] = [
 export const ServiciosCards = () => {
   return (
     <section id="servicios" className="container py-6 space-y-8">
-      <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 text-center roboto-Font">
+      <p className="text-xl text-muted-foreground  mx-auto lg:mx-0 text-center roboto-Font">
         Escoge la mejor opción para tu negocio.
       </p>
       <div className="flex justify-center space-x-8">
         {features.map((feature, index) => {
           const pricing = pricingList.find(item => item.title.toUpperCase() === feature.title);
           return (
-            <div key={index} className="flip-card">
+            <div key={index} className="flip-card ">
               <div className="flip-card-inner">
                 <div className="flip-card-front bg-white">
                   <img className="w-full h-64 object-cover rounded-t-lg" src={feature.image} alt={feature.title} />
