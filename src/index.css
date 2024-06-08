@@ -141,7 +141,7 @@ body {
   background-color: transparent;
   perspective: 1000px;
   width: 550px;
-  height: 500px; /* Ajusta la altura para que sea responsive */
+  height: 550px; /* Ajusta la altura para que sea responsive */
   border-radius: 10px; /* Borde redondeado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
 }

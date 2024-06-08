@@ -48,7 +48,7 @@ export const Footer = () => {
       <section className="container py-20 grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8">
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="text-xs text-gray-400">STATUS</h3>
+            <h3 className="text-md text-gray-400">STATUS</h3>
             <h3 className="font-medium mt-4">
               MONTERREY, MX ➔ {formatTime(time)}
             </h3>
@@ -77,7 +77,7 @@ export const Footer = () => {
         <div className="md:ml-auto md:col-span-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
             <div className="flex flex-col gap-2">
-              <h3 className="text-xs text-gray-400">CONTACTO</h3>
+              <h3 className="text-md text-gray-400">CONTÁCTO</h3>
               <div>
                 <a
                   href="mailto:design@duotech.com"
@@ -133,7 +133,7 @@ export const Footer = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <h3 className="text-xs text-gray-400">LINKS</h3>
+              <h3 className="text-md text-gray-400">LINKS</h3>
               <div>
                 <a
                   href="https://www.instagram.com/duotechdesign/"

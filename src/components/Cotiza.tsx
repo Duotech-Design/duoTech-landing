@@ -49,7 +49,7 @@ export const Cotiza = () => {
     <section id="cotiza" className="container flex flex-col py-24 relative">
       <ToastContainer />
       <div className="w-full flex items-center mb-8">
-        <h1 className=" flex-shrink-0 mr-4">CONTÁCTANOS</h1>
+        <h1 className=" flex-shrink-0 mr-4 text-xl">CONTÁCTANOS</h1>
         <h2 className="text-5xl  ml-auto">
           EMPECEMOS A CONSTRUIR UN NEGOCIO DURADERO
         </h2>

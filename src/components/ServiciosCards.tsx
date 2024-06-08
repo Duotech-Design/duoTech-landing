@@ -77,8 +77,8 @@ const pricingList: CotizacionProps[] = [
 
 export const ServiciosCards = () => {
   return (
-    <section id="servicios" className="container py-6 space-y-8">
-      <p className="text-xl text-muted-foreground  mx-auto lg:mx-0 text-center roboto-Font">
+    <section id="servicios" className="container py-8 space-y-8">
+      <p className="text-xl text-muted-foreground  mx-auto lg:mx-0 text-center roboto-Font mb-8">
         Escoge la mejor opción para tu negocio.
       </p>
       <div className="flex justify-center space-x-8">
@@ -88,18 +88,18 @@ export const ServiciosCards = () => {
             <div key={index} className="flip-card ">
               <div className="flip-card-inner">
                 <div className="flip-card-front bg-white">
-                  <img className="w-full h-64 object-cover rounded-t-lg" src={feature.image} alt={feature.title} />
+                  <img className="w-full h-96 object-cover rounded-t-lg" src={feature.image} alt={feature.title} />
                   <div className="px-6 py-4 text-left">
                     <div className="font-bold text-xl mb-2">{feature.title}</div>
-                    <p className="text-gray-700 roboto-Font">{feature.description}</p>
+                    <p className="text-gray-700 roboto-Font text-xl">{feature.description}</p>
                   </div>
                 </div>
                 <div className="flip-card-back p-6 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg">
                   <h1 className="text-xl font-bold mb-4">{pricing?.title}</h1>
-                  <p className="mb-4">{pricing?.description}</p>
+                  <p className="text-xl mb-4">{pricing?.description}</p>
                   <ul className="list-none mb-4">
                     {pricing?.benefitList.map((benefit, idx) => (
-                      <li key={idx} className="flex items-start">
+                      <li key={idx} className="flex items-start text-xl">
                         <img src="/checkmark.svg" alt="checkmark" className="w-4 h-4 mr-2 mt-1" />
                         <span>{benefit}</span>
                       </li>

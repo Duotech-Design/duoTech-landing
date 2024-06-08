@@ -10,7 +10,7 @@ export const Proyectos = () => {
       id="proyectos"
       className="container flex flex-col! py-24 sm:py-24"
     >
-      <div className="w-1/4">
+      <div className="w-1/4 text-xl">
         <h1> PROYECTOS </h1>
       </div>
 
@@ -22,8 +22,8 @@ export const Proyectos = () => {
         />
         <div className="flex items-center mt-6">
           <div className="flex-grow">
-            <p className="text-sm">PAG. WEB EMPRESARIAL / 2024</p>
-            <p className="text-sm mt-4">WE ONE</p>
+            <p className="text-lg">PAG. WEB EMPRESARIAL / 2024</p>
+            <p className="text-lg mt-4">WE ONE</p>
           </div>
           <GenericButton title="Ver proyecto" />
         </div>
