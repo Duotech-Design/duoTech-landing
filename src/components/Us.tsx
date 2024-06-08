@@ -1,5 +1,5 @@
 import Messenger from "./Messenger";
-import imageUs from "/imageUs.png"
+import imageUs from "/imageUs.jpg"
 
 
 

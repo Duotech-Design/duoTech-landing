@@ -3,7 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import heroImage from "/heroImage.png";
+import heroImage from "/heroImage.jpg";
 import GenericButton2 from "../components/ui/Buttons/GenericButton2";
 
 // Definir el esquema de validación con Yup

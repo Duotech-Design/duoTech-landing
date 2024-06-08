@@ -1,5 +1,5 @@
 import GenericButton2 from "./ui/Buttons/GenericButton2";
-import heroImage from "/heroImage.png";
+import servicios from "/servicios.png"
 
 export const Servicios = () => {
   return (
@@ -18,8 +18,8 @@ export const Servicios = () => {
         </div>
         <div>
           <img
-            src={heroImage}
-            className="object-cover h-[200px] w-auto rounded-sm"
+            src={servicios}
+            className="object-cover h-[350px] w-auto rounded-sm"
             alt="Hero"
           />
         </div>

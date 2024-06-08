@@ -6,14 +6,14 @@ export const Hero: React.FC = () => {
   return (
     <section className="flex justify-center h-[700px]">
       <div className="flex flex-col justify-center items-center">
-        <main className="mt-96 text-center space-y-6">
-          <h1 className="text-5xl md:text-9xl ">
-            <span className="inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
+        <main className="mt-96 text-center ">
+          <h1 className="text-6xl md:text-8xl lg:text-9x1">
+            <span className=" inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
               TECNOLOGÍA
             </span>
           </h1>
-          <h1 className="text-5xl md:text-9xl ">
-            <span className="inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] text-transparent bg-clip-text">
+          <h1 className="text-6xl md:text-8xl lg:text-9x1">
+            <span className="  inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] text-transparent bg-clip-text">
               & DISEÑO
             </span>
           </h1>
@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
           <Messenger text="tecnología." />
         </span>
         <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center mt-3 mb-16">
-          <GenericButton title="COTIZA TU PROYECTO" />
+          <GenericButton title="Cotiza tu proyecto" />
         
         
         </div>
