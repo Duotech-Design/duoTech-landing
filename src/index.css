@@ -18,7 +18,7 @@ body {
   width: 260px;
   top: 200px;
   height: 400px;
-  filter: blur(150px);
+  filter: blur(100px);
   animation: shadow-slide infinite 4s linear alternate;
 }
 
@@ -69,6 +69,7 @@ body {
     }
   }
 }
+*/
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
