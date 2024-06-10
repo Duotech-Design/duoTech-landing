@@ -18,9 +18,9 @@ export const Servicios = () => {
       <div className="flex flex-col!">
         <div className="w-2/4">
           {" "}
-          <div>
+          <a href="https://wa.me/528122043750?text=Quiero%20más%20información">
             <GenericButton2 title="PONTE EN CONTACTO" />
-          </div>{" "}
+          </a>
         </div>
         <div className="w-full grid grid-cols-2  px-3 mt-3">
           <div>

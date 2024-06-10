@@ -118,7 +118,9 @@ export const ServiciosCards = () => {
                       </li>
                     ))}
                   </ul>
-                  <GenericButton2 title="Contáctanos" />
+                  <a href="https://wa.me/528122043750?text=Quiero%20más%20información">
+                    <GenericButton2 title="Contáctanos" />
+                  </a>
                 </div>
               </div>
             </div>
