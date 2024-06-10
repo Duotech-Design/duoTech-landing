@@ -1,6 +1,5 @@
 import imageCard2 from "/imageCard2.jpg";
 import imageCard from "/imageCard.png";
-import GenericButton from "./ui/Buttons/GenericButton";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
 
 // Interface de propiedades de servicios
@@ -52,7 +51,7 @@ const pricingList: CotizacionProps[] = [
       "Secciones personalizadas.",
       "Links a redes sociales",
       "Links de Whatsapp.",
-      "Codigo QR de tu pag,"
+      "Codigo QR de tu pag,",
     ],
   },
   {
@@ -70,7 +69,7 @@ const pricingList: CotizacionProps[] = [
       "Secciones personalizadas",
       "Links a redes sociales",
       "Links de Whatsapp.",
-      "Codigo QR de tu pag,"
+      "Codigo QR de tu pag,",
     ],
   },
 ];
@@ -83,15 +82,25 @@ export const ServiciosCards = () => {
       </p>
       <div className="flex justify-center space-x-8">
         {features.map((feature, index) => {
-          const pricing = pricingList.find(item => item.title.toUpperCase() === feature.title);
+          const pricing = pricingList.find(
+            (item) => item.title.toUpperCase() === feature.title
+          );
           return (
             <div key={index} className="flip-card ">
               <div className="flip-card-inner">
                 <div className="flip-card-front bg-white ">
-                  <img className="contrast-50 w-full h-96 object-cover rounded-t-lg" src={feature.image} alt={feature.title} />
+                  <img
+                    className="contrast-50 w-full h-96 object-cover rounded-t-lg"
+                    src={feature.image}
+                    alt={feature.title}
+                  />
                   <div className="px-6 py-4 text-left mb-5">
-                    <div className="font-bold text-xl mb-2">{feature.title}</div>
-                    <p className=" text-gray-700 roboto-Font text-base">{feature.description}</p>
+                    <div className="font-bold text-xl mb-2">
+                      {feature.title}
+                    </div>
+                    <p className=" text-gray-700 roboto-Font text-base">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
                 <div className="flip-card-back p-6 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg">
@@ -100,7 +109,11 @@ export const ServiciosCards = () => {
                   <ul className="list-none mb-4">
                     {pricing?.benefitList.map((benefit, idx) => (
                       <li key={idx} className="flex items-start text-xl">
-                        <img src="/checkmark.svg" alt="checkmark" className="w-4 h-4 mr-2 mt-1" />
+                        <img
+                          src="/checkmark.svg"
+                          alt="checkmark"
+                          className="w-4 h-4 mr-2 mt-1"
+                        />
                         <span>{benefit}</span>
                       </li>
                     ))}

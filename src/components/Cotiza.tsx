@@ -3,7 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import heroImage from "/heroImage.jpg";
+import cotizaImg from "/cotizaImg.jpg";
 import GenericButton2 from "../components/ui/Buttons/GenericButton2";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
@@ -82,7 +82,7 @@ export const Cotiza = () => {
 
         <div className="relative w-full lg:w-1/2 flex items-center justify-center">
           <img
-            src={heroImage}
+            src={cotizaImg}
             alt="Imagen de proyectos"
             className="absolute inset-0 object-cover h-full w-full opacity-30"
           />

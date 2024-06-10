@@ -27,9 +27,9 @@ export const Hero: React.FC = () => {
           <Messenger text="tecnología." />
         </span>
         <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center mt-8 ">
-          <GenericButton  title="Cotiza tu proyecto" />
-        
-        
+          <a href="/#cotiza">
+            <GenericButton title="Cotiza tu proyecto" />
+          </a>
         </div>
       </div>
       <div className="shadow"></div>
