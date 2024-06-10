@@ -1,5 +1,5 @@
 import GenericButton2 from "./ui/Buttons/GenericButton2";
-import servicios from "/servicios.jpg";
+import servicios from "/servicios.png";
 
 export const Servicios = () => {
   return (
