@@ -1,4 +1,4 @@
-import imageCard2 from "/imageCard2.png";
+import imageCard2 from "/imageCard2.jpg";
 import imageCard from "/imageCard.png";
 import GenericButton from "./ui/Buttons/GenericButton";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
@@ -87,11 +87,11 @@ export const ServiciosCards = () => {
           return (
             <div key={index} className="flip-card ">
               <div className="flip-card-inner">
-                <div className="flip-card-front bg-white">
-                  <img className="w-full h-96 object-cover rounded-t-lg" src={feature.image} alt={feature.title} />
-                  <div className="px-6 py-4 text-left">
+                <div className="flip-card-front bg-white ">
+                  <img className="contrast-50 w-full h-96 object-cover rounded-t-lg" src={feature.image} alt={feature.title} />
+                  <div className="px-6 py-4 text-left mb-5">
                     <div className="font-bold text-xl mb-2">{feature.title}</div>
-                    <p className="text-gray-700 roboto-Font text-xl">{feature.description}</p>
+                    <p className=" text-gray-700 roboto-Font text-base">{feature.description}</p>
                   </div>
                 </div>
                 <div className="flip-card-back p-6 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg">

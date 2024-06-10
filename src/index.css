@@ -138,7 +138,7 @@ body {
 }
 /* Estilos para el efecto de flip */
 .flip-card {
-  background-color: transparent;
+  /*background-color: transparent;*/
   perspective: 1000px;
   width: 550px;
   height: 550px; /* Ajusta la altura para que sea responsive */
