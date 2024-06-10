@@ -5,6 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import heroImage from "/heroImage.jpg";
 import GenericButton2 from "../components/ui/Buttons/GenericButton2";
+import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
 
 // Definir el esquema de validación con Yup
 const validationSchema = Yup.object().shape({
@@ -28,8 +30,14 @@ export const Cotiza = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data: Record<string, unknown> | undefined) => {
+    const servicesId = "default_service";
+    const templateId = "template_085ihoa";
+    try {
+      await emailjs.send(servicesId, templateId, data);
+    } catch (error) {
+      console.log("error");
+    }
     toast.success(
       "¡Gracias por contarnos sobre tu proyecto! Nos pondremos en contacto contigo muy pronto!",
       {
@@ -45,6 +53,9 @@ export const Cotiza = () => {
     reset();
   };
 
+  useEffect(() => {
+    emailjs.init("ZImBVJpi19LozqG4Y");
+  }, []);
   return (
     <section id="cotiza" className="container flex flex-col py-24 relative">
       <ToastContainer />
