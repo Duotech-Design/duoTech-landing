@@ -1,56 +1,37 @@
-// import { Button } from "./ui/button";
-import { buttonVariants } from "./ui/button";
-import { HeroCards } from "./HeroCards";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import React from "react";
 import GenericButton from "./ui/Buttons/GenericButton";
+import Messenger from "./Messenger";
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
-      <div className="text-center lg:text-start space-y-6">
-        <main className="text-5xl md:text-6xl font-bold">
-          <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              TECNOLOGIA 
-            </span>{" "}
-            
-          </h1>{" "}
-          &{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              DISEÑO
-            </span>{" "}
-            
-          </h2>
+    <section className="flex justify-center h-[700px] mb-14">
+      <div className="flex flex-col justify-center items-center">
+        <main className="mt-96 text-center  font-medium ">
+          <h1 className="text-6xl md:text-8xl lg:text-9x1">
+            <span className=" inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
+              TECNOLOGÍA
+            </span>
+          </h1>
+          <h1 className="text-6xl md:text-8xl lg:text-9x1">
+            <span className="  inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] text-transparent bg-clip-text">
+              & DISEÑO
+            </span>
+          </h1>
         </main>
-
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-        Transformando ideas en experiencias digitales.  Donde el diseño encuentra la tecnología.
-        </p>
-
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <GenericButton/>
-         {/*} <Button className="w-full md:w-1/3">Get Started</Button>
-*/}
-          <a
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
-          >
-            Github Repository
-            <GitHubLogoIcon className="ml-2 w-5 h-5" />
+        <span className="mt-8 text-xl">
+          Transformando <Messenger text="ideas" /> en experiencias{" "}
+          <Messenger text="digitales." />
+        </span>
+        <span className="text-xl">
+          Donde el <Messenger text="diseño" /> encuentra la{" "}
+          <Messenger text="tecnología." />
+        </span>
+        <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center mt-8 ">
+          <a href="/#cotiza">
+            <GenericButton title="Cotiza tu proyecto" />
           </a>
         </div>
       </div>
-
-      {/* Hero cards sections */}
-      <div className="z-10">
-        <HeroCards />
-      </div>
-
-      {/* Shadow effect */}
       <div className="shadow"></div>
     </section>
   );

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* *=========== Default theme =========== */
 /* @layer base {
   :root {
@@ -79,7 +80,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 142.1 76.2% 36.3%;
+    --primary: 204 19% 60%;
     --primary-foreground: 355.7 100% 97.3%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -102,7 +103,8 @@
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
-    --primary: 142.1 70.6% 45.3%;
+    /*  INTENTE CAMBIAR EL COLOR   */
+    --primary: 300 1% 25%;
     --primary-foreground: 144.9 80.4% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -118,6 +120,24 @@
   }
 }
 
+
+.inconsolata-miUniquifier {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.roboto-Font {
+  font-family: "Roboto+Flex", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+
 @layer base {
   * {
     @apply border-border;
@@ -127,24 +147,13 @@
   }
 }
 
-body {
-  margin: 0;
-  overflow: hidden;
-  background-color: #fff;
-  position: relative;
-}
-.title {
-  width: 100%;
-  padding-top: 56px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 56px!important; 
-  font-weight: bold;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
+.scrambler-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 20px;
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
 }

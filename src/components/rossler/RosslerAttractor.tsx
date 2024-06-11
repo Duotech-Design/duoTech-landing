@@ -31,7 +31,7 @@ const a = 0.2;
 const b = 0.2;
 const c = 6.7;
 const dt = 0.01;
-const steps = 8500;
+const steps = 3150;
 const x0: number[] = [0, 1, 0];
 
 // Generate the trajectory
@@ -64,7 +64,7 @@ function RosslerAttractor() {
   
           // Inicia el zoom aquí
           zoomInterval = setInterval(() => {
-            if (camera.zoom < 15) {
+            if (camera.zoom < 5) {
               camera.zoom += 0.1; // Ajusta el incremento del zoom aquí
               camera.updateProjectionMatrix();
             } else {
@@ -95,7 +95,7 @@ function RosslerAttractor() {
 
   return (
     <primitive object={new THREE.Line()} ref={lineRef}>
-      <lineBasicMaterial attach="material" color="#000000" linewidth={2} />
+      <lineBasicMaterial attach="material" color="currentColor" linewidth={2} />
     </primitive>
   );
 }

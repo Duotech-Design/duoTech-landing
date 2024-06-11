@@ -2,17 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /* HeroCards background shadow */
 .shadow {
   position: absolute;
-  background: hsl(var(--primary) / 0%);
+  background: #879EAD;
   border-radius: 24px;
   rotate: 35deg;
 
   width: 260px;
   top: 200px;
   height: 400px;
-  filter: blur(150px);
+  filter: blur(100px);
   animation: shadow-slide infinite 4s linear alternate;
 }
 
@@ -62,4 +68,121 @@ html {
       right: 100px;
     }
   }
+}
+*/
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.animated-text::before {
+  content: "NUEVO";
+  animation: textAnimation infinite 8s;
+}
+
+@keyframes textAnimation {
+  0% {
+    content: "NUEVO";
+  }
+  25% {
+    content: "DIVERTIDO";
+  }
+  50% {
+    content: "ÚNICO";
+  }
+  75% {
+    content: "ORIGINAL";
+  }
+  100% {
+    content: "NUEVO";
+  }
+}
+/* animation.css */
+.navbar-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.navbar-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #879EAD;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-item:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/* Estilos para el efecto de flip */
+.flip-card {
+  /*background-color: transparent;*/
+  perspective: 1000px;
+  width: 550px;
+  height: 550px; /* Ajusta la altura para que sea responsive */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left; /* Alineación del texto a la izquierda */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #EDECE2;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  background-color: #EDECE2;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }

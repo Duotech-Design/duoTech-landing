@@ -12,15 +12,16 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import RosslerComponent from "./rossler/RosslerAttractor";
+import MessengerHover from "./MessengerHover"; // Importa el componente MessengerHover
 
 interface RouteProps {
   href: string;
   label: string;
+  icon?: JSX.Element;
 }
 
 const routeList: RouteProps[] = [
@@ -29,37 +30,49 @@ const routeList: RouteProps[] = [
     label: "Servicios",
   },
   {
-    href: "#portafolio",
-    label: "Portafolio",
+    href: "#proyectos",
+    label: "Proyectos",
   },
   {
-    href: "#cotizacion",
-    label: "Cotizacion",
+    href: "#cotiza",
+    label: "Cotiza",
   },
   {
     href: "#contacto",
     label: "Contacto",
   },
-  { 
+  {
     href: "#English",
     label: "English",
-
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="20"
+        height="20"
+      >
+        <path
+          d="M12 6L12 18M12 18L17 13M12 18L7 13"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    ),
   },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
+    <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
-            <a
-              href="/"
-              className="ml-2 font-bold text-xl flex"
-            >
-              <LogoIcon />
-              LOGO AQUI
+            <a href="/" className="font-bold text-xl flex">
+              <RosslerComponent />
             </a>
           </NavigationMenuItem>
 
@@ -67,10 +80,7 @@ export const Navbar = () => {
           <span className="flex md:hidden">
             <ModeToggle />
 
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
@@ -87,26 +97,20 @@ export const Navbar = () => {
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label }: RouteProps) => (
+                  {routeList.map(({ href, label, icon }: RouteProps, i) => (
                     <a
                       key={label}
                       href={href}
                       onClick={() => setIsOpen(false)}
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                      {label}
+                      <MessengerHover
+                        text={label}
+                        isHovered={hoveredIndex === i}
+                      />
+                      {icon && <span className="ml-1">{icon}</span>}
                     </a>
                   ))}
-                 {/* <a
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                    target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
-                      variant: "secondary",
-                    })}`}
-                  >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
-                  </a> */}
                 </nav>
               </SheetContent>
             </Sheet>
@@ -121,22 +125,19 @@ export const Navbar = () => {
                 className={`text-[17px] ${buttonVariants({
                   variant: "ghost",
                 })}`}
+                onMouseEnter={() => setHoveredIndex(i)}
+                onMouseLeave={() => setHoveredIndex(null)}
               >
-                {route.label}
+                <MessengerHover
+                  text={route.label}
+                  isHovered={hoveredIndex === i}
+                />
+                {route.icon && <span className="ml-1">{route.icon}</span>}
               </a>
             ))}
           </nav>
 
           <div className="hidden md:flex gap-2">
-           {/* <a
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-              */}
             <ModeToggle />
           </div>
         </NavigationMenuList>
