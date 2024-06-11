@@ -1,4 +1,4 @@
-import "/Users/alisonrangel/Desktop/RA/proyectos /duoTech-landing/src/index.css"; // Asegúrate de importar el archivo de estilos
+//import "/Users/alisonrangel/Desktop/RA/proyectos /duoTech-landing/src/index.css"; // Asegúrate de importar el archivo de estilos
 
 export const Contacto = () => {
   return (
