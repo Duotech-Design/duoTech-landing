@@ -13,8 +13,8 @@ export const Footer = () => {
     return () => clearInterval(timer); // Cleanup interval on component unmount
   }, []);
 
-  const formatTime = (date) => {
-    const options = {
+  const formatTime = (date: number | Date | undefined) => {
+    const options: Intl.DateTimeFormatOptions = {
       hour: "numeric",
       minute: "numeric",
       second: "numeric",
@@ -24,8 +24,8 @@ export const Footer = () => {
     return new Intl.DateTimeFormat("en-US", options).format(date);
   };
 
-  const isOnDuty = (date) => {
-    const options = {
+  const isOnDuty = (date: number | Date | undefined) => {
+    const options: Intl.DateTimeFormatOptions = {
       hour: "numeric",
       minute: "numeric",
       hour12: false,

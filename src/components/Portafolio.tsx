@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import GenericButton3 from "../components/ui/Buttons/GenericButton3" ;
+import GenericButton2 from "../components/ui/Buttons/GenericButton2" ;
 
 interface PortafolioProps {
   image: string;
@@ -75,7 +75,7 @@ export const Portafolio = () => {
        PAG. WEB EMPRESARIAL / 2024 
       </p>
       <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center">
-          <GenericButton3/>
+          <GenericButton2 title={"Ver Proyecto"}/>
          {/*} <Button className="w-full md:w-1/3">Get Started</Button>
 */}
          
