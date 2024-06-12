@@ -2,6 +2,7 @@ import React from "react";
 import GenericButton from "./ui/Buttons/GenericButton";
 import Messenger from "./Messenger";
 
+
 export const Hero: React.FC = () => {
   return (
     <section className="flex justify-center h-[700px] mb-14">
@@ -18,11 +19,11 @@ export const Hero: React.FC = () => {
             </span>
           </h1>
         </main>
-        <span className="mt-8 text-xl">
+        <span className="mt-8 text-base flex justify-center md:text-xl">
           Transformando <Messenger text="ideas" /> en experiencias{" "}
           <Messenger text="digitales." />
         </span>
-        <span className="text-xl">
+        <span className="md:text-xl text-base">
           Donde el <Messenger text="diseño" /> encuentra la{" "}
           <Messenger text="tecnología." />
         </span>
