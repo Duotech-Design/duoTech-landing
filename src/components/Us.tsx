@@ -11,7 +11,7 @@ export const Us = () => {
       </div>
       <div className="w-full ">
         <div className="px-3  md:mt-0 mt-3">
-          <p className=" roboto-Font text-sm md:text-base">
+          <p className=" roboto-Font text-xs md:text-sm lg:text-base">
             {" "}
             Nos especializamos en diseño web y desarrollo de soluciones
             digitales a medida, enfocándonos exclusivamente en la creación de
