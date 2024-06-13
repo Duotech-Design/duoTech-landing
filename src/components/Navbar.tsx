@@ -15,8 +15,10 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
+import { LanguageToggle } from "./mode-toggle-lenguage";
 import RosslerComponent from "./rossler/RosslerAttractor";
 import MessengerHover from "./MessengerHover"; // Importa el componente MessengerHover
+import { useTranslation } from "react-i18next";
 
 interface RouteProps {
   href: string;
@@ -24,48 +26,28 @@ interface RouteProps {
   icon?: JSX.Element;
 }
 
-const routeList: RouteProps[] = [
-  {
-    href: "#servicios",
-    label: "Servicios",
-  },
-  {
-    href: "#proyectos",
-    label: "Proyectos",
-  },
-  {
-    href: "#cotiza",
-    label: "Cotiza",
-  },
-  {
-    href: "#contacto",
-    label: "Contacto",
-  },
-  {
-    href: "#English",
-    label: "English",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="20"
-        height="20"
-      >
-        <path
-          d="M12 6L12 18M12 18L17 13M12 18L7 13"
-          stroke="#000000"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    ),
-  },
-];
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+  const { t } = useTranslation("global");
+  const routeList: RouteProps[] = [
+    {
+      href: "#servicios",
+      label: t("navbar.services"),
+    },
+    {
+      href: "#proyectos",
+      label: t("navbar.projects"),
+    },
+    {
+      href: "#cotiza",
+      label: t("navbar.price"),
+    },
+    {
+      href: "#contacto",
+      label: t("navbar.contact"),
+    }
+  ];
   return (
     <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
@@ -78,6 +60,7 @@ export const Navbar = () => {
 
           {/* mobile */}
           <span className="flex md:hidden">
+          <LanguageToggle />
             <ModeToggle />
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -114,6 +97,7 @@ export const Navbar = () => {
                 </nav>
               </SheetContent>
             </Sheet>
+         
           </span>
 
           {/* desktop */}
@@ -136,8 +120,9 @@ export const Navbar = () => {
               </a>
             ))}
           </nav>
-
+          
           <div className="hidden md:flex gap-2">
+          <LanguageToggle />
             <ModeToggle />
           </div>
         </NavigationMenuList>

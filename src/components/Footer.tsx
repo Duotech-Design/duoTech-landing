@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import MessengerHover from "./MessengerHover";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation("global");
   const [time, setTime] = useState(new Date());
   const [hoveredItem, setHoveredItem] = useState<string | null>(null); // Define hoveredItem
 
@@ -48,18 +50,18 @@ export const Footer = () => {
       <section className="container py-20 grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8">
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="text-md text-gray-400">STATUS</h3>
+            <h3 className="text-md text-gray-400">{t("footer.status")}</h3>
             <h3 className="font-medium mt-4">
               MONTERREY, MX ➔ {formatTime(time)}
             </h3>
             <h3 className="font-medium mt-4">
-              CURRENTLY:{" "}
+            {t("footer.currently")}:{" "}
               <span
                 className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}
               >
                 ●
               </span>{" "}
-              {isOnDuty(time) ? "ON-DUTY" : "OFF-DUTY"}
+              {isOnDuty(time) ? t("footer.on_duty") : t("footer.off_duty")}
             </h3>
           </div>
           <div className="mt-8">
@@ -77,7 +79,7 @@ export const Footer = () => {
         <div className="md:ml-auto md:col-span-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
             <div className="flex flex-col gap-2">
-              <h3 className="text-md text-gray-400">CONTÁCTO</h3>
+              <h3 className="text-md text-gray-400">{t("footer.contact")}</h3>
               <div>
                 <a
                   href="mailto:design@duotech.com"

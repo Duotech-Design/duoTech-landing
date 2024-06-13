@@ -4,37 +4,50 @@
         "projects": "Proyectos",
         "price": "Cotización",
         "contact": "Contacto",
-        "language": "Inglés"
+        "language": "Español",
+        "english": "Inglés",
+        "spanish": "Español"
     },
     "hero": {
-        "title": "TECNOLOGÍA & DISEÑO",
-        "content": "Transformando ideas en experiencias digitales.Donde el diseño encuentra la tecnología."
+        "title": "TECNOLOGÍA",
+        "subtitle": "& DISEÑO",
+        "content_1": "Transformando",
+        "content_2": "ideas",
+        "content_3": "en experiencias",
+        "content_4": "digitales.",
+        "content_5": "Donde el",
+        "content_6": "diseño",
+        "content_7": "encuentra la",
+        "content_8": "tecnología.",
+        "button": "Cotiza tu proyecto"
     },
-    "about": {
+    "us": {
         "title": "NOSOTROS",
         "content": "Nos especializamos en diseño web y desarrollo de soluciones digitales a medida, enfocándonos exclusivamente en la creación de páginas web. Además, construimos todo el ecosistema de tu marca para mejorar la percepción y experiencia de tu audiencia, diferenciándote de la competencia, aumentando la satisfacción del usuario, fomentando la lealtad del cliente y fortaleciendo el valor de tu marca.",
         "subtitle": "DIGITAL",
         "subContent_1": "DISEÑO WEB",
         "subContent_2": "IDENTIDAD",
         "subContent_3": "PROTOTIPADO",
-        "subContent_4": "DEVELOPMENT",
-        "subContent_5": "ESTRATEGIA",
-        "subContent_6": "Construyes negocios, juntos los transformamos."
+        "subContent_4": "DESARROLLO",
+        "subContent_5": "ESTRATEGIA"
     },
-    "us": {
-        "title": "No sabes por donde empezar, te ayudamos.",
+    "services": {
+         "title": "Construyes negocios, juntos los transformamos.",
+        "subtitle": "No sabes por donde empezar, te ayudamos.",
         "subContent_1": "TE AYUDAMOS",
         "subContent_2": "GENERAR CONFIANZA",
         "subContent_3": "CREAR MEMORAILIDAD",
         "subContent_4": "DISRUPTIR CATEGORÍAS",
         "subContent_5": "AUMENTAR VISIVILIDAD",
-        "subContent_6": "Te ayudamos a destacar para que no te veas como los demás."
+        "subContent_6": "Te ayudamos a destacar para que no te veas como los demás.",
+        "button": "PONTE EN CONTACTO"
     },
-    "services": {
+    "services_cards": {
         "title": "Escoge la mejor opción para tu negocio.",
+        "button": "Contáctanos",
         "card_1": {
             "title": "DISEÑO WEB",
-            "content": "Una pag. con efecto parallax. Solución web eficiente que condensa toda la información esencial de tu negocio en una única página, ideal para proyectos y promociones puntuales, ofreciendo una experiencia de navegación directa y concisa para tus visitantes.",
+            "description": "Una pag. con efecto parallax. Solución web eficiente que condensa toda la información esencial de tu negocio en una única página, ideal para proyectos y promociones puntuales, ofreciendo una experiencia de navegación directa y concisa para tus visitantes.",
             "benefistList": {
                 "benefit_1": "Propuesta de diseño.",
                 "benefit_2": "Diseño responsivo (Desktop, tablet y mobile).",
@@ -48,7 +61,7 @@
         },
         "card_2": {
             "title": "DESARROLLO",
-            "content": "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
+            "description": "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
             "benefistList": {
                 "benefit_1": "Pag. con 10 secciones.",
                 "benefit_2": "Propuesta de diseño.",
@@ -64,7 +77,8 @@
     "projects": {
         "title": "PROYECTOS",
         "subContent_1": "PAG. WEB EMPRESARIAL / 2024",
-        "subContent_2": "WE ONE"
+        "subContent_2": "WE ONE",
+        "button": "Ver proyecto"
     },
     "cotiza": {
         "title": "CONTÁCTANOS",
@@ -87,11 +101,14 @@
     "footer": {
         "status": "STATUS",
         "currently": "ACTUALMENTE",
-        "contact": "DESIGN@DUOTECH.COM",
+        "contact": "CONTACTO",
+        "contact_email": "DESIGN@DUOTECH.COM",
         "phone": "+51 444 4-----",
         "address": "MONTERREY, MX",
         "email": "Correo",
         "social": "Redes Sociales",
-        "rights": "Todos los derechos reservados"
+        "rights": "Todos los derechos reservados",
+        "on_duty": "EN SERVICIO",
+        "off_duty": "FUERA DE SERVICIO"
     }
 }

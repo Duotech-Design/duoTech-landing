@@ -4,37 +4,50 @@
       "projects": "Projects",
       "price": "Quote",
       "contact": "Contact",
-      "language": "Spanish"
+      "language": "English",
+      "english": "English",
+      "spanish": "Spanish"
     },
     "hero": {
-      "title": "TECHNOLOGY & DESIGN",
-      "content": "Transforming ideas into digital experiences. Where design meets technology."
+      "title": "TECHNOLOGY",
+      "subtitle": "& DESIGN",
+      "content_1": "Transforming",
+      "content_2": "ideas",
+      "content_3": "into",
+      "content_4": "digital experiences.",
+      "content_5": "Where",
+      "content_6": "design",
+      "content_7": "meets",
+      "content_8": "technology.",
+      "button": "Quote your project"
     },
-    "about": {
-      "title": "ABOUT US",
-      "content": "We specialize in web design and custom digital solutions development, focusing exclusively on creating websites. Additionally, we build the entire ecosystem of your brand to enhance audience perception and experience, differentiating you from the competition, increasing user satisfaction, fostering customer loyalty, and strengthening your brand's value.",
+    "us": {
+      "title": "ABOUT",
+      "content": "We specialize in web design and development of custom digital solutions, focusing exclusively on creating websites. Additionally, we build your brand’s entire ecosystem to enhance your audience's perception and experience, differentiate you from the competition, increase user satisfaction, foster customer loyalty, and strengthen your brand value.",
       "subtitle": "DIGITAL",
       "subContent_1": "WEB DESIGN",
       "subContent_2": "IDENTITY",
       "subContent_3": "PROTOTYPING",
       "subContent_4": "DEVELOPMENT",
-      "subContent_5": "STRATEGY",
-      "subContent_6": "You build businesses, together we transform them."
+      "subContent_5": "STRATEGY"
     },
-    "us": {
-      "title": "Not sure where to start? We can help.",
+    "services": {
+      "title": "You build businesses, together we transform them.",
+      "subtitle": "Got a project in mind?",
       "subContent_1": "WE HELP YOU",
-      "subContent_2": "BUILD TRUST",
+      "subContent_2": "CREATE TRUST",
       "subContent_3": "CREATE MEMORABILITY",
       "subContent_4": "DISRUPT CATEGORIES",
       "subContent_5": "INCREASE VISIBILITY",
-      "subContent_6": "We help you stand out so you don't look like everyone else."
+      "subContent_6": "We help you avoid looking like the rest of them.",
+      "button": "GET IN TOUCH"
     },
-    "services": {
+    "services_cards": {
       "title": "Choose the best option for your business.",
+      "button": "Contact us",
       "card_1": {
         "title": "WEB DESIGN",
-        "content": "A page with parallax effect. Efficient web solution that condenses all the essential information of your business into a single page, ideal for projects and promotional events, offering a direct and concise browsing experience for your visitors.",
+        "description": "A page with parallax effect. Efficient web solution that condenses all the essential information of your business into a single page, ideal for projects and promotional events, offering a direct and concise browsing experience for your visitors.",
         "benefistList": {
           "benefit_1": "Design proposal.",
           "benefit_2": "Responsive design (Desktop, tablet, and mobile).",
@@ -48,7 +61,7 @@
       },
       "card_2": {
         "title": "DEVELOPMENT",
-        "content": "Web design focused on capturing attention and converting visitors into potential customers, optimizing the user experience, and highlighting your business's value proposition on a single page.",
+        "description": "Web design focused on capturing attention and converting visitors into potential customers, optimizing the user experience, and highlighting your business's value proposition on a single page.",
         "benefistList": {
           "benefit_1": "Page with 10 sections.",
           "benefit_2": "Design proposal.",
@@ -64,7 +77,8 @@
     "projects": {
       "title": "PROJECTS",
       "subContent_1": "BUSINESS WEBSITE / 2024",
-      "subContent_2": "WE ONE"
+      "subContent_2": "WE ONE",
+      "button": "View project"
     },
     "cotiza": {
       "title": "CONTACT US",
@@ -87,12 +101,15 @@
     "footer": {
       "status": "STATUS",
       "currently": "CURRENTLY",
-      "contact": "DESIGN@DUOTECH.COM",
+      "contact": "CONTACT",
+      "contact_email": "DESIGN@DUOTECH.COM",
       "phone": "+51 444 4-----",
       "address": "MONTERREY, MX",
       "email": "Email",
       "social": "Social Media",
-      "rights": "All rights reserved"
+      "rights": "All rights reserved",
+      "on_duty": "ON DUTY",
+      "off_duty": "OFF DUTY"
     }
   }
   
