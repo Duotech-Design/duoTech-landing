@@ -1,96 +1,98 @@
 {
     "navbar": {
-        "services": "Servicios",
-        "projects": "Proyectos",
-        "price": "Cotización",
-        "contact": "Contacto",
-        "language": "Inglés"
+      "services": "Services",
+      "projects": "Projects",
+      "price": "Quote",
+      "contact": "Contact",
+      "language": "Spanish"
     },
     "hero": {
-        "title": "TECHNOLOGY & DESIGN  ",
-        "content": "Where design meets technology. Transforming ideas into digital experiences."
+      "title": "TECHNOLOGY & DESIGN",
+      "content": "Transforming ideas into digital experiences. Where design meets technology."
     },
     "about": {
-        "title": "ABOUT",
-        "content": "We specialize in web design and development of custom digital solutions, focusing exclusively on creating websites. Additionally, we build your brand’s entire ecosystem to enhance your audience's perception and experience, differentiate you from the competition, increase user satisfaction, foster customer loyalty, and strengthen your brand value.",
-        "subtitle": "DIGITAL",
-        "subContent_1": "WEB DESIGN",
-        "subContent_2": "IDENTITY",
-        "subContent_3": "PROTOTYPING",
-        "subContent_4": "DEVELOPMENT",
-        "subContent_5": "STRATEGY"
+      "title": "ABOUT US",
+      "content": "We specialize in web design and custom digital solutions development, focusing exclusively on creating websites. Additionally, we build the entire ecosystem of your brand to enhance audience perception and experience, differentiating you from the competition, increasing user satisfaction, fostering customer loyalty, and strengthening your brand's value.",
+      "subtitle": "DIGITAL",
+      "subContent_1": "WEB DESIGN",
+      "subContent_2": "IDENTITY",
+      "subContent_3": "PROTOTYPING",
+      "subContent_4": "DEVELOPMENT",
+      "subContent_5": "STRATEGY",
+      "subContent_6": "You build businesses, together we transform them."
     },
     "us": {
-        "title": "Got a project in mind?",
-        "subContent_1": "TE AYUDAMOS",
-        "subContent_2": "GENERAR CONFIANZA",
-        "subContent_3": "CREAR MEMORAILIDAD",
-        "subContent_4": "DISRUPTIR CATEGORÍAS",
-        "subContent_5": "AUMENTAR VISIVILIDAD",
-        "subContent_6": "Te ayudamos a destacar para que no te veas como los demás."
+      "title": "Not sure where to start? We can help.",
+      "subContent_1": "WE HELP YOU",
+      "subContent_2": "BUILD TRUST",
+      "subContent_3": "CREATE MEMORABILITY",
+      "subContent_4": "DISRUPT CATEGORIES",
+      "subContent_5": "INCREASE VISIBILITY",
+      "subContent_6": "We help you stand out so you don't look like everyone else."
     },
     "services": {
-        "title": "Escoge la mejor opción para tu negocio.",
-        "card_1": {
-            "title": "DISEÑO WEB",
-            "content": "Una pag. con efecto parallax. Solución web eficiente que condensa toda la información esencial de tu negocio en una única página, ideal para proyectos y promociones puntuales, ofreciendo una experiencia de navegación directa y concisa para tus visitantes.",
-            "benefistList": {
-                "benefit_1": "Propuesta de diseño.",
-                "benefit_2": "Diseño responsivo (Desktop, tablet y mobile).",
-                "benefit_3": "Hasta 4 paginas",
-                "benefit_4": "Formulario de contacto personalizado.",
-                "benefit_5": "Secciones personalizadas.",
-                "benefit_6": "Links a redes sociales",
-                "benefit_7": "Links de Whatsapp.",
-                "benefit_8": "Codigo QR de tu pag."
-            }
-        },
-        "card_2": {
-            "title": "DESARROLLO",
-            "content": "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
-            "benefistList": {
-                "benefit_1": "Pag. con 10 secciones.",
-                "benefit_2": "Propuesta de diseño.",
-                "benefit_3": "Diseño responsivo (Desktop, tablet y mobile).",
-                "benefit_4": "Formulario de contacto personalizado.",
-                "benefit_5": "Secciones personalizadas",
-                "benefit_6": "Links a redes sociales",
-                "benefit_7": "Links de Whatsapp.",
-                "benefit_8": "Codigo QR de tu pag."
-            }
+      "title": "Choose the best option for your business.",
+      "card_1": {
+        "title": "WEB DESIGN",
+        "content": "A page with parallax effect. Efficient web solution that condenses all the essential information of your business into a single page, ideal for projects and promotional events, offering a direct and concise browsing experience for your visitors.",
+        "benefistList": {
+          "benefit_1": "Design proposal.",
+          "benefit_2": "Responsive design (Desktop, tablet, and mobile).",
+          "benefit_3": "Up to 4 pages.",
+          "benefit_4": "Custom contact form.",
+          "benefit_5": "Custom sections.",
+          "benefit_6": "Social media links.",
+          "benefit_7": "WhatsApp links.",
+          "benefit_8": "QR code of your page."
         }
+      },
+      "card_2": {
+        "title": "DEVELOPMENT",
+        "content": "Web design focused on capturing attention and converting visitors into potential customers, optimizing the user experience, and highlighting your business's value proposition on a single page.",
+        "benefistList": {
+          "benefit_1": "Page with 10 sections.",
+          "benefit_2": "Design proposal.",
+          "benefit_3": "Responsive design (Desktop, tablet, and mobile).",
+          "benefit_4": "Custom contact form.",
+          "benefit_5": "Custom sections.",
+          "benefit_6": "Social media links.",
+          "benefit_7": "WhatsApp links.",
+          "benefit_8": "QR code of your page."
+        }
+      }
     },
     "projects": {
-        "title": "PROYECTOS",
-        "subContent_1": "PAG. WEB EMPRESARIAL / 2024",
-        "subContent_2": "WE ONE"
+      "title": "PROJECTS",
+      "subContent_1": "BUSINESS WEBSITE / 2024",
+      "subContent_2": "WE ONE"
     },
     "cotiza": {
-        "title": "CONTÁCTANOS",
-        "subtitle": "EMPECEMOS A CONSTRUIR UN NEGOCIO DURADERO",
-        "content_1": "Con tantos diseñadores y estudios para elegir, te encuentras ante un dilema de opciones. Elegir uno es difícil, seleccionar el adecuado es aún más complicado. Queremos asegurarnos de que tomes la decisión correcta desde el principio.",
-        "content_2": "Contáctanos hoy mismo, conoce al equipo y veamos si somos la opción ideal para lo que quieres hacer y a dónde quieres llegar.",
-        "form": {
-            "name": "Nombre Completo",
-            "email": "Correo",
-            "phone": "Teléfono",
-            "message": "Cuéntanos sobre tu proyecto",
-            "send": "Enviar"
-        }
+      "title": "CONTACT US",
+      "subtitle": "LET'S BUILD A LASTING BUSINESS",
+      "content_1": "With so many designers and studios to choose from, you are faced with a dilemma of options. Choosing one is difficult, selecting the right one is even more challenging. We want to ensure you make the right decision from the start.",
+      "content_2": "Contact us today, meet the team, and see if we are the ideal choice for what you want to do and where you want to go.",
+      "form": {
+        "name": "Full Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Tell us about your project",
+        "send": "Send"
+      }
     },
     "contact": {
-        "title": "SI BUSCAS ALGO ...",
-        "subContent_1": "EMPECEMOS A",
-        "subContent_2": "CREAR"
+      "title": "IF YOU ARE LOOKING FOR SOMETHING...",
+      "subContent_1": "LET'S START",
+      "subContent_2": "CREATING"
     },
     "footer": {
-        "status": "STATUS",
-        "currently": "ACTUALMENTE",
-        "contact": "DESIGN@DUOTECH.COM",
-        "phone": "+51 444 4-----",
-        "address": "MONTERREY, MX",
-        "email": "Correo",
-        "social": "Redes Sociales",
-        "rights": "Todos los derechos reservados"
+      "status": "STATUS",
+      "currently": "CURRENTLY",
+      "contact": "DESIGN@DUOTECH.COM",
+      "phone": "+51 444 4-----",
+      "address": "MONTERREY, MX",
+      "email": "Email",
+      "social": "Social Media",
+      "rights": "All rights reserved"
     }
-}
+  }
+  
