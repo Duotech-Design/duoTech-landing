@@ -5,13 +5,13 @@ import imageUs from "/imageUs.jpg"
 
 export const Us = () => {
   return (
-    <section className="container flex flex-col! mt-8">
+    <section className="container  md:flex md:flex-col!  mt-8 ">
       <div className="w-2/4 text-xl">
         <h1> NOSOTROS </h1>
       </div>
       <div className="w-full ">
-        <div className="px-3">
-          <p className=" roboto-Font ">
+        <div className="px-3  md:mt-0 mt-3">
+          <p className=" roboto-Font text-xs md:text-sm lg:text-base">
             {" "}
             Nos especializamos en diseño web y desarrollo de soluciones
             digitales a medida, enfocándonos exclusivamente en la creación de
@@ -36,7 +36,7 @@ export const Us = () => {
           </div>
         </div>
       </div>
-      <div className="w-3/4">
+      <div className="w-4/4 md:w-3/4">
         <img src={imageUs} className="object-cover h-[400px] w-auto  rounded-sm"></img>
       </div>
     </section>

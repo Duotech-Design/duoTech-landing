@@ -3,8 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import cotizaImg from "/cotizaImg.jpg";
-import GenericButton2 from "../components/ui/Buttons/GenericButton2";
+import GenericButton from "../components/ui/Buttons/GenericButton";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 
@@ -58,76 +57,71 @@ export const Cotiza = () => {
   }, []);
 
   return (
-    <section id="cotiza" className="container mx-auto py-24 relative">
+    <section id="cotiza" className="relative min-h-screen bg-gray-800">
+      <img
+        src="/4.svg"
+        alt="Background"
+        className="absolute inset-0 object-cover w-full h-full opacity-60"
+      />
       <ToastContainer />
-      <div className="w-full flex items-center mb-8">
-        <h1 className="flex-shrink-0 mr-4 text-xl">CONTÁCTANOS</h1>
-        <h2 className="text-5xl ml-auto">EMPECEMOS A CONSTRUIR UN NEGOCIO DURADERO</h2>
+      <div className="absolute top-10 right-10 text-white text-xl cursor-pointer flex items-center">
+        <button className="flex items-center text-white hover:text-gray-300">
+          <span className="mr-2">Close</span>
+          <img src="/close.png" alt="Close" className="w-6 h-6" />
+        </button>
       </div>
-
-      <div className="relative w-full h-[700px]">
-        <img
-          src={cotizaImg}
-          alt="Imagen de proyectos"
-          className="absolute inset-0 object-cover w-full h-full opacity-60"
-        />
-        <div className="absolute inset-0 flex flex-col lg:flex-row items-center justify-between p-8 bg-gray-900 bg-opacity-40">
-          <div className="w-full lg:w-1/2 text-white p-4 mt-[-250px]">
-            <p className="mt-4 text-lg">
-              Con tantos diseñadores y estudios para elegir, te encuentras ante un
-              dilema de opciones. Elegir uno es difícil, seleccionar el adecuado
-              es aún más complicado. Queremos asegurarnos de que tomes la decisión
-              correcta desde el principio.
-            </p>
-            <p className="mt-2 text-lg">
-              Contáctanos hoy mismo, conoce al equipo y veamos si somos la opción
-              ideal para lo que quieres hacer y a dónde quieres llegar.
-            </p>
-          </div>
-
-          <div className="relative w-full lg:w-1/2 flex items-center justify-center">
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className="relative p-8 rounded-md shadow-lg w-full lg:w-3/4 bg-gray-100 bg-opacity-70"
-            >
-              <div className="mb-4">
-                <input
-                  type="text"
-                  placeholder="Nombre completo"
-                  {...register("name")}
-                  className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p className="text-red-500 mt-1">{errors.name?.message}</p>
-              </div>
-              <div className="mb-4">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  {...register("email")}
-                  className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p className="text-red-500 mt-1">{errors.email?.message}</p>
-              </div>
-              <div className="mb-4">
-                <input
-                  type="text"
-                  placeholder="Teléfono"
-                  {...register("phone")}
-                  className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p className="text-red-500 mt-1">{errors.phone?.message}</p>
-              </div>
-              <div className="mb-4">
-                <textarea
-                  placeholder="Cuéntanos sobre tu proyecto"
-                  {...register("message")}
-                  className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full h-24 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <p className="text-red-500 mt-1">{errors.message?.message}</p>
-              </div>
-              <GenericButton2 title="ENVIAR" />
-            </form>
-          </div>
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center h-full py-24 relative z-10">
+        <div className="w-full lg:w-1/2 text-white px-4 lg:px-16 mt-8 lg:mt-0 text-center lg:text-left">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
+            ¡Queremos conocerte, cuéntanos sobre tu proyecto!
+          </h1>
+          <p className="text-base md:text-lg lg:text-xl mt-80">
+            ¡Estamos aquí para ayudarte! Contáctanos hoy, conoce a nuestro equipo
+            y descubre si somos la opción ideal para tus proyectos y objetivos.
+            ¡Haz la elección correcta desde el principio!
+          </p>
+        </div>
+        <div className="w-full lg:w-1/2 px-4 lg:px-8">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-lg">
+            <div className="mb-4">
+              <input
+                type="text"
+                placeholder="Nombre completo"
+                {...register("name")}
+                className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <p className="text-red-500 mt-1">{errors.name?.message}</p>
+            </div>
+            <div className="mb-4">
+              <input
+                type="email"
+                placeholder="Email"
+                {...register("email")}
+                className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <p className="text-red-500 mt-1">{errors.email?.message}</p>
+            </div>
+            <div className="mb-4">
+              <input
+                type="text"
+                placeholder="Teléfono"
+                {...register("phone")}
+                className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <p className="text-red-500 mt-1">{errors.phone?.message}</p>
+            </div>
+            <div className="mb-4">
+              <textarea
+                placeholder="Cuéntanos sobre tu proyecto"
+                {...register("message")}
+                className="mt-2 px-4 py-2 border border-gray-300 rounded-md w-full h-24 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <p className="text-red-500 mt-1">{errors.message?.message}</p>
+            </div>
+            <div className="flex justify-end">
+              <GenericButton title="COTIZA TU PROYECTO" />
+            </div>
+          </form>
         </div>
       </div>
     </section>
