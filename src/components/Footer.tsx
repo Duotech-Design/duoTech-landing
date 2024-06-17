@@ -35,10 +35,19 @@ export const Footer = () => {
     const [hour, minute] = timeString.split(":").map(Number);
 
     const currentMinutes = hour * 60 + minute;
-    const startMinutes = 9 * 60; // 9:00 AM in minutes
-    const endMinutes = 18 * 60 + 30; // 6:30 PM in minutes
+    const startMinutesWeekdays = 9 * 60; // 9:00 AM in minutes for weekdays
+    const endMinutesWeekdays = 18 * 60 + 30; // 6:30 PM in minutes for weekdays
+    const endMinutesSaturday = 16 * 60; // 4:00 PM in minutes for Saturday
 
-    return currentMinutes >= startMinutes && currentMinutes < endMinutes;
+    const day = date.getDay(); // Get the day of the week (0 for Sunday, 6 for Saturday)
+
+    if (day === 0) {
+      return false; // Sunday, off-duty all day
+    } else if (day === 6) {
+      return currentMinutes >= startMinutesWeekdays && currentMinutes < endMinutesSaturday; // Saturday, on-duty 9:00 AM - 4:00 PM
+    } else {
+      return currentMinutes >= startMinutesWeekdays && currentMinutes < endMinutesWeekdays; // Weekdays, on-duty 9:00 AM - 6:30 PM
+    }
   };
 
   return (

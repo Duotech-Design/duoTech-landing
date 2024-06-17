@@ -8,13 +8,11 @@ body {
   line-height: 1.5;
 }
 
-/* HeroCards background shadow */
 .shadow {
   position: absolute;
-  background: #879EAD;
+  background: #879ead;
   border-radius: 24px;
   rotate: 35deg;
-
   width: 260px;
   top: 200px;
   height: 400px;
@@ -69,7 +67,7 @@ body {
     }
   }
 }
-*/
+
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
@@ -104,12 +102,12 @@ body {
   }
   75% {
     content: "ORIGINAL";
-  }
+     }
   100% {
     content: "NUEVO";
   }
 }
-/* animation.css */
+
 .navbar-item {
   position: relative;
   display: inline-block;
@@ -126,7 +124,7 @@ body {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #879EAD;
+  background-color: #879ead;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -136,32 +134,33 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
-/* Estilos para el efecto de flip */
-.flip-card {
-  /*background-color: transparent;*/
-  perspective: 1000px;
-  width: 550px;
-  height: 550px; /* Ajusta la altura para que sea responsive */
-  border-radius: 10px; /* Borde redondeado */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
+
+.card-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s, width 0.6s, height 0.6s;
 }
 
-.flip-card-inner {
-  position: relative;
+.card-container:hover {
+  transform: scale(1.1);
+  width: 350px;
+  height: 500px;
+}
+
+.card {
+  position: absolute;
   width: 100%;
   height: 100%;
-  text-align: left; /* Alineación del texto a la izquierda */
   transition: transform 0.6s;
-  transform-style: preserve-3d;
-  border-radius: 10px;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
+.card-content,
+.card-hover-content {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -169,20 +168,31 @@ body {
   border-radius: 10px;
 }
 
-.flip-card-front {
-  background-color: #EDECE2;
+.card-content {
+  background-color: #edece2;
   color: black;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
 }
 
-.flip-card-back {
-  background-color: #EDECE2;
+.card-hover-content {
+  background-color: #edece2;
   color: black;
-  transform: rotateY(180deg);
+  transform: scale(1.2);
+  opacity: 0;
+  transition: opacity 0.6s, transform 0.6s;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-container:hover .card-hover-content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card-container:hover .card {
+  transform: scale(1.1);
 }

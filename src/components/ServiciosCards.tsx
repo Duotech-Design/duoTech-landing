@@ -77,39 +77,38 @@ const pricingList: CotizacionProps[] = [
 export const ServiciosCards = () => {
   return (
     <section id="servicios" className="container py-8 space-y-8">
-      <p className="text-lg md:text-xl text-muted-foreground mx-auto lg:mx-0 text-center roboto-Font mb-8">
+      <p className="text-xl text-muted-foreground mx-auto lg:mx-0 text-center roboto-Font mb-8">
         Escoge la mejor opción para tu negocio.
       </p>
-      <div className="flex flex-col md:flex-row md:justify-center md:space-x-8 space-y-4 md:space-y-0">
+      <div className="flex justify-center space-x-8 flex-wrap">
         {features.map((feature, index) => {
           const pricing = pricingList.find(
             (item) => item.title.toUpperCase() === feature.title
           );
           return (
-            <div key={index} className="flip-card w-full md:w-1/2">
-              <div className="flip-card-inner">
-                <div className="flip-card-front bg-white p-4">
+            <div key={index} className="card-container max-w-md mb-8">
+              <div className="card">
+                <div className="card-content">
                   <img
-                    className="contrast-50 w-full h-48 md:h-96 object-cover rounded-t-lg"
+                    className="w-full h-64 object-cover rounded-t-lg"
                     src={feature.image}
                     alt={feature.title}
                   />
-                  <div className="px-6 py-4 text-left">
-                    <div className="font-bold text-lg md:text-xl mb-2">
+                  <div className="px-4 py-4 text-left">
+                    <div className="font-bold text-2xl mb-2">
                       {feature.title}
                     </div>
+                    <p className="text-gray-700 roboto-Font text-base">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
-                <div className="flip-card-back p-6 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg">
-                  <h1 className="text-lg md:text-xl font-bold mb-4">
-                    {pricing?.title}
-                  </h1>
-                  <p className="text-sm md:text-base mb-4">
-                    {pricing?.description}
-                  </p>
+                <div className="card-hover-content p-6 bg-gray-800 text-white rounded-lg">
+                  <h1 className="text-2xl font-bold mb-4">{pricing?.title}</h1>
+                  <p className="text-xl mb-4">{pricing?.description}</p>
                   <ul className="list-none mb-4">
                     {pricing?.benefitList.map((benefit, idx) => (
-                      <li key={idx} className="flex items-start text-sm md:text-base">
+                      <li key={idx} className="flex items-start text-xl">
                         <img
                           src="/checkmark.svg"
                           alt="checkmark"
