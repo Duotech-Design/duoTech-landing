@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import MessengerHover from "./MessengerHover";
+ // Ensure to import the updated CSS file
 
 export const Footer = () => {
   const [time, setTime] = useState(new Date());
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null); // Define hoveredItem
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(new Date());
     }, 1000);
 
-    return () => clearInterval(timer); // Cleanup interval on component unmount
+    return () => clearInterval(timer);
   }, []);
 
   const formatTime = (date: number | Date | undefined) => {
@@ -35,25 +36,24 @@ export const Footer = () => {
     const [hour, minute] = timeString.split(":").map(Number);
 
     const currentMinutes = hour * 60 + minute;
-    const startMinutesWeekdays = 9 * 60; // 9:00 AM in minutes for weekdays
-    const endMinutesWeekdays = 18 * 60 + 30; // 6:30 PM in minutes for weekdays
-    const endMinutesSaturday = 16 * 60; // 4:00 PM in minutes for Saturday
+    const startMinutesWeekdays = 9 * 60;
+    const endMinutesWeekdays = 18 * 60 + 30;
+    const endMinutesSaturday = 16 * 60;
 
-    const day = date.getDay(); // Get the day of the week (0 for Sunday, 6 for Saturday)
+    const day = date.getDay();
 
     if (day === 0) {
-      return false; // Sunday, off-duty all day
+      return false;
     } else if (day === 6) {
-      return currentMinutes >= startMinutesWeekdays && currentMinutes < endMinutesSaturday; // Saturday, on-duty 9:00 AM - 4:00 PM
+      return currentMinutes >= startMinutesWeekdays && currentMinutes < endMinutesSaturday;
     } else {
-      return currentMinutes >= startMinutesWeekdays && currentMinutes < endMinutesWeekdays; // Weekdays, on-duty 9:00 AM - 6:30 PM
+      return currentMinutes >= startMinutesWeekdays && currentMinutes < endMinutesWeekdays;
     }
   };
 
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
-
       <section className="container py-20 grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8">
         <div className="flex flex-col justify-between">
           <div>
@@ -63,19 +63,14 @@ export const Footer = () => {
             </h3>
             <h3 className="font-medium mt-4">
               CURRENTLY:{" "}
-              <span
-                className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}
-              >
+              <span className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}>
                 ●
               </span>{" "}
               {isOnDuty(time) ? "ON-DUTY" : "OFF-DUTY"}
             </h3>
           </div>
           <div className="mt-8">
-            <a
-              href="/"
-              className="font-bold text-4xl flex flex-col leading-none"
-            >
+            <a href="/" className="font-bold text-4xl flex flex-col leading-none">
               LO
               <br />
               GO
@@ -90,7 +85,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="mailto:design@duotech.com"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("DESIGN@DUOTECH.COM")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -103,7 +98,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="tel:+51444"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("+51 444 4-----")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -116,7 +111,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="tel:+5244"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("+51 444 ------")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -129,7 +124,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="mailto:__@duptechdesign.com"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("__@duotechdesign.com")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -146,7 +141,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="https://www.instagram.com/duotechdesign/"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("INSTAGRAM")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -159,7 +154,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("PINTEREST")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -170,8 +165,12 @@ export const Footer = () => {
                 </a>
               </div>
               <div>
-                <a href="https://www.duotechdesign.com/" className="opacity-60 hover:opacity-100"  onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
-                  onMouseLeave={() => setHoveredItem(null)}>
+                <a
+                  href="https://www.duotechdesign.com/"
+                  className="animated-link opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
                   <MessengerHover
                     text="DUO-TECH SHOP"
                     isHovered={hoveredItem === "DUO-TECH SHOP"}
