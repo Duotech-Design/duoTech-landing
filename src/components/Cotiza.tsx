@@ -59,9 +59,9 @@ export const Cotiza = () => {
   return (
     <section id="cotiza" className="relative min-h-screen bg-gray-800">
       <img
-        src="/4.svg"
+        src="/cotizacion.png"
         alt="Background"
-        className="absolute inset-0 object-cover w-full h-full opacity-60"
+        className="absolute inset-0 object-cover w-full h-full "
       />
       <ToastContainer />
       <div className="absolute top-10 right-10 text-white text-xl cursor-pointer flex items-center">
