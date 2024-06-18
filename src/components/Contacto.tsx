@@ -1,4 +1,4 @@
-import React from "react";
+
 import AnimatedTextWithMessenger from "./MessengerWithCSSAnimation";
 import Messenger from "./Messenger";
 

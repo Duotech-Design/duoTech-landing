@@ -102,7 +102,7 @@ body {
   }
   75% {
     content: "ORIGINAL";
-     }
+  }
   100% {
     content: "NUEVO";
   }
@@ -196,6 +196,7 @@ body {
 .card-container:hover .card {
   transform: scale(1.1);
 }
+
 .animated-link {
   position: relative;
   color: #000;
@@ -224,10 +225,69 @@ body {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     visibility: hidden;
   }
   50% {
     visibility: visible;
   }
+}
+
+/* Nuevas clases y animaciones para la animación de texto */
+
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+.poster__inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: background-slide 8s infinite alternate;
+}
+
+@keyframes background-slide {
+  0% {
+    background-image: url('/fondo1.svg');
+  }
+  100% {
+    background-image: url('/fondo2.svg');
+  }
+}
+
+.font-2 {
+  font-family: "Inconsolata", monospace;
+}
+
+.size-3 {
+  font-size: 8rem;
+}
+
+@media (max-width: 768px) {
+  .size-3 {
+    font-size: 4rem;
+  }
+}
+
+.poster.visible .poster__inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.poster .poster__inner {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s;
 }
