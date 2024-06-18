@@ -17,13 +17,13 @@ export const Servicios = () => {
         </div>
       </div>
 
-      <div className="md:flex md:flex-col">
+      <div className="md:flex md:flex-col! md:justify-between mt-8">
         <div className="w-2/4">
           <a href="https://wa.me/528122043750?text=Quiero%20más%20información">
             <GenericButton2 title={t("services.button")} />
           </a>
         </div>
-        <div className="w-full grid grid-cols-2 px-3 mt-3">
+        <div className="w-full grid grid-cols-2 px-3 mt-8 md:mt-3">
           <div>
             <span className="mt-4 md:mt-0">{t("services.subContent_1")}</span>
           </div>
@@ -39,7 +39,7 @@ export const Servicios = () => {
         <div className="w-4/4 md:w-3/4 flex  justify-end">
           <img
             src={servicios}
-            className="object-contain h-[400px] w-auto rounded-sm opacity-75"
+            className="object-contain h-[300px] w-auto rounded-sm opacity-75"
             alt="Hero"
           />
         </div>

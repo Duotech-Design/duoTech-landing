@@ -76,7 +76,7 @@ export const ServiciosCards = () => {
     },
   ];
   return (
-    <section id="servicios" className="container py-8 space-y-8">
+    <section id="servicios" className="container py-8 space-y-8 h-[1000px]">
       <p className="text-lg md:text-xl text-muted-foreground mx-auto lg:mx-0 text-center roboto-Font mb-8">
       {t("services_cards.title")}
       </p>
@@ -86,18 +86,21 @@ export const ServiciosCards = () => {
             (item) => item.title.toUpperCase() === feature.title
           );
           return (
-            <div key={index} className="flip-card w-full md:w-1/2">
+            <div key={index} className="flip-card w-full h-[450px] md:h-[600px] md:w-1/2">
               <div className="flip-card-inner">
-                <div className="flip-card-front bg-white p-4">
+                <div className="flip-card-front bg-white">
                   <img
-                    className="contrast-50 w-full h-48 md:h-96 object-cover rounded-t-lg"
+                    className="contrast-50 w-full h-48 md:h-[450px] object-cover rounded-t-lg"
                     src={feature.image}
                     alt={feature.title}
                   />
-                  <div className="px-6 py-4 text-left">
-                    <div className="font-bold text-lg md:text-xl mb-2">
+                   <div className="px-6 py-4 text-left mb-5">
+                    <div className="font-bold text-xl mb-2">
                       {feature.title}
                     </div>
+                    <p className=" text-gray-700 roboto-Font text-base">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
                 <div className="flip-card-back p-6 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg">
