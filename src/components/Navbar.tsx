@@ -46,21 +46,21 @@ export const Navbar = () => {
     {
       href: "#contacto",
       label: t("navbar.contact"),
-    }
+    },
   ];
   return (
     <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
-          <NavigationMenuItem className="font-bold flex">
-            <a href="/" className="font-bold text-xl flex">
+          <NavigationMenuItem className="flex justify-start max-w-[100px] md:w-full">
+            <div className="font-bold text-xl flex">
               <RosslerComponent />
-            </a>
+            </div>
           </NavigationMenuItem>
-
           {/* mobile */}
-          <span className="flex md:hidden">
-          <LanguageToggle />
+
+          <div className="flex w-auto md:hidden">
+            <LanguageToggle />
             <ModeToggle />
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -75,9 +75,7 @@ export const Navbar = () => {
 
               <SheetContent side={"left"}>
                 <SheetHeader>
-                  <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
-                  </SheetTitle>
+                  <SheetTitle className="font-bold text-xl">DuoTech</SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
                   {routeList.map(({ href, label, icon }: RouteProps, i) => (
@@ -97,8 +95,7 @@ export const Navbar = () => {
                 </nav>
               </SheetContent>
             </Sheet>
-         
-          </span>
+          </div>
 
           {/* desktop */}
           <nav className="hidden md:flex gap-2">
@@ -120,9 +117,8 @@ export const Navbar = () => {
               </a>
             ))}
           </nav>
-          
           <div className="hidden md:flex gap-2">
-          <LanguageToggle />
+            <LanguageToggle />
             <ModeToggle />
           </div>
         </NavigationMenuList>
