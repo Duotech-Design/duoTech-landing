@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MessengerHover from "./MessengerHover";
 import { useTranslation } from "react-i18next";
+import RosslerSVG from "./rossler/RosslerSVG";
 
 export const Footer = () => {
   const { t } = useTranslation("global");
@@ -64,15 +65,8 @@ export const Footer = () => {
               {isOnDuty(time) ? t("footer.on_duty") : t("footer.off_duty")}
             </h3>
           </div>
-          <div className="mt-8">
-            <a
-              href="/"
-              className="font-bold text-4xl flex flex-col leading-none"
-            >
-              LO
-              <br />
-              GO
-            </a>
+          <div className="flex justify-center md:justify-start">
+            <RosslerSVG />
           </div>
         </div>
 
