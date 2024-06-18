@@ -185,3 +185,25 @@ body {
   align-items: center;
   border-radius: 10px;
 }
+/* Cotiza.css */
+.cotiza-form {
+  background: transparent;
+}
+
+.cotiza-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff; /* Línea blanca */
+  width: 100%;
+  padding: 8px 0;
+  color: #fff; /* Texto blanco */
+}
+
+.cotiza-input::placeholder {
+  color: #fff; /* Placeholder blanco */
+}
+
+.cotiza-input:focus {
+  outline: none;
+  border-bottom: 2px solid #fff; /* Línea blanca */
+}

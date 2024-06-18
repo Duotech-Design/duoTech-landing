@@ -76,13 +76,13 @@ export const Footer = () => {
               <h3 className="text-md text-gray-400">{t("footer.contact")}</h3>
               <div>
                 <a
-                  href="mailto:design@duotech.com"
+                  href="mailto:info@duotechdesign.com"
                   className="opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("DESIGN@DUOTECH.COM")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <MessengerHover
-                    text="DESIGN@DUOTECH.COM"
+                    text="info@duotechdesign.com"
                     isHovered={hoveredItem === "DESIGN@DUOTECH.COM"}
                   />
                 </a>
@@ -115,13 +115,13 @@ export const Footer = () => {
               </div>
               <div>
                 <a
-                  href="mailto:__@duptechdesign.com"
+                  href="mailto:info@duotechdesign.com"
                   className="opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("__@duotechdesign.com")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <MessengerHover
-                    text="__@duotechdesign.com"
+                    text="info@duotechdesign.com"
                     isHovered={hoveredItem === "__@duotechdesign.com"}
                   />
                 </a>
