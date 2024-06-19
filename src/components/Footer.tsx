@@ -2,18 +2,19 @@ import { useState, useEffect } from "react";
 import MessengerHover from "./MessengerHover";
 import { useTranslation } from "react-i18next";
 import RosslerSVG from "./rossler/RosslerSVG";
+import whatsappIcon from "/whatsapp.png"; // Importa la imagen
 
 export const Footer = () => {
   const { t } = useTranslation("global");
   const [time, setTime] = useState(new Date());
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null); // Define hoveredItem
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(new Date());
     }, 1000);
 
-    return () => clearInterval(timer); // Cleanup interval on component unmount
+    return () => clearInterval(timer);
   }, []);
 
   const formatTime = (date: number | Date | undefined) => {
@@ -47,7 +48,6 @@ export const Footer = () => {
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
-
       <section className="container py-20 grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8">
         <div className="flex flex-col justify-between">
           <div>
@@ -56,10 +56,8 @@ export const Footer = () => {
               MONTERREY, MX ➔ {formatTime(time)}
             </h3>
             <h3 className="font-medium mt-4">
-            {t("footer.currently")}:{" "}
-              <span
-                className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}
-              >
+              {t("footer.currently")}:{" "}
+              <span className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}>
                 ●
               </span>{" "}
               {isOnDuty(time) ? t("footer.on_duty") : t("footer.off_duty")}
@@ -69,7 +67,6 @@ export const Footer = () => {
             <RosslerSVG />
           </div>
         </div>
-
         <div className="md:ml-auto md:col-span-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
             <div className="flex flex-col gap-2">
@@ -90,26 +87,36 @@ export const Footer = () => {
               <div>
                 <a
                   href="tel:+51444"
-                  className="opacity-60 hover:opacity-100"
-                  onMouseEnter={() => setHoveredItem("+51 444 4-----")}
+                  className="opacity-60 hover:opacity-100 flex items-center gap-2"
+                  onMouseEnter={() => setHoveredItem("444 4-----")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
+                  <img
+                    src={whatsappIcon}
+                    alt="WhatsApp"
+                    className="h-6 w-6"
+                  />
                   <MessengerHover
-                    text="+51 444 4-----"
-                    isHovered={hoveredItem === "+51 444 4-----"}
+                    text="444 4-----"
+                    isHovered={hoveredItem === "444 4-----"}
                   />
                 </a>
               </div>
               <div>
                 <a
-                  href="tel:+5244"
-                  className="opacity-60 hover:opacity-100"
-                  onMouseEnter={() => setHoveredItem("+51 444 ------")}
+                  href="https://wa.me/524445443817?text=Quiero%20más%20información"
+                  className="opacity-60 hover:opacity-100 flex items-center gap-2"
+                  onMouseEnter={() => setHoveredItem("4445443817")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
+                  <img
+                    src={whatsappIcon}
+                    alt="WhatsApp"
+                    className="h-6 w-6"
+                  />
                   <MessengerHover
-                    text="+51 444 ------"
-                    isHovered={hoveredItem === "+51 444 ------"}
+                    text="4445443817"
+                    isHovered={hoveredItem === "4445443817"}
                   />
                 </a>
               </div>
@@ -127,7 +134,6 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-
             <div className="flex flex-col gap-2">
               <h3 className="text-md text-gray-400">LINKS</h3>
               <div>
@@ -157,8 +163,12 @@ export const Footer = () => {
                 </a>
               </div>
               <div>
-                <a href="https://www.duotechdesign.com/" className="opacity-60 hover:opacity-100"  onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
-                  onMouseLeave={() => setHoveredItem(null)}>
+                <a
+                  href="https://www.duotechdesign.com/"
+                  className="opacity-60 hover:opacity-100"
+                  onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
                   <MessengerHover
                     text="DUO-TECH SHOP"
                     isHovered={hoveredItem === "DUO-TECH SHOP"}
@@ -169,7 +179,6 @@ export const Footer = () => {
           </div>
         </div>
       </section>
-
       <section className="container pb-14 text-center">
         <h3>
           &copy; 2024 Landing page made by{" "}
