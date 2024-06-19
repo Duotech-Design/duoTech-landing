@@ -7,7 +7,6 @@ import GenericButton from "../components/ui/Buttons/GenericButton";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 
-
 // Definir el esquema de validación con Yup
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("El nombre es obligatorio"),
@@ -62,7 +61,7 @@ export const Cotiza = () => {
       <img
         src="/4.svg"
         alt="Background"
-        className="absolute inset-0 object-cover w-full h-full opacity-98"
+        className="absolute inset-0 object-cover w-full h-full"
       />
       <ToastContainer />
       <div className="absolute top-10 right-10 text-white text-xl cursor-pointer flex items-center">
@@ -71,16 +70,11 @@ export const Cotiza = () => {
           <img src="/close.png" alt="Close" className="w-6 h-6" />
         </button>
       </div>
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center h-full py-24 relative z-10">
-        <div className="w-full lg:w-1/2 text-white px-4 lg:px-16 mt-8 lg:mt-0 text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
+      <div className="container mx-auto flex flex-col lg:flex-row items-start justify-between h-full py-24 relative z-10">
+        <div className="w-full lg:w-1/2 text-white px-4 lg:px-16 mt-8 lg:mt-0 text-left space-y-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
             ¡Queremos conocerte, cuéntanos sobre tu proyecto!
           </h1>
-          <p className="text-base md:text-lg lg:text-xl mt-80">
-            ¡Estamos aquí para ayudarte! Contáctanos hoy, conoce a nuestro equipo
-            y descubre si somos la opción ideal para tus proyectos y objetivos.
-            ¡Haz la elección correcta desde el principio!
-          </p>
         </div>
         <div className="w-full lg:w-1/2 px-4 lg:px-8">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-lg cotiza-form">
@@ -124,6 +118,13 @@ export const Cotiza = () => {
             </div>
           </form>
         </div>
+      </div>
+      <div className="w-full text-center text-white px-4 lg:px-16 absolute bottom-20 mb-8">
+        <p className="text-lg md:text-xl lg:text-2xl lg:w-1/2">
+          ¡Estamos aquí para ayudarte! Contáctanos hoy, conoce a nuestro equipo
+          y descubre si somos la opción ideal para tus proyectos y objetivos.
+          ¡Haz la elección correcta desde el principio!
+        </p>
       </div>
     </section>
   );
