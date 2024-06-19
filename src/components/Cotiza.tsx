@@ -3,10 +3,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import GenericButton from "../components/ui/Buttons/GenericButton";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
-import { GalleryThumbnails } from "lucide-react";
 import TransparentButton from "./ui/Buttons/TransparentButton";
 
 // Definir el esquema de validación con Yup
@@ -21,7 +19,7 @@ const validationSchema = Yup.object().shape({
   message: Yup.string().required("El mensaje es obligatorio"),
 });
 
-export const Cotiza = () => {
+export const Cotiza = ({ onClose }: { onClose: () => void }) => {
   const {
     register,
     handleSubmit,
@@ -66,19 +64,19 @@ export const Cotiza = () => {
         className="absolute inset-0 object-cover w-full h-full"
       />
       <ToastContainer />
-       <div className="absolute top-10 right-10 text-white text-xl cursor-pointer flex items-center">
-        <button className="flex items-center text-white hover:text-gray-300">
-          <span className="mr-2">Close</span>
-          <img src="/close.png" alt="Close" className="w-6 h-6" />
+      <div className="absolute top-10 right-10 text-white text-xl cursor-pointer flex items-center">
+        <button onClick={onClose} className="flex items-center text-white hover:text-gray-300">
+          <span className="mr-2 cursor-pointer">Close</span>
+          <img src="/close.png" alt="Close" className="w-6 h-6 cursor-pointer" />
         </button>
       </div>
       <div className="px-16 flex flex-col lg:flex-row items-start justify-between h-full py-24 relative z-10">
-        <div className="w-full  text-white px-4 lg:px-0 mt-8 lg:mt-0 text-left space-y-8">
+        <div className="w-full text-white px-4 lg:px-0 mt-8 lg:mt-0 text-left space-y-8">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-light">
             ¡Queremos conocerte,<br />cuéntanos sobre tu proyecto!
           </h1>
         </div>
-        <div className="w-full lg:w-3/4 px-4 lg:px-8 mt-96 lg:mt-96">  {/* Ajustar margen superior */}
+        <div className="w-full lg:w-3/4 px-4 lg:px-8 mt-96 lg:mt-96">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form">
             <div className="mb-4">
               <input
@@ -121,7 +119,7 @@ export const Cotiza = () => {
           </form>
         </div>
       </div>
-      <div className="w-full text-left text-white px-4 lg:px-16 absolute bottom-20 mb-8  ">
+      <div className="w-full text-left text-white px-4 lg:px-16 absolute bottom-20 mb-8">
         <p className="text-xs md:text-sm lg:text-xl lg:w-1/2">
           ¡Estamos aquí para ayudarte! Contáctanos hoy, conoce a nuestro equipo
           y descubre si somos la opción ideal para tus proyectos y objetivos.

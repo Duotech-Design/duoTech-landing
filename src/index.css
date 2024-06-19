@@ -208,3 +208,36 @@ body {
   outline: none;
   border-bottom: 2px solid #fff; /* Línea blanca */
 }
+@keyframes sketch {
+  0% {
+    stroke-dasharray: 0 480;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 480 0;
+    stroke-dashoffset: 960;
+    opacity: 0;
+  }
+}
+
+.sketch-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketch-animation:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #EEECE3; /* Cambiar el color del borde */
+  animation: sketch 1s linear forwards; /* Ajustar la duración a 1 segundo */
+}
