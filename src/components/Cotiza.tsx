@@ -78,8 +78,8 @@ export const Cotiza = () => {
             ¡Queremos conocerte,<br />cuéntanos sobre tu proyecto!
           </h1>
         </div>
-        <div className="w-full lg:w-1/2 px-4 lg:px-8 mt-96 lg:mt-96">  {/* Ajustar margen superior */}
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-lg cotiza-form">
+        <div className="w-full lg:w-3/4 px-4 lg:px-8 mt-96 lg:mt-96">  {/* Ajustar margen superior */}
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form">
             <div className="mb-4">
               <input
                 type="text"

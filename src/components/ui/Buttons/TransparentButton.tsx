@@ -9,13 +9,13 @@ const TransparentButton = ({ title }: { title: string }) => {
     <motion.button
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="bg-transparent flex justify-center items-center text-white font-semibold hover:text-[#879EAD] py-2 px-2 md:px-4 border border-transparent hover:border-[#879EAD] rounded-full md:text-base text-xs"
+      className="bg-transparent flex justify-center items-center text-white font-semibold hover:text-[#879EAD] py-2 px-2 md:px-8 border border-white hover:border-[#879EAD] rounded-full md:text-lg text-xs"
     >
       <MessengerHover text={title} isHovered={isHovered} />
       <svg
         className="text-current ml-1 md:ml-2"
-        width="20px"
-        height="20px"
+        width="35px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
