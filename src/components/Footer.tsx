@@ -91,7 +91,7 @@ export const Footer = () => {
                 <a
                   href="tel:+51444"
                   className="opacity-60 hover:opacity-100 flex items-center gap-2"
-                  onMouseEnter={() => setHoveredItem("444 4-----")}
+                  onMouseEnter={() => setHoveredItem("+51 444 4-----")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <img
@@ -100,8 +100,8 @@ export const Footer = () => {
                     className="h-6 w-6"
                   />
                   <MessengerHover
-                    text="444 4-----"
-                    isHovered={hoveredItem === "444 4-----"}
+                    text="+51 444 4-----"
+                    isHovered={hoveredItem === "+51 444 4-----"}
                   />
                 </a>
               </div>
@@ -109,7 +109,7 @@ export const Footer = () => {
                 <a
                   href="https://wa.me/524445443817?text=Quiero%20más%20información"
                   className="opacity-60 hover:opacity-100 flex items-center gap-2"
-                  onMouseEnter={() => setHoveredItem("4445443817")}
+                  onMouseEnter={() => setHoveredItem("+514445443817")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <img
@@ -118,8 +118,8 @@ export const Footer = () => {
                     className="h-6 w-6"
                   />
                   <MessengerHover
-                    text="4445443817"
-                    isHovered={hoveredItem === "4445443817"}
+                    text="+51 4445443817"
+                    isHovered={hoveredItem === "+514445443817"}
                   />
                 </a>
               </div>
