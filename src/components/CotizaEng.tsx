@@ -65,19 +65,30 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
       />
       <ToastContainer />
       <div className="absolute top-10 right-10 text-white text-xl cursor-pointer flex items-center z-50">
-        <button onClick={onClose} className="flex items-center text-white hover:text-gray-300">
+        <button
+          onClick={onClose}
+          className="flex items-center text-white hover:text-gray-300"
+        >
           <span className="mr-2 cursor-pointer">Close</span>
-          <img src="/close.png" alt="Close" className="w-6 h-6 cursor-pointer" />
+          <img
+            src="/close.png"
+            alt="Close"
+            className="w-6 h-6 cursor-pointer"
+          />
         </button>
       </div>
       <div className="px-16 flex flex-col lg:flex-row items-start justify-between h-full py-24 relative z-10">
         <div className="w-full text-white px-4 lg:px-0 mt-8 lg:mt-0 text-left space-y-8">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-light">
-            ¡Queremos conocerte,<br />cuéntanos sobre tu proyecto!
+            We want to get to know you,
+            <br /> tell us about your project!
           </h1>
         </div>
         <div className="w-full lg:w-3/4 px-4 lg:px-8 mt-96 lg:mt-96">
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form"
+          >
             <div className="mb-4">
               <input
                 type="text"
@@ -121,9 +132,11 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
       </div>
       <div className="w-full text-left text-white px-4 lg:px-16 absolute bottom-20 mb-8">
         <p className="text-xs md:text-sm lg:text-xl lg:w-1/2">
-          ¡Estamos aquí para ayudarte! Contáctanos hoy, conoce a nuestro equipo
-          y descubre si somos la opción ideal para tus proyectos y objetivos.
-          <br />¡Haz la elección correcta desde el principio!
+          We are here to help you! Contact us today, meet our team, and discover
+          if we are the ideal choice for your projects and goals. Make the right
+          choice from the start!
+          <br />
+          Make the right choice from the start!
         </p>
       </div>
     </section>
