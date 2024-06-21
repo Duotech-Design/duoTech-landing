@@ -69,12 +69,12 @@ export const Footer = () => {
         </div>
         <div className="md:ml-auto md:col-span-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 ">
               <h3 className="text-md text-gray-400">{t("footer.contact")}</h3>
-              <div>
+              <div className="w-full">
                 <a
                   href="mailto:info@duotechdesign.com"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100 flex items-center gap-2"
                   onMouseEnter={() => setHoveredItem("DESIGN@DUOTECH.COM")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -84,11 +84,11 @@ export const Footer = () => {
                   />
                 </a>
               </div>
-              <div>
+              <div >
                 <a
                   href="tel:+51444"
-                  className="opacity-60 hover:opacity-100 flex items-center gap-2"
-                  onMouseEnter={() => setHoveredItem("+51 444 4-----")}
+                  className="opacity-60 hover:opacity-100 flex items-center gap-2 "
+                  onMouseEnter={() => setHoveredItem("+52 44-----")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <img
@@ -96,17 +96,18 @@ export const Footer = () => {
                     alt="WhatsApp"
                     className="h-6 w-6"
                   />
+                  <div className="animated-link">
                   <MessengerHover
-                    text="+51 444 4-----"
-                    isHovered={hoveredItem === "+51 444 4-----"}
-                  />
+                    text="+52 44-----"
+                    isHovered={hoveredItem === "+52 44-----"}
+                  /></div>
                 </a>
               </div>
-              <div>
+              <div >
                 <a
                   href="https://wa.me/524445443817?text=Quiero%20más%20información"
-                  className="opacity-60 hover:opacity-100 flex items-center gap-2"
-                  onMouseEnter={() => setHoveredItem("+514445443817")}
+                  className=" opacity-60 hover:opacity-100 flex items-center gap-2 "
+                  onMouseEnter={() => setHoveredItem("+52 4445443817")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <img
@@ -114,16 +115,18 @@ export const Footer = () => {
                     alt="WhatsApp"
                     className="h-6 w-6"
                   />
+                  <div className="animated-link">
                   <MessengerHover
-                    text="+51 4445443817"
-                    isHovered={hoveredItem === "+514445443817"}
+                    text="+52 4445443817"
+                    isHovered={hoveredItem === "+52 4445443817"}
                   />
+                  </div>
                 </a>
               </div>
               <div>
                 <a
                   href="mailto:info@duotechdesign.com"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("__@duotechdesign.com")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -139,7 +142,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="https://www.instagram.com/duotechdesign/"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("INSTAGRAM")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -152,7 +155,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="#"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("PINTEREST")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -165,7 +168,7 @@ export const Footer = () => {
               <div>
                 <a
                   href="https://www.duotechdesign.com/"
-                  className="opacity-60 hover:opacity-100"
+                  className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("DUO-TECH SHOP")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >

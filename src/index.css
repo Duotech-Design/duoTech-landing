@@ -240,3 +240,26 @@ body {
   border: 2px solid #EEECE3; /* Cambiar el color del borde */
   animation: sketch 1s linear forwards; /* Ajustar la duración a 1 segundo */
 }
+.animated-link {
+  position: relative;
+
+  transition: color 0.3s ease;
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.animated-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
