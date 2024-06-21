@@ -42,7 +42,8 @@ export const Hero: React.FC = () => {
               <Messenger text={t("hero.content_8")} />
             </span>
             <div className="space-y-4 md:space-y-0 md:space-x-4 justify-center mt-8">
-              <AnimatedButton title={t("hero.button")} onClick={handleOpenCotiza} />
+              {/* <AnimatedButton title={t("hero.button")} onClick={handleOpenCotiza} /> */}
+              <button  onClick={handleOpenCotiza} > grgr</button>
             </div>
           </div>
           <div className="shadow"></div>

@@ -12,7 +12,7 @@ const AnimatedButton = ({ title, onClick }: { title: string; onClick: () => void
     setTimeout(() => {
       setShowAnimation(false);
       onClick();
-    }, 1000); // Ajusta el tiempo según la duración de tu animación
+    }, 20); // Ajusta el tiempo según la duración de tu animación
   };
 
   return (
@@ -49,7 +49,7 @@ const AnimatedButton = ({ title, onClick }: { title: string; onClick: () => void
             transition={{ duration: 0.5 }}
             className="fixed inset-0 bg-gray-800 flex items-center justify-center z-50"
           >
-            <div className=""></div>
+         
           </motion.div>
         )}
       </AnimatePresence>
