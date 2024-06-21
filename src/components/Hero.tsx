@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
         </section>
       ) : (
         <Cotiza onClose={handleCloseCotiza} />
-      )}
+     )}
     </>
   );
 };
