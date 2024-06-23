@@ -64,7 +64,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
         className="absolute inset-0 object-cover w-full h-full"
       />
       <ToastContainer />
-      <div className="absolute md:top-10 md:right-10 top-5 right-10 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
+      <div className="absolute md:top-10 md:right-10 top-5 right-5 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
         <button onClick={onClose} className="flex items-center text-white hover:text-gray-300">
           <span className="mr-2 cursor-pointer">Close</span>
           <img src="/close.png" alt="Close" className="w-6 h-6 cursor-pointer" />
