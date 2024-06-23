@@ -76,7 +76,7 @@ export const ServiciosCards = () => {
     },
   ];
   return (
-    <section id="servicios" className="container py-8 space-y-8 h-[1000px]">
+    <section id="servicios" className="container py-8 space-y-8 h-[1000px] md:h-[700px]">
       <p className="text-lg md:text-xl text-muted-foreground mx-auto lg:mx-0 text-center roboto-Font mb-8">
       {t("services_cards.title")}
       </p>

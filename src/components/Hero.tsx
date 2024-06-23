@@ -7,9 +7,6 @@ import { useTranslation } from "react-i18next";
 export const Hero: React.FC = () => {
   const { t } = useTranslation("global");
   const [showCotiza, setShowCotiza] = useState(false);
-  //const [titleText, setTitleText] = useState("DUO");
-  //const [subtitleText, setSubtitleText] = useState("TECH");
-  //const containerRef = useRef<HTMLDivElement>(null);
 
   const handleOpenCotiza = () => {
     setShowCotiza(true);
@@ -22,35 +19,11 @@ export const Hero: React.FC = () => {
     document.body.classList.remove("modal-open");
   };
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  //     if (scrollTop > 80) { // Cambia este valor según sea necesario para ajustar el comportamiento del scroll
-  //       setTitleText(t("hero.title"));
-  //       setSubtitleText(t("hero.subtitle"));
-  //     } else {
-  //       setTitleText("DUO");
-  //       setSubtitleText("TECH");
-  //     }
-
-  //     const container = containerRef.current;
-  //     if (container) {
-  //       container.style.transform = `translateX(${-scrollTop}px)`;
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [t]);
-
   return (
     <>
       <section className="flex justify-center h-[700px] mb-14">
         <div className="flex flex-col justify-center items-center">
-          <main className="mt-96 text-center  font-medium ">
+          <main className="mt-96 text-center font-medium hero-title">
             <h1 className="text-6xl md:text-8xl lg:text-9x1">
               <span className=" inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
                 {t("hero.title")}

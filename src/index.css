@@ -186,7 +186,10 @@ body {
   border-radius: 10px;
 }
 /* Cotiza.css */
-@keyframes opaIn {
+.modal-open {
+  overflow: hidden;
+}
+@keyframes In {
   from {
     opacity: 0;
   }
@@ -194,12 +197,23 @@ body {
     opacity: 1;
   }
 }
-.modal-open {
-  overflow: hidden;
+@keyframes Out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
+
 #cotiza {
-  animation: opaIn 1s ease-in-out forwards;
+  animation: In 1s ease-in-out forwards;
 }
+
+#cotiza.fade-out {
+  animation: Out 1s ease-in-out forwards;
+}
+
 .cotiza-form {
   background: transparent;
 }
@@ -211,6 +225,8 @@ body {
   width: 100%;
   padding: 20px 0;
   color: #fff; /* Texto blanco */
+  transition-property: border-bottom-color;
+  transition-duration: 0.3s;
 }
 
 .cotiza-input::placeholder {
@@ -219,7 +235,7 @@ body {
 
 .cotiza-input:focus {
   outline: none;
-  border-bottom: 2px solid #fff; /* Línea blanca */
+  border-bottom: 2px solid #879EAD; /* Línea blanca */
 }
 
 .animated-link {
@@ -270,3 +286,37 @@ body {
 .i-05 {
   --i: 0.5;
 }
+section {
+ 
+  view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show-section;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+}
+@keyframes show-section {
+  0% {
+      opacity: 0 !important;
+      transform: scale(0.25);
+  }
+  25% {
+      opacity: 0.5 !important;
+      transform: scale(0.5);
+  }
+  50% {
+      opacity: 0.75 !important;
+      transform: scale(0.75);
+  }
+  75% {
+      opacity: 0.9 !important;
+      transform: scale(0.9);
+  }
+  100% {
+      opacity: 1 !important;
+      transform: scale(1);
+  }
+}
+
