@@ -44,7 +44,7 @@ const AnimatedButton = ({ title, onClick }: { title: string; onClick: () => void
         {showAnimation && (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={{ opacity: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
             className="fixed inset-0 bg-gray-800 flex items-center justify-center z-50"
