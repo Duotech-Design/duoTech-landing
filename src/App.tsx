@@ -7,7 +7,7 @@ import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import "./App.css";
 import { Contacto } from "./components/Contacto";
-import { Cotiza } from "./components/Cotiza";
+//import { Cotiza } from "./components/Cotiza";
 import { Us } from "./components/Us";
 import { ServiciosCards } from "./components/ServiciosCards";
 import { Proyectos } from "./components/Proyectos";
