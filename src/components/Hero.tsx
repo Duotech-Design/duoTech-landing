@@ -13,10 +13,13 @@ export const Hero: React.FC = () => {
 
   const handleOpenCotiza = () => {
     setShowCotiza(true);
+    document.body.classList.add("modal-open");
+   
   };
 
   const handleCloseCotiza = () => {
     setShowCotiza(false);
+    document.body.classList.remove("modal-open");
   };
 
   useEffect(() => {
