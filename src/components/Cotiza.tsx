@@ -76,7 +76,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
             ¡Queremos conocerte,<br />cuéntanos sobre tu proyecto!
           </h1>
         </div>
-        <div className="w-3/4 px-4 lg:px-8 mt-20 lg:mt-24 mb-24 lg:mb-0">
+        <div className="w-full md:w-3/4 px-4 lg:px-8 mt-20 lg:mt-24 mb-24 lg:mb-0">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form">
             <div className="mb-4">
               <input

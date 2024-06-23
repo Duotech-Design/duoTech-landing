@@ -11,6 +11,7 @@ interface ServiciosProps {
 
 // Definición de servicios
 
+
 // Interface de propiedades de cotización
 interface CotizacionProps {
   title: string;
@@ -97,11 +98,7 @@ export const ServiciosCards = () => {
                     <div className="font-bold text-xl mb-2">
                       {feature.title}
                     </div>
-                    <div className="lg:hidden space-y-2"> {/* Visible solo en mobile */}
-                      <GenericButton2 title="Más info" />
-                      <GenericButton2 title="Contáctanos" />
-                    </div>
-                    <p className="hidden lg:block text-gray-700 roboto-Font text-base"> {/* Visible solo en desktop y tablet */}
+                    <p className=" text-gray-700 roboto-Font text-base">
                       {feature.description}
                     </p>
                   </div>
