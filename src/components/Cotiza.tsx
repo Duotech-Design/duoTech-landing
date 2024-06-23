@@ -64,7 +64,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
         className="absolute inset-0 object-cover w-full h-full"
       />
       <ToastContainer />
-      <div className="absolute md:top-10 md:right-10 top-5 right-5 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
+      <div className="absolute md:top-10 md:right-10 top-5 right-10 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
         <button onClick={onClose} className="flex items-center text-white hover:text-gray-300">
           <span className="mr-2 cursor-pointer">Close</span>
           <img src="/close.png" alt="Close" className="w-6 h-6 cursor-pointer" />
@@ -76,7 +76,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
             ¡Queremos conocerte,<br />cuéntanos sobre tu proyecto!
           </h1>
         </div>
-        <div className="w-3/4 px-4 lg:px-8 mt-16 lg:mt-24 mb-24 lg:mb-0">
+        <div className="w-3/4 px-4 lg:px-8 mt-20 lg:mt-24 mb-24 lg:mb-0">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form">
             <div className="mb-4">
               <input

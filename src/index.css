@@ -140,8 +140,7 @@ body {
 .flip-card {
   /*background-color: transparent;*/
   perspective: 1000px;
-  width: 550px;
-  height: 550px; /* Ajusta la altura para que sea responsive */
+   /* Ajusta la altura para que sea responsive */
   border-radius: 10px; /* Borde redondeado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
 }
@@ -195,7 +194,9 @@ body {
     opacity: 1;
   }
 }
-
+.modal-open {
+  overflow: hidden;
+}
 #cotiza {
   animation: opaIn 1s ease-in-out forwards;
 }
