@@ -119,7 +119,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
           </form>
         </div>
       </div>
-      <div className="w-full text-left text-white px-4 lg:px-16 absolute bottom-20 mb-8">
+      <div className="w-full text-left text-white px-4 lg:px-16 absolute bottom-20 mb-8 cotiza-text-form">
         <p className="text-xs md:text-sm lg:text-xl w-full lg:w-1/2">
           ¡Estamos aquí para ayudarte! Contáctanos hoy, conoce a nuestro equipo
           y descubre si somos la opción ideal para tus proyectos y objetivos.

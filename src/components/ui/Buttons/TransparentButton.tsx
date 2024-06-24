@@ -12,7 +12,7 @@ const TransparentButton = ({ title }: { title: string }) => {
       className="bg-transparent flex justify-center items-center text-white 
         font-semibold transition-text-color duration-300 hover:text-[#879EAD] 
         py-2 px-2 md:px-8 border border-white hover:border-[#879EAD] rounded-full 
-        md:text-lg text-xs transition-transform duration-300 hover:scale-110"
+        md:text-lg text-xs transition-transform duration-300 hover:scale-110 cotiza-button"
     >
       <MessengerHover text={title} isHovered={isHovered} />
       <svg

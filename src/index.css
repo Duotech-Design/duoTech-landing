@@ -227,6 +227,10 @@ body {
   color: #fff; /* Texto blanco */
   transition-property: border-bottom-color;
   transition-duration: 0.3s;
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
 .cotiza-input::placeholder {
@@ -238,6 +242,19 @@ body {
   border-bottom: 2px solid #879EAD; /* Línea blanca */
 }
 
+.cotiza-button {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+.cotiza-text-form {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
 .animated-link {
   position: relative;
 
@@ -352,4 +369,18 @@ section {
       transform: translateX(0); /* Termina en la posición original */
       opacity: 1; /* Termina con opacidad 1 (completamente visible) */
   }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50%, to {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+  }
+
 }
