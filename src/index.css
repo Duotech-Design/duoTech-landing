@@ -287,7 +287,6 @@ body {
   --i: 0.5;
 }
 section {
- 
   view-timeline-name: --image;
 	view-timeline-axis: block;
 
@@ -320,3 +319,37 @@ section {
   }
 }
 
+.hero-title {
+  animation: moveLeft 2s ease forwards;
+  animation-fill-mode: both;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+.hero-subtitle{
+  animation: moveRight 2s ease forwards;
+  animation-fill-mode: both;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+/* Definición de la animación */
+@keyframes moveLeft {
+  from {
+      transform: translateX(100px); /* Empieza movido hacia la derecha */
+      opacity: 0; /* Empieza con opacidad 0 (invisible) */
+  }
+  to {
+      transform: translateX(0); /* Termina en la posición original */
+      opacity: 1; /* Termina con opacidad 1 (completamente visible) */
+  }
+}
+
+@keyframes moveRight {
+  from {
+      transform: translateX(-100px); /* Empieza movido hacia la izquierda */
+      opacity: 0; /* Empieza con opacidad 0 (invisible) */
+  }
+  to {
+      transform: translateX(0); /* Termina en la posición original */
+      opacity: 1; /* Termina con opacidad 1 (completamente visible) */
+  }
+}

@@ -23,13 +23,13 @@ export const Hero: React.FC = () => {
     <>
       <section className="flex justify-center h-[700px] mb-14">
         <div className="flex flex-col justify-center items-center">
-          <main className="mt-96 text-center font-medium hero-title">
-            <h1 className="text-6xl md:text-8xl lg:text-9x1">
+          <main className="mt-96 text-center font-medium">
+            <h1 className="text-6xl md:text-8xl lg:text-9x1 hero-title">
               <span className=" inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
                 {t("hero.title")}
               </span>
             </h1>
-            <h1 className="text-6xl md:text-8xl lg:text-9x1">
+            <h1 className="text-6xl md:text-8xl lg:text-9x1 hero-subtitle">
               <span className="  inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] text-transparent bg-clip-text">
                 {t("hero.subtitle")}
               </span>
@@ -48,10 +48,10 @@ export const Hero: React.FC = () => {
           </div>
         </div>
         <div className="shadow"></div>
-        {showCotiza && <div className="fixed top-0 left-0 w-full z-50">
+      </section>
+        {showCotiza && <div className="fixed top-0 left-0 w-full z-[9999]">
           <Cotiza onClose={handleCloseCotiza} />
         </div>}
-      </section>
     </>
   );
 };
