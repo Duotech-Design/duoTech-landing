@@ -22,14 +22,14 @@ export const Hero: React.FC = () => {
   return (
     <>
       <section className="flex justify-center h-[700px] mb-14">
-        <div className="flex flex-col justify-center items-center">
-          <main className="mt-96 text-center font-medium">
-            <h1 className="text-6xl md:text-8xl lg:text-9x1 hero-title">
+        <div className="mt-96 flex flex-col justify-center items-center">
+          <main className="text-center font-medium headings">
+            <h1 className="text-5xl md:text-8xl lg:text-9x1 first-heading">
               <span className=" inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
                 {t("hero.title")}
               </span>
             </h1>
-            <h1 className="text-6xl md:text-8xl lg:text-9x1 hero-subtitle">
+            <h1 className="text-5xl md:text-8xl lg:text-9x1 second-heading">
               <span className="  inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] text-transparent bg-clip-text">
                 {t("hero.subtitle")}
               </span>

@@ -384,3 +384,37 @@ section {
   }
 
 }
+/*animacion principal */
+.headings {
+  animation: headings 4s both;
+}
+.first-heading {
+  animation: first-heading 4s both;
+}
+.second-heading {
+  animation: second-heading 4s both;
+}
+@keyframes first-heading {
+  from{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to, 50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes second-heading {
+  from, 50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes headings {
+  from, 50% {
+    transform: translateY(50%) scale(1.5);
+  }
+  to {
+    transform: none;
+  }
+}
