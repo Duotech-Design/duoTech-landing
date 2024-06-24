@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root {
+  --scroll-offset: 0px;
+}
 body {
   font-family: "Inconsolata", monospace;
   font-size: 1rem;
@@ -310,64 +312,29 @@ section {
 	animation-timeline: --image;
 	animation-name: show-section;
 
-	animation-range: entry 25% cover 30%;
+	animation-range: entry 5% cover 30%;
 	animation-fill-mode: both;
 }
 @keyframes show-section {
   0% {
-      opacity: 0 !important;
-      transform: scale(0.25);
+      opacity: 0;
+      transform: scale(0.30);
   }
   25% {
-      opacity: 0.5 !important;
+      opacity: 0.5;
       transform: scale(0.5);
   }
   50% {
-      opacity: 0.75 !important;
+      opacity: 0.75;
       transform: scale(0.75);
   }
   75% {
-      opacity: 0.9 !important;
+      opacity: 0.9;
       transform: scale(0.9);
   }
   100% {
-      opacity: 1 !important;
+      opacity: 1;
       transform: scale(1);
-  }
-}
-
-.hero-title {
-  animation: moveLeft 2s ease forwards;
-  animation-fill-mode: both;
-  animation-iteration-count: 5;
-  animation-direction: alternate;
-}
-.hero-subtitle{
-  animation: moveRight 2s ease forwards;
-  animation-fill-mode: both;
-  animation-iteration-count: 5;
-  animation-direction: alternate;
-}
-/* Definición de la animación */
-@keyframes moveLeft {
-  from {
-      transform: translateX(100px); /* Empieza movido hacia la derecha */
-      opacity: 0; /* Empieza con opacidad 0 (invisible) */
-  }
-  to {
-      transform: translateX(0); /* Termina en la posición original */
-      opacity: 1; /* Termina con opacidad 1 (completamente visible) */
-  }
-}
-
-@keyframes moveRight {
-  from {
-      transform: translateX(-100px); /* Empieza movido hacia la izquierda */
-      opacity: 0; /* Empieza con opacidad 0 (invisible) */
-  }
-  to {
-      transform: translateX(0); /* Termina en la posición original */
-      opacity: 1; /* Termina con opacidad 1 (completamente visible) */
   }
 }
 
@@ -417,4 +384,13 @@ section {
   to {
     transform: none;
   }
+}
+
+.animated-title {   
+  transform: translateX(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
+    transition: transform 0.1s linear;
+}
+.animated-subtitle {
+  transform: translateX(calc(1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
+  transition: transform 0.1s linear;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedButton from "./ui/Buttons/AnimatedButton";
 import Messenger from "./Messenger";
 import { Cotiza } from "./Cotiza";
@@ -7,7 +7,6 @@ import { useTranslation } from "react-i18next";
 export const Hero: React.FC = () => {
   const { t } = useTranslation("global");
   const [showCotiza, setShowCotiza] = useState(false);
-
   const handleOpenCotiza = () => {
     setShowCotiza(true);
     document.body.classList.add("modal-open");
@@ -19,17 +18,31 @@ export const Hero: React.FC = () => {
     document.body.classList.remove("modal-open");
   };
 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log("ALISON", window.scrollY)
+        document.documentElement.style.setProperty('--scroll-offset', `${window.scrollY}`);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
   return (
     <>
       <section className="flex justify-center h-[700px] mb-14">
         <div className="mt-96 flex flex-col justify-center items-center">
-          <main className="text-center font-medium headings">
-            <h1 className="text-5xl md:text-8xl lg:text-9x1 first-heading">
+          <main className="text-center font-medium headings ">
+            <h1 className="text-5xl md:text-8xl lg:text-9x1 first-heading animated-title">
               <span className=" inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
                 {t("hero.title")}
               </span>
             </h1>
-            <h1 className="text-5xl md:text-8xl lg:text-9x1 second-heading">
+            <h1 className="text-5xl md:text-8xl lg:text-9x1 second-heading animated-subtitle">
               <span className="  inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] text-transparent bg-clip-text">
                 {t("hero.subtitle")}
               </span>
@@ -49,9 +62,9 @@ export const Hero: React.FC = () => {
         </div>
         <div className="shadow"></div>
       </section>
-        {showCotiza && <div className="fixed top-0 left-0 w-full z-[9999]">
-          <Cotiza onClose={handleCloseCotiza} />
-        </div>}
+      {showCotiza && <div className="fixed top-0 left-0 w-full z-[9999]">
+        <Cotiza onClose={handleCloseCotiza} />
+      </div>}
     </>
   );
 };
