@@ -391,6 +391,6 @@ section {
     transition: transform 0.1s linear;
 }
 .animated-subtitle {
-  transform: translateX(calc(1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
+  transform: translateY(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
   transition: transform 0.1s linear;
 }
