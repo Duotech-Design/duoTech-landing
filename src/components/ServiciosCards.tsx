@@ -76,7 +76,12 @@ export const ServiciosCards = () => {
     },
   ];
   return (
-    <section id="servicios" className="container py-8 space-y-8 h-[1000px] md:h-[700px]">
+    <section id="servicios" className="container py-8 space-y-8 h-[1130px] md:h-[830px]">
+       <div className="mt-4 md:mt-8">
+        <h1 className="text-3xl md:text-5xl">
+        {t("services.subContent_6")}
+        </h1>
+      </div>
       <p className="text-lg md:text-xl text-muted-foreground mx-auto lg:mx-0 text-center roboto-Font mb-8">
       {t("services_cards.title")}
       </p>

@@ -44,12 +44,6 @@ export const Servicios = () => {
           />
         </div>
       </div>
-
-      <div className="mt-4 md:mt-8">
-        <h1 className="text-3xl md:text-5xl">
-        {t("services.subContent_6")}
-        </h1>
-      </div>
     </section>
   );
 };
