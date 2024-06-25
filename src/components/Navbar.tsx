@@ -17,7 +17,7 @@ import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LanguageToggle } from "./mode-toggle-lenguage";
 import RosslerComponent from "./rossler/RosslerAttractor";
-import MessengerHover from "./MessengerHover"; // Importa el componente MessengerHover
+import MessengerHover from "./MessengerHover";
 import { useTranslation } from "react-i18next";
 
 interface RouteProps {
@@ -40,10 +40,6 @@ export const Navbar = () => {
       label: t("navbar.projects"),
     },
     {
-      href: "#cotiza",
-      label: t("navbar.price"),
-    },
-    {
       href: "#contacto",
       label: t("navbar.contact"),
     },
@@ -51,75 +47,77 @@ export const Navbar = () => {
   return (
     <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between items-center">
           <NavigationMenuItem className="flex justify-start max-w-[100px] md:w-full">
             <div className="font-bold text-xl flex">
               <RosslerComponent />
             </div>
           </NavigationMenuItem>
-          {/* mobile */}
 
-          <div className="flex w-auto md:hidden">
-            <LanguageToggle />
-            <ModeToggle />
+          <div className="flex items-center">
+            {/* mobile */}
+            <div className="flex w-auto md:hidden">
+              <LanguageToggle />
+              <ModeToggle />
 
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger className="px-2">
-                <Menu
-                  className="flex md:hidden h-5 w-5"
-                  onClick={() => setIsOpen(true)}
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger className="px-2">
+                  <Menu
+                    className="flex md:hidden h-5 w-5"
+                    onClick={() => setIsOpen(true)}
+                  >
+                    <span className="sr-only">Menu Icon</span>
+                  </Menu>
+                </SheetTrigger>
+
+                <SheetContent side={"left"}>
+                  <SheetHeader>
+                    <SheetTitle className="font-bold text-xl">DuoTech</SheetTitle>
+                  </SheetHeader>
+                  <nav className="flex flex-col justify-center items-center gap-2 mt-4">
+                    {routeList.map(({ href, label, icon }: RouteProps, i) => (
+                      <a
+                        key={label}
+                        href={href}
+                        onClick={() => setIsOpen(false)}
+                        className={buttonVariants({ variant: "ghost" })}
+                      >
+                        <MessengerHover
+                          text={label}
+                          isHovered={hoveredIndex === i}
+                        />
+                        {icon && <span className="ml-1">{icon}</span>}
+                      </a>
+                    ))}
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </div>
+
+            {/* desktop */}
+            <nav className="hidden md:flex gap-2">
+              {routeList.map((route: RouteProps, i) => (
+                <a
+                  href={route.href}
+                  key={i}
+                  className={`text-[17px] ${buttonVariants({
+                    variant: "ghost",
+                  })}`}
+                  onMouseEnter={() => setHoveredIndex(i)}
+                  onMouseLeave={() => setHoveredIndex(null)}
                 >
-                  <span className="sr-only">Menu Icon</span>
-                </Menu>
-              </SheetTrigger>
-
-              <SheetContent side={"left"}>
-                <SheetHeader>
-                  <SheetTitle className="font-bold text-xl">DuoTech</SheetTitle>
-                </SheetHeader>
-                <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label, icon }: RouteProps, i) => (
-                    <a
-                      key={label}
-                      href={href}
-                      onClick={() => setIsOpen(false)}
-                      className={buttonVariants({ variant: "ghost" })}
-                    >
-                      <MessengerHover
-                        text={label}
-                        isHovered={hoveredIndex === i}
-                      />
-                      {icon && <span className="ml-1">{icon}</span>}
-                    </a>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </div>
-
-          {/* desktop */}
-          <nav className="hidden md:flex gap-2">
-            {routeList.map((route: RouteProps, i) => (
-              <a
-                href={route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
-                  variant: "ghost",
-                })}`}
-                onMouseEnter={() => setHoveredIndex(i)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <MessengerHover
-                  text={route.label}
-                  isHovered={hoveredIndex === i}
-                />
-                {route.icon && <span className="ml-1">{route.icon}</span>}
-              </a>
-            ))}
-          </nav>
-          <div className="hidden md:flex gap-2">
-            <LanguageToggle />
-            <ModeToggle />
+                  <MessengerHover
+                    text={route.label}
+                    isHovered={hoveredIndex === i}
+                  />
+                  {route.icon && <span className="ml-1">{route.icon}</span>}
+                </a>
+              ))}
+            </nav>
+            <div className="hidden md:flex gap-2">
+              <LanguageToggle />
+              <ModeToggle />
+            </div>
           </div>
         </NavigationMenuList>
       </NavigationMenu>
