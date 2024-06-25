@@ -305,7 +305,7 @@ body {
 .i-05 {
   --i: 0.5;
 }
-section {
+/* section {
   view-timeline-name: --image;
 	view-timeline-axis: block;
 
@@ -336,7 +336,7 @@ section {
       opacity: 1;
       transform: scale(1);
   }
-}
+} */
 
 @keyframes slide-up {
   from {
