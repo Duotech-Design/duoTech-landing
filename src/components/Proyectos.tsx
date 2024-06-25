@@ -13,8 +13,8 @@ export const Proyectos = () => {
       <div className="relative ">
         <img
           src={proyectosImage}
-          className="object-cover h-[600px] w-auto  rounded-sm"
-          alt="Nuestros Proyectos"
+          className="object-cover h-[600px] w-[850px] opacity-75 rounded-sm"
+          alt="Proyectos"
         />
         <div className="md:flex md:items-center mt-6">
           <div className="flex-grow mb-4 md:mb-0">

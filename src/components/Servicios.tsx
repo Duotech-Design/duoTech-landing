@@ -1,5 +1,5 @@
 import GenericButton2 from "./ui/Buttons/GenericButton2";
-import servicios from "/servicios.jpg";
+import servicios2 from "/servicios2.png";
 import { useTranslation } from "react-i18next";
 
 export const Servicios = () => {
@@ -36,10 +36,10 @@ export const Servicios = () => {
             </div>
           </div>
         </div>
-        <div className="w-4/4 md:w-3/4 flex  justify-end">
+        <div className="w-4/4 md:w-3/4 flex justify-end">
           <img
-            src={servicios}
-            className="object-contain h-[300px] w-auto rounded-sm opacity-75"
+            src={servicios2}
+            className="object-contain h-[450px] w-auto rounded-sm opacity-75"
             alt="Hero"
           />
         </div>

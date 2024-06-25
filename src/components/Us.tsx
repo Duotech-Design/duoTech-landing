@@ -12,7 +12,7 @@ export const Us = () => {
       </div>
       <div className="w-full ">
         <div className="px-3  md:mt-0 mt-3">
-          <p className=" roboto-Font text-xs md:text-sm lg:text-base">
+          <p className=" roboto-Font  text-xs md:text-sm lg:text-base">
             {" "}
             {t("us.content")}
           </p>
@@ -32,7 +32,7 @@ export const Us = () => {
         </div>
       </div>
       <div className="w-4/4 md:w-3/4">
-        <img src={imageUs} className="object-cover h-[400px] w-auto  rounded-sm"></img>
+        <img src={imageUs} className="object-cover h-[350px] w-auto opacity-75 rounded-sm"></img>
       </div>
     </section>
   );
