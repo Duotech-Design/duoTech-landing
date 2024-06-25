@@ -2,13 +2,19 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import MessengerHover from "@/components/MessengerHover";
 
-const GenericButton2 = ({ title }: { title: string }) => {
+interface GenericButton2Props {
+  title: string;
+  onClick?: () => void;
+}
+
+const GenericButton2: React.FC<GenericButton2Props> = ({ title, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.button
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
       className="bg-black flex justify-center items-center font-roboto-Font text-[#F5F5F5] font-semibold py-2 px-4 md:px-4 border border-[#252525] rounded-full hover:bg-[#879EAD] hover:text-white hover:border-[#879EAD] md:text-base text-xs w-full md:w-auto"
     >
       <MessengerHover text={title} isHovered={isHovered} />
