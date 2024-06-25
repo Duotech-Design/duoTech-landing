@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import imageCard2 from "/imageCard2.jpg";
 import imageCard from "/imageCard.png";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
@@ -106,7 +106,7 @@ export const ServiciosCards = () => {
             );
             return (
               <div key={index} className="flip-card w-full h-[450px] md:h-[600px] md:w-1/2">
-                <div className="flip-card-inner">
+                <div className="flip-card-inner group">
                   <div className="flip-card-front bg-white">
                     <img
                       className="contrast-50 w-full h-48 md:h-[450px] object-cover rounded-t-lg"
@@ -123,15 +123,15 @@ export const ServiciosCards = () => {
                     </div>
                   </div>
                   <div className="flip-card-back p-6 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg">
-                    <h1 className="text-lg md:text-xl font-bold mb-4">
+                    <h1 className="text-lg md:text-xl font-bold mb-4 group-hover:md:text-3xl">
                       {pricing?.title}
                     </h1>
-                    <p className="text-sm md:text-base mb-4">
+                    <p className="text-sm md:text-base mb-4 group-hover:md:text-xl">
                       {pricing?.description}
                     </p>
                     <ul className="list-none mb-4">
                       {pricing?.benefitList.map((benefit, idx) => (
-                        <li key={idx} className="flex items-start text-sm md:text-base">
+                        <li key={idx} className="flex items-start text-sm md:text-base group-hover:md:text-xl">
                           <img
                             src="/checkmark.svg"
                             alt="checkmark"
@@ -141,7 +141,11 @@ export const ServiciosCards = () => {
                         </li>
                       ))}
                     </ul>
-                    <GenericButton2 title={t("services_cards.button")} onClick={handleOpenCotiza} />
+                    <GenericButton2
+                      title={t("services_cards.button")}
+                      onClick={handleOpenCotiza}
+                      className="group-hover:md:py-3 group-hover:md:px-5 group-hover:md:text-xl"
+                    />
                   </div>
                 </div>
               </div>

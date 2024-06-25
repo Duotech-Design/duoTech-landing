@@ -5,9 +5,10 @@ import MessengerHover from "@/components/MessengerHover";
 interface GenericButton2Props {
   title: string;
   onClick?: () => void;
+  className?: string;  // Añadir la propiedad className
 }
 
-const GenericButton2: React.FC<GenericButton2Props> = ({ title, onClick }) => {
+const GenericButton2: React.FC<GenericButton2Props> = ({ title, onClick, className }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -15,7 +16,7 @@ const GenericButton2: React.FC<GenericButton2Props> = ({ title, onClick }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}
-      className="bg-black flex justify-center items-center font-roboto-Font text-[#F5F5F5] font-semibold py-2 px-4 md:px-4 border border-[#252525] rounded-full hover:bg-[#879EAD] hover:text-white hover:border-[#879EAD] md:text-base text-xs w-full md:w-auto"
+      className={`bg-black flex justify-center items-center font-roboto-Font text-[#F5F5F5] font-semibold py-2 px-4 md:px-4 border border-[#252525] rounded-full hover:bg-[#879EAD] hover:text-white hover:border-[#879EAD] md:text-base text-xs w-full md:w-auto ${className}`}  // Incluir className
     >
       <MessengerHover text={title} isHovered={isHovered} />
       <svg
