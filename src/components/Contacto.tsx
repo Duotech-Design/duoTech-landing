@@ -10,9 +10,9 @@ export const Contacto = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2000); // Cambia cada 2 segundos (2000 ms)
+    }, 2000);
     
-    return () => clearInterval(interval); // Limpiar el intervalo al desmontar el componente
+    return () => clearInterval(interval);
   }, []);
   
   return (

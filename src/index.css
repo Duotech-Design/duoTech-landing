@@ -88,29 +88,6 @@ body {
     visibility: hidden;
   }
 }
-
-.animated-text::before {
-  content: "NUEVO";
-  animation: textAnimation infinite 8s;
-}
-
-@keyframes textAnimation {
-  0% {
-    content: "NUEVO";
-  }
-  25% {
-    content: "DIVERTIDO";
-  }
-  50% {
-    content: "ÚNICO";
-  }
-  75% {
-    content: "ORIGINAL";
-  }
-  100% {
-    content: "NUEVO";
-  }
-}
 /* animation.css */
 .navbar-item {
   position: relative;
