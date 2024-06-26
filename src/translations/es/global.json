@@ -81,18 +81,19 @@
         "button": "Ver proyecto"
     },
     "cotiza": {
-        "title": "CONTÁCTANOS",
-        "subtitle": "EMPECEMOS A CONSTRUIR UN NEGOCIO DURADERO",
-        "content_1": "Con tantos diseñadores y estudios para elegir, te encuentras ante un dilema de opciones. Elegir uno es difícil, seleccionar el adecuado es aún más complicado. Queremos asegurarnos de que tomes la decisión correcta desde el principio.",
-        "content_2": "Contáctanos hoy mismo, conoce al equipo y veamos si somos la opción ideal para lo que quieres hacer y a dónde quieres llegar.",
+        "title": "¡Queremos conocerte,",
+        "title_2": "cuéntanos sobre tu proyecto!",
+        "content_1": "¡Estamos aquí para ayudarte! Contáctanos, conoce a nuestro equipo y descubre si somos la opción ideal para tus proyectos y objetivos. ",
+        "content_2": "¡Haz la elección correcta desde el principio! ",
+      
         "form": {
-            "name": "Nombre Completo",
-            "email": "Correo",
-            "phone": "Teléfono",
-            "message": "Cuéntanos sobre tu proyecto",
-            "send": "Enviar"
+          "name": "Nombre completo",
+          "email": "Email",
+          "phone": "Teléfono",
+          "message": "Cuentanos sobre tu proyecto",
+          "send": "Enviar"
         }
-    },
+      },
     "contact": {
         "title": "SI BUSCAS ALGO ...",
         "subContent_1": "EMPECEMOS A",

@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 import TransparentButton from "./ui/Buttons/TransparentButton";
+import { useTranslation } from "react-i18next";
 
 // Definir el esquema de validación con Yup
 const validationSchema = Yup.object().shape({
@@ -20,6 +21,7 @@ const validationSchema = Yup.object().shape({
 });
 
 export const Cotiza = ({ onClose }: { onClose: () => void }) => {
+  const { t } = useTranslation("global");
   const {
     register,
     handleSubmit,
@@ -65,23 +67,34 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
       />
       <ToastContainer />
       <div className="absolute md:top-10 md:right-10 top-5 right-5 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
-        <button onClick={onClose} className="flex items-center text-white hover:text-gray-300">
+        <button
+          onClick={onClose}
+          className="flex items-center text-white hover:text-gray-300"
+        >
           <span className="mr-2 cursor-pointer">Close</span>
-          <img src="/close.png" alt="Close" className="w-6 h-6 cursor-pointer" />
+          <img
+            src="/close.png"
+            alt="Close"
+            className="w-6 h-6 cursor-pointer"
+          />
         </button>
       </div>
       <div className="md:px-16 flex flex-col lg:flex-row items-start justify-between h-full py-24 relative z-10">
         <div className="w-full text-white px-4 lg:px-0 mt-8 lg:mt-0 text-left space-y-8">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-light">
-            ¡Queremos conocerte,<br />cuéntanos sobre tu proyecto!
+            {t("cotiza.title")}
+            <br /> {t("cotiza.title_2")}
           </h1>
         </div>
         <div className="w-full md:w-3/4 px-4 lg:px-8 mt-20 lg:mt-24 mb-24 lg:mb-0">
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="space-y-4 text-sm md:text-base lg:text-2xl cotiza-form"
+          >
             <div className="mb-4">
               <input
                 type="text"
-                placeholder="Nombre completo"
+                placeholder={t("cotiza.form.name")}
                 {...register("name")}
                 className="cotiza-input"
               />
@@ -90,7 +103,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
             <div className="mb-4">
               <input
                 type="email"
-                placeholder="Email"
+                placeholder={t("cotiza.form.email")}
                 {...register("email")}
                 className="cotiza-input"
               />
@@ -99,7 +112,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
             <div className="mb-4">
               <input
                 type="text"
-                placeholder="Teléfono"
+                placeholder={t("cotiza.form.phone")}
                 {...register("phone")}
                 className="cotiza-input"
               />
@@ -107,23 +120,22 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
             </div>
             <div className="mb-4">
               <textarea
-                placeholder="Cuéntanos sobre tu proyecto"
+                placeholder={t("cotiza.form.message")}
                 {...register("message")}
                 className="cotiza-input"
               />
               <p className="text-red-500 mt-1">{errors.message?.message}</p>
             </div>
             <div className="flex justify-end">
-              <TransparentButton title="COTIZA TU PROYECTO" />
+              <TransparentButton title={t("cotiza.form.send")} />
             </div>
           </form>
         </div>
       </div>
       <div className="w-full text-left text-white px-4 lg:px-16 absolute bottom-20 mb-8 cotiza-text-form">
         <p className="text-xs md:text-sm lg:text-xl w-full lg:w-1/2">
-          ¡Estamos aquí para ayudarte! Contáctanos hoy, conoce a nuestro equipo
-          y descubre si somos la opción ideal para tus proyectos y objetivos.
-          <br />¡Haz la elección correcta desde el principio!
+          {t("cotiza.content_1")}
+          <br /> {t("cotiza.content_2")}
         </p>
       </div>
     </section>

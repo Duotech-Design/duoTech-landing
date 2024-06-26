@@ -81,10 +81,11 @@
       "button": "View project"
     },
     "cotiza": {
-      "title": "CONTACT US",
-      "subtitle": "LET'S BUILD A LASTING BUSINESS",
-      "content_1": "With so many designers and studios to choose from, you are faced with a dilemma of options. Choosing one is difficult, selecting the right one is even more challenging. We want to ensure you make the right decision from the start.",
-      "content_2": "Contact us today, meet the team, and see if we are the ideal choice for what you want to do and where you want to go.",
+      "title": "We want to get to know you! ",
+      "title_2": "Tell us about your project.",
+      "content_1": "We are here to help you. Contact us today, meet our team, and find out if we are the perfect fit for your projects and goals. ",
+      "content_2": "Make the right choice from the start!",
+     
       "form": {
         "name": "Full Name",
         "email": "Email",
