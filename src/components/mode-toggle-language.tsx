@@ -17,6 +17,7 @@ export function LanguageToggle() {
           <span className="ml-2">{t("navbar.language")}</span>
           <span className="ml-1">
             <svg
+              className="text-currentColor ml-1 md:ml-2"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="20"
@@ -24,7 +25,7 @@ export function LanguageToggle() {
             >
               <path
                 d="M12 6L12 18M12 18L17 13M12 18L7 13"
-                stroke="#000000"
+                   stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
