@@ -99,7 +99,13 @@
     "contact": {
         "title": "SI BUSCAS ALGO ...",
         "subContent_1": "EMPECEMOS A",
-        "subContent_2": "CREAR"
+        "subContent_2": "CREAR",
+        "words": {
+            "1": "NUEVO",
+            "2": "DIVERTIDO",
+            "3": "ÚNICO",
+            "4": "ORIGINAL"
+        }
     },
     "footer": {
         "status": "STATUS",

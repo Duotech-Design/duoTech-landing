@@ -100,7 +100,13 @@
     "contact": {
       "title": "IF YOU ARE LOOKING FOR SOMETHING...",
       "subContent_1": "LET'S START",
-      "subContent_2": "CREATING"
+      "subContent_2": "CREATING",
+      "words": {
+        "1": "NEW",
+        "2": "FUNNY",
+        "3": "UNIQUE",
+        "4": "ORIGINAL"
+    }
     },
     "footer": {
       "status": "STATUS",
