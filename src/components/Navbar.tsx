@@ -15,7 +15,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LanguageToggle } from "./mode-toggle-lenguage";
+import { LanguageToggle } from "./mode-toggle-language";
 import RosslerComponent from "./rossler/RosslerAttractor";
 import MessengerHover from "./MessengerHover";
 import { useTranslation } from "react-i18next";
