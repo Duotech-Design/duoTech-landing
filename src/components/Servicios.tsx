@@ -9,37 +9,40 @@ export const Servicios = () => {
       <h1 className="text-3xl md:text-5xl">
         {t("services.title")}
       </h1>
-      <div className="flex flex-col justify-between">
-        <div className="flex flex-col justify-start gap-8">
-          <p className="roboto-Font text-base md:text-xl">
-          {t("services.subtitle")}
-          </p>
-        </div>
-      </div>
-
-      <div className="md:flex md:flex-col! md:justify-between mt-8">
-        <div className="w-2/4">
-          <a href="https://wa.me/528122043750?text=Quiero%20más%20información">
-            <GenericButton2 title={t("services.button")} />
-          </a>
-        </div>
-        <div className="w-full grid grid-cols-2 px-3 mt-8 md:mt-3">
-          <div>
-            <span className="mt-4 md:mt-0">{t("services.subContent_1")}</span>
+      <div className="flex flex-col md:flex-row items-start justify-between">
+        <div className="pb-3 md:pb-0">
+          <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-start gap-8">
+              <p className="roboto-Font text-base md:text-xl">
+                {t("services.subtitle")}
+              </p>
+            </div>
           </div>
-          <div>
-            <div className="flex flex-wrap w-3/4">
-              <div>{t("services.subContent_2")}</div>
-              <div>{t("services.subContent_3")}</div>
-              <div>{t("services.subContent_4")}</div>
-              <div>{t("services.subContent_5")}</div>
+          <div className="md:flex md:flex-col! md:justify-between mt-8">
+            <div className="w-2/4">
+              <a href="https://wa.me/528122043750?text=Quiero%20más%20información">
+                <GenericButton2 title={t("services.button")} />
+              </a>
+            </div>
+            <div className="w-full grid grid-cols-2 px-3 mt-8 md:mt-3">
+              <div>
+                <span className="mt-4 md:mt-0">{t("services.subContent_1")}</span>
+              </div>
+              <div>
+                <div className="flex flex-wrap w-3/4">
+                  <div>{t("services.subContent_2")}</div>
+                  <div>{t("services.subContent_3")}</div>
+                  <div>{t("services.subContent_4")}</div>
+                  <div>{t("services.subContent_5")}</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="w-4/4 md:w-3/4 flex justify-end">
+        <div className="flex justify-end">
           <img
             src={servicios2}
-            className="object-contain h-[450px] w-auto rounded-sm opacity-75"
+            className=" w-auto rounded-sm opacity-75"
             alt="Hero"
           />
         </div>

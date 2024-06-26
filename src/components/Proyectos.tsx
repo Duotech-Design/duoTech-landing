@@ -6,14 +6,14 @@ export const Proyectos = () => {
   const { t } = useTranslation("global");
 
   return (
-    <section id="proyectos" className="container md:flex md:flex-col! py-24 sm:py-24">
+    <section id="proyectos" className="container md:flex md:flex-col! py-24 sm:py-24 md:justify-between">
       <div className="w-1/4 text-xl mb-3 md:mb-0">
         <h1>{t("projects.title")}</h1>
       </div>
-      <div className="relative ">
+      <div className="relative">
         <img
           src={proyectosImage}
-          className="object-cover h-[600px] w-[850px] opacity-75 rounded-sm"
+          className="object-cover h-[600px] w-[950px] opacity-75 rounded-sm"
           alt="Proyectos"
         />
         <div className="md:flex md:items-center mt-6">
