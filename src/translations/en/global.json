@@ -47,6 +47,7 @@
       "button": "Contact us",
       "card_1": {
         "title": "WEB DESIGN",
+        "description_front_card": "Make a strong first impression with our one-page website service, ensuring your launch is memorable and effective from the start.",
         "description": "A page with parallax effect. Efficient web solution that condenses all the essential information of your business into a single page, ideal for projects and promotional events, offering a direct and concise browsing experience for your visitors.",
         "benefistList": {
           "benefit_1": "Design proposal.",
@@ -62,6 +63,7 @@
       "card_2": {
         "title": "DEVELOPMENT",
         "description": "Web design focused on capturing attention and converting visitors into potential customers, optimizing the user experience, and highlighting your business's value proposition on a single page.",
+        "description_front_card": "Boost your conversions with a compelling landing page designed to captivate and engage visitors from the moment they arrive.",
         "benefistList": {
           "benefit_1": "Page with 10 sections.",
           "benefit_2": "Design proposal.",

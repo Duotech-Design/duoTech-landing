@@ -47,6 +47,7 @@
         "button": "Contáctanos",
         "card_1": {
             "title": "DISEÑO WEB",
+            "description_front_card": "Asegura una impresión memorable desde el primer día con nuestro servicio de one page web, ofreciendo una presentación atractiva y efectiva.",
             "description": "Una pag. con efecto parallax. Solución web eficiente que condensa toda la información esencial de tu negocio en una única página, ideal para proyectos y promociones puntuales, ofreciendo una experiencia de navegación directa y concisa para tus visitantes.",
             "benefistList": {
                 "benefit_1": "Propuesta de diseño.",
@@ -61,6 +62,7 @@
         },
         "card_2": {
             "title": "DESARROLLO",
+            "description_front_card": "Proporcionamos a tu negocio un lenguaje gráfico unificado y auténtico que conecta con tu audiencia en todos los puntos de contacto.",
             "description": "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
             "benefistList": {
                 "benefit_1": "Pag. con 10 secciones.",

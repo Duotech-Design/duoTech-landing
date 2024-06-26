@@ -76,14 +76,13 @@ export const ServiciosCards = () => {
   const features: ServiciosProps[] = [
     {
       title: "ONE PAGE WEBSITE",
-      description:
-        "La primera impresión es crucial. Nuestro servicio de one page web garantiza una presentación impactante y efectiva desde el primer vistazo.",
+      description: t("services_cards.card_1.description_front_card"),
       image: imageCard,
     },
     {
       title: "LANDING PAGE",
       description:
-        "Proporcionamos a tu negocio un lenguaje gráfico unificado y auténtico que conecta con tu audiencia en todos los puntos de contacto.",
+      t("services_cards.card_2.description_front_card"),
       image: imageCard2,
     },
   ];
