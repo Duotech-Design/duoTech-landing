@@ -22,7 +22,7 @@ export const Proyectos = () => {
             <p className="text-lg mt-4">{t("projects.subContent_2")}</p>
           </div>
           <div className="flex justify-end">
-          <GenericButton title={t("projects.button")} />
+          <GenericButton title={t("projects.button")} widthButton={true} />
           </div>
         </div>
       </div>
