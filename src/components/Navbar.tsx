@@ -32,15 +32,15 @@ export const Navbar = () => {
   const { t } = useTranslation("global");
   const routeList: RouteProps[] = [
     {
-      href: "#servicios",
+      href: "#a",
       label: t("navbar.services"),
     },
     {
-      href: "#proyectos",
+      href: "#b",
       label: t("navbar.projects"),
     },
     {
-      href: "#contacto",
+      href: "#c",
       label: t("navbar.contact"),
     },
   ];

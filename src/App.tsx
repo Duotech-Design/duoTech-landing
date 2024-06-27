@@ -21,8 +21,11 @@ function App() {
       <Us />
       {/*<HowItWorks /> */}
       <Servicios />
+      <div id="a"></div>
       <ServiciosCards />
+      <div id="b"></div>
       <Proyectos />
+      <div id="c"></div>
        {/*
       <Cotiza />
      
