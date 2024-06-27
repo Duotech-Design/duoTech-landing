@@ -13,11 +13,11 @@ export function LanguageToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="w-16 md:w-32 border-none">
-          <span className="ml-2">{t("navbar.language")}</span>
+        <Button variant="ghost" size="icon" className="w-16 md:w-20 border-none ">  {/* Removiendo padding y margin extras */}
+          <span className="">{t("navbar.language")}</span>
           <span className="ml-1">
             <svg
-              className="text-currentColor ml-1 md:ml-2"
+              className="text-currentColor "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="20"

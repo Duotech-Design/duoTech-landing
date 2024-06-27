@@ -13,7 +13,7 @@ export const Proyectos = () => {
       <div className="relative">
         <img
           src={proyectosImage}
-          className="object-cover h-[600px] w-[950px] opacity-75 rounded-sm"
+          className="object-cover h-[600px] w-[850px] opacity-75 rounded-sm"
           alt="Proyectos"
         />
         <div className="md:flex md:items-center mt-6">
@@ -21,7 +21,9 @@ export const Proyectos = () => {
             <p className="text-lg">{t("projects.subContent_1")}</p>
             <p className="text-lg mt-4">{t("projects.subContent_2")}</p>
           </div>
-          <GenericButton title={t("projects.button")} />
+          <div className="flex justify-end">
+          <GenericButton title={t("projects.button")} widthButton={true} />
+          </div>
         </div>
       </div>
     </section>

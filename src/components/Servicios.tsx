@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 export const Servicios = () => {
   const { t } = useTranslation("global");
   return (
-    <section id="servicios" className="container space-y-8 mt-8">
+    <section  className="container space-y-8 mt-8">
       <h1 className="text-3xl md:text-5xl">
         {t("services.title")}
       </h1>

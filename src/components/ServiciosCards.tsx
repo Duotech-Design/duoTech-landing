@@ -91,7 +91,7 @@ export const ServiciosCards = () => {
     <>
       <section id="servicios" className="container py-8 space-y-8 h-[1130px] md:h-[830px]">
         <div className="mt-4 md:mt-8">
-          <h1 className="text-3xl md:text-5xl">
+          <h1 className="text-3xl md:text-5xl text-justify tracking-tight">
             {t("services.subContent_6")}
           </h1>
         </div>
@@ -116,7 +116,7 @@ export const ServiciosCards = () => {
                       <div className="font-bold text-xl mb-2">
                         {feature.title}
                       </div>
-                      <p className=" text-gray-700 roboto-Font text-base">
+                      <p className=" text-gray-700 roboto-Font text-base text-justify ">
                         {feature.description}
                       </p>
                     </div>

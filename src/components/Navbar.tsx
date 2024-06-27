@@ -54,9 +54,9 @@ export const Navbar = () => {
             </div>
           </NavigationMenuItem>
 
-          <div className="flex items-center">
+          <div className="flex items-center space-x-4">  {/* Ajustar el espaciado aquí */}
             {/* mobile */}
-            <div className="flex w-auto md:hidden">
+            <div className="flex w-auto md:hidden space-x-2">
               <LanguageToggle />
               <ModeToggle />
 
@@ -95,26 +95,26 @@ export const Navbar = () => {
             </div>
 
             {/* desktop */}
-            <nav className="hidden md:flex gap-2">
-              {routeList.map((route: RouteProps, i) => (
-                <a
-                  href={route.href}
-                  key={i}
-                  className={`text-[17px] ${buttonVariants({
-                    variant: "ghost",
-                  })}`}
-                  onMouseEnter={() => setHoveredIndex(i)}
-                  onMouseLeave={() => setHoveredIndex(null)}
-                >
-                  <MessengerHover
-                    text={route.label}
-                    isHovered={hoveredIndex === i}
-                  />
-                  {route.icon && <span className="ml-1">{route.icon}</span>}
-                </a>
-              ))}
-            </nav>
-            <div className="hidden md:flex gap-2">
+            <div className="hidden md:flex items-center space-x-4">  {/* Ajustar el espaciado aquí */}
+              <nav className="">
+                {routeList.map((route: RouteProps, i) => (
+                  <a
+                    href={route.href}
+                    key={i}
+                    className={`text-[17px] ${buttonVariants({
+                      variant: "ghost",
+                    })}`}
+                    onMouseEnter={() => setHoveredIndex(i)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                  >
+                    <MessengerHover
+                      text={route.label}
+                      isHovered={hoveredIndex === i}
+                    />
+                    {route.icon && <span className="ml-1">{route.icon}</span>}
+                  </a>
+                ))}
+              </nav>
               <LanguageToggle />
               <ModeToggle />
             </div>
