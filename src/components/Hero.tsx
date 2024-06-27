@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
 
   return (
     <>
-      <section className="flex justify-center h-[700px] md:h-[800px] mb-14 overflow-hidden">
+      <section className="flex justify-center mb-14 overflow-hidden">
         <div className="mt-96 flex flex-col justify-center items-center">
           <main className="text-center font-medium headings ">
             <h1 className="animated-title text-5xl md:text-8xl lg:text-9x1 first-heading">
