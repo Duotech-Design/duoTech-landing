@@ -47,17 +47,19 @@ export const Footer = () => {
 
   return (
     <footer id="footer">
-      <hr className="w-11/12 mx-auto" />
-      <section className="container py-20 grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8">
+      <hr className="mx-auto w-11/12" />
+      <section className="container grid grid-cols-1 gap-x-12 gap-y-8 py-20 md:grid-cols-3">
         <div className="flex flex-col justify-between">
           <div>
             <h3 className="text-md text-gray-400">{t("footer.status")}</h3>
-            <h3 className="font-medium mt-4">
+            <h3 className="mt-4 font-medium">
               MONTERREY, MX ➔ {formatTime(time)}
             </h3>
-            <h3 className="font-medium mt-4">
+            <h3 className="mt-4 font-medium">
               {t("footer.currently")}:{" "}
-              <span className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}>
+              <span
+                className={`text-${isOnDuty(time) ? "green" : "red"}-500 blink`}
+              >
                 ●
               </span>{" "}
               {isOnDuty(time) ? t("footer.on_duty") : t("footer.off_duty")}
@@ -67,14 +69,14 @@ export const Footer = () => {
             <RosslerSVG />
           </div>
         </div>
-        <div className="md:ml-auto md:col-span-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
-            <div className="flex flex-col gap-2 ">
+        <div className="md:col-span-2 md:ml-auto">
+          <div className="grid grid-cols-1 gap-x-12 md:grid-cols-2">
+            <div className="flex flex-col gap-2">
               <h3 className="text-md text-gray-400">{t("footer.contact")}</h3>
               <div className="w-full">
                 <a
                   href="mailto:info@duotechdesign.com"
-                  className="animated-link opacity-60 hover:opacity-100 flex items-center gap-2"
+                  className="animated-link flex items-center gap-2 opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("DESIGN@DUOTECH.COM")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
@@ -84,42 +86,35 @@ export const Footer = () => {
                   />
                 </a>
               </div>
-              <div >
+              <div>
                 <a
                   href="tel:+51444"
-                  className="opacity-60 hover:opacity-100 flex items-center gap-2 "
+                  className="flex items-center gap-2 opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("+52 44-----")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
-                  <img
-                    src={whatsappIcon}
-                    alt="WhatsApp"
-                    className="h-6 w-6"
-                  />
+                  <img src={whatsappIcon} alt="WhatsApp" className="h-6 w-6" />
                   <div className="animated-link">
-                  <MessengerHover
-                    text="+52 44-----"
-                    isHovered={hoveredItem === "+52 44-----"}
-                  /></div>
+                    <MessengerHover
+                      text="+52 44-----"
+                      isHovered={hoveredItem === "+52 44-----"}
+                    />
+                  </div>
                 </a>
               </div>
-              <div >
+              <div>
                 <a
                   href="https://wa.me/524445443817?text=Quiero%20más%20información"
-                  className=" opacity-60 hover:opacity-100 flex items-center gap-2 "
+                  className="flex items-center gap-2 opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("+52 4445443817")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
-                  <img
-                    src={whatsappIcon}
-                    alt="WhatsApp"
-                    className="h-6 w-6"
-                  />
+                  <img src={whatsappIcon} alt="WhatsApp" className="h-6 w-6" />
                   <div className="animated-link">
-                  <MessengerHover
-                    text="+52 4445443817"
-                    isHovered={hoveredItem === "+52 4445443817"}
-                  />
+                    <MessengerHover
+                      text="+52 4445443817"
+                      isHovered={hoveredItem === "+52 4445443817"}
+                    />
                   </div>
                 </a>
               </div>
@@ -137,8 +132,8 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col gap-2 mt-3 md:mt-0">
-              <h3 className="text-md text-gray-400 ">LINKS</h3>
+            <div className="mt-3 flex flex-col gap-2 md:mt-0">
+              <h3 className="text-md text-gray-400">LINKS</h3>
               <div>
                 <a
                   href="https://www.instagram.com/duotechdesign/"
@@ -188,7 +183,7 @@ export const Footer = () => {
           <a
             target="_blank"
             href="https://www.duotechdesign.com/"
-            className="text-primary transition-all border-primary hover:border-b-2"
+            className="border-primary text-primary transition-all hover:border-b-2"
           >
             DuoTech Design
           </a>
