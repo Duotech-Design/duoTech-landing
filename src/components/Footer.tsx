@@ -84,7 +84,7 @@ export const Footer = () => {
                   />
                 </a>
               </div>
-              <div >
+              <div>
                 <a
                   href="tel:+51444"
                   className="opacity-60 hover:opacity-100 flex items-center gap-2 "
@@ -103,7 +103,7 @@ export const Footer = () => {
                   /></div>
                 </a>
               </div>
-              <div >
+              <div>
                 <a
                   href="https://wa.me/524445443817?text=Quiero%20más%20información"
                   className=" opacity-60 hover:opacity-100 flex items-center gap-2 "

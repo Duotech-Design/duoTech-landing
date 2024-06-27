@@ -371,3 +371,12 @@ body {
   transform: translateY(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
   transition: transform 0.1s linear;
 }
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 1.5s infinite;
+}
