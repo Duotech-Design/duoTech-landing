@@ -137,8 +137,8 @@ export const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="text-md text-gray-400">LINKS</h3>
+            <div className="flex flex-col gap-2 mt-3 md:mt-0">
+              <h3 className="text-md text-gray-400 ">LINKS</h3>
               <div>
                 <a
                   href="https://www.instagram.com/duotechdesign/"
