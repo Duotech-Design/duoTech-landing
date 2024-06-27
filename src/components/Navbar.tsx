@@ -96,7 +96,7 @@ export const Navbar = () => {
 
             {/* desktop */}
             <div className="hidden md:flex items-center space-x-4">  {/* Ajustar el espaciado aquí */}
-              <nav className="flex space-x-4">  {/* Añadir space-x-4 aquí */}
+              <nav className="">
                 {routeList.map((route: RouteProps, i) => (
                   <a
                     href={route.href}

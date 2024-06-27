@@ -12,7 +12,7 @@ export const Us = () => {
       </div>
       <div className="w-full ">
         <div className="px-3  md:mt-0 mt-3">
-          <p className=" roboto-Font  text-xs md:text-sm lg:text-base">
+          <p className=" roboto-Font  text-xs md:text-sm lg:text-base text-justify mr-8">
             {" "}
             {t("us.content")}
           </p>
