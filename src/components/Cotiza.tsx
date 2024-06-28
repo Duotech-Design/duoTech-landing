@@ -81,7 +81,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
     const templateId = "template_085ihoa";
 
     emailjs.send(servicesId, templateId, data)
-      .then((response) => {
+      .then(() => {
         setState("success");
         toast.success(
           "¡Gracias por contarnos sobre tu proyecto! Nos pondremos en contacto contigo muy pronto!",

@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
-import TransparentButton from "./ui/Buttons/TransparentButton";
+//import TransparentButton from "./ui/Buttons/TransparentButton";
 
 // Definir el esquema de validación con Yup
 const validationSchema = Yup.object().shape({
@@ -125,7 +125,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
               <p className="text-red-500 mt-1">{errors.message?.message}</p>
             </div>
             <div className="flex justify-end">
-              <TransparentButton title="COTIZA TU PROYECTO" />
+              {/* <TransparentButton title="COTIZA TU PROYECTO" /> */}
             </div>
           </form>
         </div>
