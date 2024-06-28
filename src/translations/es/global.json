@@ -87,13 +87,17 @@
         "title_2": "cuéntanos sobre tu proyecto!",
         "content_1": "¡Estamos aquí para ayudarte! Contáctanos, conoce a nuestro equipo y descubre si somos la opción ideal para tus proyectos y objetivos. ",
         "content_2": "¡Haz la elección correcta desde el principio! ",
-      
         "form": {
           "name": "Nombre completo",
           "email": "Email",
           "phone": "Teléfono",
           "message": "Cuentanos sobre tu proyecto",
-          "send": "Enviar"
+          "button": {
+            "start": "Enviar",
+            "loading": "Enviando...",
+            "success": "Enviado con Exito",
+            "error": "Intentalo más tarde"
+          }
         }
       },
     "contact": {

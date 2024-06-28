@@ -370,3 +370,15 @@ body {
   transform: translateY(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
   transition: transform 0.1s linear;
 }
+.start {
+  background-color: transparent;
+}
+.loading {
+  background-color: #879EAD;
+}
+.success {
+  background-color: #879EAD;
+}
+.error {
+  background-color: red;
+}
