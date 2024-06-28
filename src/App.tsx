@@ -11,14 +11,18 @@ import { Contacto } from "./components/Contacto";
 import { Us } from "./components/Us";
 import { ServiciosCards } from "./components/ServiciosCards";
 import { Proyectos } from "./components/Proyectos";
+import { useInViewport } from "./lazyLoadedComponent/useInViewport"
 
 function App() {
+  const { isInViewport, ref } = useInViewport();
   return (
     <>
       <Navbar />
       <Hero />
       <About />
-      <Us />
+      <div ref={ref}>
+      {isInViewport && (<Us/>)}
+      </div>
       {/*<HowItWorks /> */}
       <Servicios />
       <div id="a"></div>

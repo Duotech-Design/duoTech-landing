@@ -2,7 +2,6 @@ import Messenger from "./Messenger";
 import imageUs from "/imageUs.jpg"
 import { useTranslation } from "react-i18next";
 
-
 export const Us = () => {
   const { t } = useTranslation("global");
   return (
