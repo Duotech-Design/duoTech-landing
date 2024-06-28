@@ -11,7 +11,7 @@ import { Contacto } from "./components/Contacto";
 import { Us } from "./components/Us";
 import { ServiciosCards } from "./components/ServiciosCards";
 import { Proyectos } from "./components/Proyectos";
-import { useInViewport } from "./lazyLoadedComponent/useInViewport"
+import { useInViewport } from "./lazyLoadedComponent/useInViewport";
 
 function App() {
   const { isInViewport, ref } = useInViewport();
@@ -20,9 +20,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <div ref={ref}>
-      {isInViewport && (<Us/>)}
-      </div>
+      <div ref={ref}>{isInViewport && <Us />}</div>
       {/*<HowItWorks /> */}
       <Servicios />
       <div id="a"></div>
@@ -30,20 +28,15 @@ function App() {
       <div id="b"></div>
       <Proyectos />
       <div id="c"></div>
-       {/*
+      {/*
       <Cotiza />
-     
       <Services />
-      
       <Portafolio />
       <Sponsors />
-     
       <Cta />
     */}
       {/* <Team />*/}
-
       {/*<Newsletter />*/}
-
       <Contacto />
       <Footer />
       <ScrollToTop />
