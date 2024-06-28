@@ -84,7 +84,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
       .then(() => {
         setState("success");
         toast.success(
-          "¡Gracias por contarnos sobre tu proyecto! Nos pondremos en contacto contigo muy pronto!",
+          t("cotiza.form.toast.success"),
           {
             position: "top-right",
             autoClose: 5000,
@@ -100,7 +100,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
         console.log(error);
         setState("error");
         toast.error(
-          "Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.",
+          t("cotiza.form.toast.error"),
           {
             position: "top-right",
             autoClose: 5000,

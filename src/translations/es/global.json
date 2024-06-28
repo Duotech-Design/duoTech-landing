@@ -97,6 +97,10 @@
             "loading": "Enviando...",
             "success": "Enviado con Exito",
             "error": "Intentalo más tarde"
+          },
+          "toast": {
+            "success": "¡Gracias por contarnos sobre tu proyecto! Nos pondremos en contacto contigo muy pronto!",
+            "error": "Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde."
           }
         }
       },
