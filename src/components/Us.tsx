@@ -21,7 +21,7 @@ export const Us = () => {
             {" "}
             <span>{t("us.subtitle")}</span>
           </div>
-          <div className="flex flex-wrap w-2/4 flex-col ">
+          <div className="flex flex-wrap w-3/4 flex-col ">
             <div><Messenger text={t("us.subContent_1")} /></div>
             <div>{t("us.subContent_2")}</div>
             <div>{t("us.subContent_3")}</div>
