@@ -12,7 +12,7 @@ const TransparentButton = ({ title, state }: { title: string, state: string }) =
       className={`${state} flex justify-center items-center text-white 
         font-semibold transition-text-color duration-300 hover:text-${state} 
         py-2 px-2 md:px-8 border border-white hover:border-${state} rounded-full 
-        md:text-lg text-xs transition-transform duration-300 hover:scale-110 cotiza-button`}
+        md:text-lg text-xs transition-transform duration-300 hover:scale-110 cotiza-button w-2/5 md:w-auto`}
     >
       <MessengerHover text={title} isHovered={isHovered} />
       <svg
