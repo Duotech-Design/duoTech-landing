@@ -1,22 +1,23 @@
+/* Hero.css */
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   --scroll-offset: 0px;
 }
+
 body {
   font-family: "Inconsolata", monospace;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* HeroCards background shadow */
 .shadow {
   position: absolute;
   background: #879EAD;
   border-radius: 24px;
   rotate: 35deg;
-
   width: 260px;
   top: 200px;
   height: 400px;
@@ -71,7 +72,7 @@ body {
     }
   }
 }
-*/
+
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
@@ -88,7 +89,7 @@ body {
     visibility: hidden;
   }
 }
-/* animation.css */
+
 .navbar-item {
   position: relative;
   display: inline-block;
@@ -115,20 +116,18 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
-/* Estilos para el efecto de flip */
+
 .flip-card {
-  /*background-color: transparent;*/
   perspective: 1000px;
-   /* Ajusta la altura para que sea responsive */
-  border-radius: 10px; /* Borde redondeado */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la tarjeta */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: left; /* Alineación del texto a la izquierda */
+  text-align: left;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   border-radius: 10px;
@@ -164,10 +163,11 @@ body {
   align-items: center;
   border-radius: 10px;
 }
-/* Cotiza.css */
+
 .modal-open {
   overflow: hidden;
 }
+
 @keyframes In {
   from {
     opacity: 0;
@@ -176,6 +176,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes Out {
   from {
     opacity: 1;
@@ -200,10 +201,10 @@ body {
 .cotiza-input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #fff; /* Línea blanca */
+  border-bottom: 1px solid #fff;
   width: 100%;
   padding: 20px 0;
-  color: #fff; /* Texto blanco */
+  color: #fff;
   transition-property: border-bottom-color;
   transition-duration: 0.3s;
   animation-name: slide-up;
@@ -213,12 +214,12 @@ body {
 }
 
 .cotiza-input::placeholder {
-  color: #fff; /* Placeholder blanco */
+  color: #fff;
 }
 
 .cotiza-input:focus {
   outline: none;
-  border-bottom: 2px solid #879EAD; /* Línea blanca */
+  border-bottom: 2px solid #879EAD;
 }
 
 .cotiza-button {
@@ -234,149 +235,116 @@ body {
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
-.animated-link {
-  position: relative;
-
-  transition: color 0.3s ease;
-}
-
-.animated-link::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: currentColor;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.animated-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-#scroll-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
-  max-width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.scroll-text {
-  position: relative;
-  width: 100%;
-  font-size: 6.5em;
-  color: black;
-  line-height: 1em;
-  white-space: nowrap;
-  transform: translateX(0);
-  transition: transform 0.5s ease-out;
-  text-align: center;
-}
-
-.i-05 {
-  --i: 0.5;
-}
-/* section {
-  view-timeline-name: --image;
-	view-timeline-axis: block;
-
-	animation-timeline: --image;
-	animation-name: show-section;
-
-	animation-range: entry 5% cover 30%;
-	animation-fill-mode: both;
-}
-@keyframes show-section {
-  0% {
-      opacity: 0;
-      transform: scale(0.30);
-  }
-  25% {
-      opacity: 0.5;
-      transform: scale(0.5);
-  }
-  50% {
-      opacity: 0.75;
-      transform: scale(0.75);
-  }
-  75% {
-      opacity: 0.9;
-      transform: scale(0.9);
-  }
-  100% {
-      opacity: 1;
-      transform: scale(1);
-  }
-} */
 
 @keyframes slide-up {
   from {
+    transform: translateY(30px);
     opacity: 0;
-    transform: translateY(100%);
-  }
-  50%, to {
-    opacity: 1;
   }
   to {
     transform: translateY(0);
-  }
-
-}
-/*animacion principal */
-.headings {
-  animation: headings 4s both;
-}
-.first-heading {
-  animation: first-heading 4s both;
-}
-.second-heading {
-  animation: second-heading 4s both;
-}
-@keyframes first-heading {
-  from{
-    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-  }
-  to, 50% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-@keyframes second-heading {
-  from, 50% {
-    opacity: 0;
-  }
-  to {
     opacity: 1;
   }
 }
-@keyframes headings {
-  from, 50% {
-    transform: translateY(50%) scale(1.5);
+
+.navbar-item-active::before {
+  visibility: visible;
+  transform: scaleX(1);
+}.flier-1 {
+  position: fixed;
+  width: 20%;
+  height: 25%;
+  object-fit: cover;
+  animation: fly-around-1 20s linear infinite;
+  z-index: 9999;
+}
+
+.flier-2 {
+  position: fixed;
+  width: 20%;
+  height: 25%;
+  object-fit: cover;
+  animation: fly-2 50s linear infinite;
+  z-index: 9999;
+}
+
+.flier-3 {
+  position: fixed;
+  width: 20%;
+  height: 25%;
+  object-fit: cover;
+  animation: fly 50s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes fly-around-1 {
+  0% {
+    transform: translate(0, 0);
   }
-  to {
-    transform: none;
+  25% {
+    transform: translate(40%, -30%);
+  }
+  50% {
+    transform: translate(-30%, 40%);
+  }
+  75% {
+    transform: translate(30%, 30%);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
-.animated-title {   
-  transform: translateX(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
-    transition: transform 0.1s linear;
-}
-.animated-subtitle {
-  transform: translateY(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
-  transition: transform 0.1s linear;
-}
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+@keyframes fly-2 {
+  0%, 98.001% {
+    transform: translateX(-150%) translateY(100vh) rotateZ(0deg);
+  }
+  20% {
+    transform: translateX(120vw) translateY(-100%) rotateZ(180deg);
+  }
+  20.001%, 23% {
+    transform: translateX(100vw) translateY(-20%) rotateZ(0deg);
+  }
+  45% {
+    transform: translateX(-150%) translateY(10vh) rotateZ(-180deg);
+  }
+  45.001%, 48% {
+    transform: translateX(-150%) translateY(-120%) rotateZ(-180deg);
+  }
+  70% {
+    transform: translateX(120vw) translateY(70vh) rotateZ(0deg);
+  }
+  70.001%, 73% {
+    transform: translateX(10vw) translateY(-180%) rotateZ(180deg);
+  }
+  95% {
+    transform: translateX(20vw) translateY(90vh) rotateZ(0deg);
+  }
 }
 
-.blink {
-  animation: blink 1.5s infinite;
+@keyframes fly {
+  0%, 98.001% {
+    transform: translateX(-200%) translateY(100vh) rotateZ(0deg);
+  }
+  15% {
+    transform: translateX(100vw) translateY(-100%) rotateZ(180deg);
+  }
+  15.001%, 18% {
+    transform: translateX(100vw) translateY(-30%) rotateZ(0deg);
+  }
+  40% {
+    transform: translateX(-200%) translateY(3vh) rotateZ(-180deg);
+  }
+  40.001%, 43% {
+    transform: translateX(-200%) translateY(-100%) rotateZ(-180deg);
+  }
+  65% {
+    transform: translateX(100vw) translateY(50vh) rotateZ(0deg);
+  }
+  65.001%, 68% {
+    transform: translateX(20vw) translateY(-200%) rotateZ(180deg);
+  }
+  95% {
+    transform: translateX(10vw) translateY(100vh) rotateZ(0deg);
+  }
 }

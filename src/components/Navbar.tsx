@@ -11,14 +11,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LanguageToggle } from "./mode-toggle-language";
-import RosslerComponent from "./rossler/RosslerAttractor";
 import MessengerHover from "./MessengerHover";
 import { useTranslation } from "react-i18next";
+
+// Importa la imagen dt.png
 
 interface RouteProps {
   href: string;
@@ -50,11 +50,16 @@ export const Navbar = () => {
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between items-center">
           <NavigationMenuItem className="flex justify-start max-w-[100px] md:w-full">
             <div className="font-bold text-xl flex">
-              <RosslerComponent />
+              <img
+                src={"/DT.png"}
+                alt="DuoTech Logo"
+                className="w-20 h-10 md:w-72 md:h-40 mt-3 object-contain"
+                // Ajusta el tamaño de la imagen y usa object-contain para mantener la proporción
+              />
             </div>
           </NavigationMenuItem>
 
-          <div className="flex items-center space-x-4">  {/* Ajustar el espaciado aquí */}
+          <div className="flex items-center space-x-4">
             {/* mobile */}
             <div className="flex w-auto md:hidden space-x-2">
               <LanguageToggle />
@@ -95,7 +100,7 @@ export const Navbar = () => {
             </div>
 
             {/* desktop */}
-            <div className="hidden md:flex items-center space-x-4">  {/* Ajustar el espaciado aquí */}
+            <div className="hidden md:flex items-center space-x-4">
               <nav className="">
                 {routeList.map((route: RouteProps, i) => (
                   <a

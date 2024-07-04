@@ -7,10 +7,10 @@ import { useTranslation } from "react-i18next";
 export const Hero: React.FC = () => {
   const { t } = useTranslation("global");
   const [showCotiza, setShowCotiza] = useState(false);
+
   const handleOpenCotiza = () => {
     setShowCotiza(true);
     document.body.classList.add("modal-open");
-
   };
 
   const handleCloseCotiza = () => {
@@ -18,25 +18,23 @@ export const Hero: React.FC = () => {
     document.body.classList.remove("modal-open");
   };
 
-
   useEffect(() => {
     const handleScroll = () => {
-      console.log("ALISON", window.scrollY)
-        document.documentElement.style.setProperty('--scroll-offset', `${window.scrollY}`);
+      document.documentElement.style.setProperty('--scroll-offset', `${window.scrollY}`);
     };
 
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-        window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
-}, []);
+  }, []);
 
   return (
     <>
       <section className="flex justify-center h-[700px] mb-14">
         <div className="mt-96 flex flex-col justify-center items-center">
-          <main className="text-center font-medium headings ">
+          <main className="text-center font-medium headings">
             <h1 className="text-5xl md:text-8xl lg:text-9x1 first-heading animated-title">
               <span className=" inline bg-gradient-to-r from-[#73726C] to-[#879EAD] text-transparent bg-clip-text">
                 {t("hero.title")}
@@ -65,6 +63,9 @@ export const Hero: React.FC = () => {
       {showCotiza && <div className="fixed top-0 left-0 w-full z-[9999]">
         <Cotiza onClose={handleCloseCotiza} />
       </div>}
+      <img src="/5.png" alt="Floating Object" className="flier-1" />
+      <img src="/2.png" alt="Floating Object" className="flier-2" />
+      <img src="/4.png" alt="Floating Object" className="flier-3" />
     </>
   );
 };
