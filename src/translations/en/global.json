@@ -93,7 +93,16 @@
         "email": "Email",
         "phone": "Phone",
         "message": "Tell us about your project",
-        "send": "Send"
+        "button": {
+          "start": "Send",
+          "loading": "Loading...",
+          "success": "success",
+          "error": "Try again later"
+        },
+        "toast": {
+          "success": "Thanks for telling us about your project! We will contact you very soon!",
+          "error": "There was an error submitting the form. Please try again later."
+        }
       }
     },
   

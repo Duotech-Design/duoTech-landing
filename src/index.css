@@ -74,19 +74,18 @@ body {
 }
 
 .blink {
-  animation: blink-animation 1s steps(5, start) infinite;
-  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+  animation: blink-animation 1.5s infinite;
 }
 
 @keyframes blink-animation {
-  to {
-    visibility: hidden;
+  0% {
+    opacity: 0;
   }
-}
-
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -334,4 +333,20 @@ body {
   100% {
     transform: translate(0, 0);
   }
+}
+.animated-subtitle {
+  transform: translateY(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
+  transition: transform 0.1s linear;
+}
+.start {
+  background-color: transparent;
+}
+.loading {
+  background-color: #879EAD;
+}
+.success {
+  background-color: #879EAD;
+}
+.error {
+  background-color: red;
 }
