@@ -250,17 +250,22 @@ body {
 .navbar-item-active::before {
   visibility: visible;
   transform: scaleX(1);
-}.flier-1 {
+}
+
+.flier-1 {
   position: fixed;
+  top: 0%;
+  left: 0%;
+  
   width: 25%;
   height: 25%;
-  object-fit: cover;
+  object-fit: contain;
   animation: fly-around-1 60s linear infinite;
   z-index: 9999;
 }
 
 .flier-2 {
-  position: fixed;
+ 
   width: 20%;
   height: 20%;
   object-fit: cover;
@@ -269,7 +274,7 @@ body {
 }
 
 .flier-3 {
-  position: fixed;
+ 
   width: 20%;
   height: 25%;
   object-fit: cover;
@@ -282,13 +287,13 @@ body {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(30vw, -40vh);
+    transform: translate(30vw, var(--i)vh);
   }
   50% {
-    transform: translate(-20vw, 50vh);
+    transform: translate(60vw, var(--i)vh);
   }
   75% {
-    transform: translate(40vw, 40vh);
+    transform: translate(85vw, var(--i)vh);
   }
   100% {
     transform: translate(0, 0);
