@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
       <section className="mb-14 flex justify-center overflow-hidden">
         <div className="mt-96 flex flex-col items-center justify-center">
           <main className="headings text-center font-medium">
-            <h1 className="animated-title lg:text-9x1 first-heading text-5xl md:text-8xl">
+            <h1 className="animated-subtitle lg:text-9x1 first-heading text-5xl md:text-8xl">
               <span className="inline bg-gradient-to-r from-[#73726C] to-[#879EAD] bg-clip-text text-transparent">
                 {t("hero.title")}
               </span>
