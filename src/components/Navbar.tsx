@@ -51,9 +51,9 @@ export const Navbar = () => {
           <NavigationMenuItem className="flex justify-start max-w-[100px] md:w-full">
             <div className="font-bold text-xl flex">
               <img
-                src={"/DT.png"}
+                src={"/DT-BLACK.png"}
                 alt="DuoTech Logo"
-                className="w-20 h-10 md:w-72 md:h-40 mt-3 object-contain"
+                className="w-20 h-10 md:w-72 md:h-40 mt-4 object-contain"
                 // Ajusta el tamaño de la imagen y usa object-contain para mantener la proporción
               />
             </div>
