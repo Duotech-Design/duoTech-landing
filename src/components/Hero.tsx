@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
     const handleScroll = () => {
       document.documentElement.style.setProperty(
         "--scroll-offset",
-        `${window.scrollY}`,
+        `${window.scrollY}`
       );
     };
 
@@ -38,16 +38,9 @@ export const Hero: React.FC = () => {
       <section className="mb-14 flex justify-center overflow-hidden">
         <div className="mt-96 flex flex-col items-center justify-center">
           <main className="headings text-center font-medium">
-            <h1 className="animated-subtitle lg:text-9x1 first-heading text-5xl md:text-8xl">
-              <span className="inline bg-gradient-to-r from-[#73726C] to-[#879EAD] bg-clip-text text-transparent">
-                {t("hero.title")}
-              </span>
-            </h1>
-            <h1 className="animated-subtitle lg:text-9x1 second-heading text-5xl md:text-8xl">
-              <span className="inline bg-gradient-to-r from-[#73726C] via-[#879EAD] to-[#73726C] bg-clip-text text-transparent">
-                {t("hero.subtitle")}
-              </span>
-            </h1>
+            <div className="animated-subtitle lg:text-9x1 first-heading text-5xl md:text-8xl">
+              <img src="/DUOTECHBLACK.png" alt="Duotech Black" className="inline" />
+            </div>
           </main>
           <span className="mt-8 flex justify-center text-base md:text-xl">
             {t("hero.content_1")}&nbsp;
@@ -77,6 +70,9 @@ export const Hero: React.FC = () => {
       <img src="/5.png" alt="Floating Object" className="flier-1" />
       <img src="/2.png" alt="Floating Object" className="flier-2" />
       <img src="/4.png" alt="Floating Object" className="flier-3" />
+      <img src="/1.png" alt="Floating Object" className="flier-4" />
+      {/* <img src="/3.png" alt="Floating Object" className="flier-5" /> */}
+      <img src="/6.png" alt="Floating Object" className="flier-6 random-float" />
     </>
   );
 };

@@ -88,16 +88,16 @@ export const Footer = () => {
               </div>
               <div>
                 <a
-                  href="tel:+51444"
+                  href="https://wa.me/524445443817?text=Quiero%20más%20información%20sobre..."
                   className="flex items-center gap-2 opacity-60 hover:opacity-100"
-                  onMouseEnter={() => setHoveredItem("+52 44-----")}
+                  onMouseEnter={() => setHoveredItem("+52 8123842401")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <img src={whatsappIcon} alt="WhatsApp" className="h-6 w-6" />
                   <div className="animated-link">
                     <MessengerHover
-                      text="+52 44-----"
-                      isHovered={hoveredItem === "+52 44-----"}
+                      text="+52 8123842401"
+                      isHovered={hoveredItem === "+52 8123842401"}
                     />
                   </div>
                 </a>
