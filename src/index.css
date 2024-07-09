@@ -74,19 +74,18 @@ body {
 }
 
 .blink {
-  animation: blink-animation 1s steps(5, start) infinite;
-  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+  animation: blink-animation 1.5s infinite;
 }
 
 @keyframes blink-animation {
-  to {
-    visibility: hidden;
+  0% {
+    opacity: 0;
   }
-}
-
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -250,83 +249,121 @@ body {
 .navbar-item-active::before {
   visibility: visible;
   transform: scaleX(1);
-}.flier-1 {
+}
+
+.flier-1 {
   position: fixed;
-  width: 25%;
-  height: 25%;
-  object-fit: cover;
+  top: 10%;
+  left: -30%;
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
   animation: fly-around-1 60s linear infinite;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .flier-2 {
   position: fixed;
+  top: 60%; 
   width: 20%;
   height: 20%;
-  object-fit: cover;
+  object-fit: contain;
   animation: fly-around-2 60s linear infinite;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .flier-3 {
   position: fixed;
+  top: 15%;
+  left: 0%;
   width: 20%;
   height: 25%;
-  object-fit: cover;
-  animation: fly-around-3 60s linear infinite;
+  object-fit: contain;
+  transform: rotate(calc(1deg + var(--scroll-offset) * 0.3deg));
+  transition: transform 0.1s linear;
   z-index: 9999;
 }
 
-@keyframes fly-around-1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(30vw, -40vh);
-  }
-  50% {
-    transform: translate(-20vw, 50vh);
-  }
-  75% {
-    transform: translate(40vw, 40vh);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+@keyframes fly-around-1 {   
+  0% {     
+    transform: translate(0, 0) rotate(0deg) scale(1);   
+  }   
+  12.5% {     
+    transform: translate(15vw, calc(0.01vh * var(--scroll-offset))) rotate(45deg) scale(1.1);   
+  }   
+  25% {     
+    transform: translate(30vw, calc(0.02vh * var(--scroll-offset))) rotate(90deg) scale(1.4);   
+  }   
+  37.5% {     
+    transform: translate(45vw, calc(0.01vh * var(--scroll-offset))) rotate(135deg) scale(1.1);   
+  }   
+  50% {     
+    transform: translate(60vw, calc(0.01vh * var(--scroll-offset))) rotate(180deg) scale(1);   
+  }   
+  62.5% {     
+    transform: translate(75vw, calc(0.01vh * var(--scroll-offset))) rotate(225deg) scale(0.9);   
+  }   
+  75% {     
+    transform: translate(85vw, calc(0.01vh * var(--scroll-offset))) rotate(270deg) scale(1);   
+  }   
+  87.5% {     
+    transform: translate(100vw, calc(0.01vh * var(--scroll-offset))) rotate(315deg) scale(1.1);   
+  }   
+  100% {     
+    transform: translate(0, calc(0.01vh * var(--scroll-offset))) rotate(360deg) scale(1);   
+  } 
 }
+
 
 @keyframes fly-around-2 {
   0% {
-    transform: translate(0, 0);
+    transform: translate(100vw, 0) rotate(0deg) scale(1);
   }
   25% {
-    transform: translate(-30vw, 50vh);
+    transform: translate(70vw, calc(0.02vh * var(--scroll-offset))) rotate(90deg) scale(1.4);
   }
   50% {
-    transform: translate(40vw, -40vh);
+    transform: translate(50vw, calc(0.01vh * var(--scroll-offset))) rotate(180deg) scale(1);
   }
   75% {
-    transform: translate(-20vw, -50vh);
+    transform: translate(60vw, calc(0.01vh * var(--scroll-offset))) rotate(225deg) scale(0.9);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translate(100vw, calc(0.01vh * var(--scroll-offset))) rotate(360deg) scale(1);
   }
 }
 
+
 @keyframes fly-around-3 {
   0% {
-    transform: translate(0, 0);
+    transform: scale(calc(1 + var(--scroll-offset) * 0.01));
   }
   25% {
-    transform: translate(40vw, 50vh);
+    transform: rotate(90deg);
   }
   50% {
-    transform: translate(-30vw, -40vh);
+    transform: rotate(120deg);
   }
   75% {
-    transform: translate(20vw, 50vh);
+    transform: rotate(180deg);
   }
   100% {
-    transform: translate(0, 0);
+    transform: rotate(0deg);
   }
+}
+.animated-subtitle {
+  transform: translateY(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
+  transition: transform 0.1s linear;
+}
+.start {
+  background-color: transparent;
+}
+.loading {
+  background-color: #879EAD;
+}
+.success {
+  background-color: #879EAD;
+}
+.error {
+  background-color: red;
 }

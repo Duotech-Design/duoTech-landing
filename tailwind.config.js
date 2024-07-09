@@ -18,6 +18,10 @@ export const theme = {
     colors: {
       border: "hsl(var(--border))",
       alison: "#EEECE3",
+      start: "#879EAD",
+      loading: "#fff",
+      success: "#fff",
+      error: "#fff",
       ring: "hsl(var(--ring))",
       background: "hsl(var(--background))",
       foreground: "hsl(var(--foreground))",

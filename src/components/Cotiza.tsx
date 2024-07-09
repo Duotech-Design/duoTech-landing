@@ -4,11 +4,53 @@ import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import TransparentButton from "./ui/Buttons/TransparentButton";
 import { useTranslation } from "react-i18next";
+type State = "loading" | "success" | "start" | "error";
 
-// Definir el esquema de validación con Yup
+type Event = { type: "CLICK" };
+
+interface StateMachine {
+  initial: State;
+  states: {
+    [key in State]: {
+      on: {
+        [key in Event["type"]]: State;
+      };
+    };
+  };
+}
+
+const machine: StateMachine = {
+  initial: "start",
+  states: {
+    start: {
+      on: {
+        CLICK: "loading"
+      }
+    },
+    loading: {
+      on: {
+        CLICK: "success"
+      }
+    },
+    success: {
+      on: {
+        CLICK: "error"
+      }
+    },
+    error: {
+      on: {
+        CLICK: "start"
+      }
+    }
+  }
+};
+
+const transition = (state: State, event: Event): State => {
+  return machine.states[state].on[event.type];
+};
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("El nombre es obligatorio"),
   email: Yup.string()
@@ -22,6 +64,7 @@ const validationSchema = Yup.object().shape({
 
 export const Cotiza = ({ onClose }: { onClose: () => void }) => {
   const { t } = useTranslation("global");
+  const [state, setState] = useState<State>(machine.initial);
   const {
     register,
     handleSubmit,
@@ -31,27 +74,51 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
     resolver: yupResolver(validationSchema),
   });
 
-  const onSubmit = async (data: Record<string, unknown> | undefined) => {
+  const onSubmit = (data: Record<string, unknown> | undefined) => {
+    setState(transition(state, { type: "CLICK" }));
+
     const servicesId = "default_service";
     const templateId = "template_085ihoa";
-    try {
-      await emailjs.send(servicesId, templateId, data);
-    } catch (error) {
-      console.log("error");
-    }
-    toast.success(
-      "¡Gracias por contarnos sobre tu proyecto! Nos pondremos en contacto contigo muy pronto!",
-      {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      }
-    );
-    reset();
+
+    emailjs.send(servicesId, templateId, data)
+      .then(() => {
+        setState("success");
+        toast.success(
+          t("cotiza.form.toast.success"),
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          }
+        );
+      })
+      .catch((error) => {
+        console.log(error);
+        setState("error");
+        toast.error(
+          t("cotiza.form.toast.error"),
+          {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          }
+        );
+      })
+      .finally(() => {
+        reset();
+        setTimeout(() => {
+          setState("start");
+          onClose();
+        }, 5000);
+      });
   };
 
   useEffect(() => {
@@ -63,7 +130,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
       <img
         src="/backgroundCotiza.png"
         alt="Background"
-        className="absolute inset-0 object-cover w-full h-full"
+        className="absolute inset-0 object-cover w-screen h-screen"
       />
       <ToastContainer />
       <div className="absolute md:top-10 md:right-10 top-5 right-5 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
@@ -127,7 +194,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
               <p className="text-red-500 mt-1">{errors.message?.message}</p>
             </div>
             <div className="flex justify-end">
-              <TransparentButton title={t("cotiza.form.send")} />
+              <TransparentButton title={t(`cotiza.form.button.${state}`)} state={state} />
             </div>
           </form>
         </div>
