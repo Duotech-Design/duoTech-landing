@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
         </div>
       )}
       <img src="/5.png" alt="Floating Object" className="flier-1" />
-      <img src="/2.png" alt="Floating Object" className="flier-2" />
+      <img src="/2.svg" alt="Floating Object" className="flier-2" />
       <img src="/4.png" alt="Floating Object" className="flier-3" />
       <img src="/1.png" alt="Floating Object" className="flier-4" />
       {/* <img src="/3.png" alt="Floating Object" className="flier-5" /> */}

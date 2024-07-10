@@ -21,7 +21,7 @@ const AnimatedButton = ({ title, onClick }: { title: string; onClick: () => void
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleClick}
-        className="bg-[#F5F5F5] flex justify-center items-center text-[#73726C] font-semibold hover:text-[#879EAD] py-2 px-2 md:px-4 border border-[#73726C] hover:border-[#879EAD] rounded-full md:text-base text-xs"
+        className="bg-[#F5F5F5]   flex justify-center items-center text-[#73726C] font-semibold hover:text-[#879EAD] py-2 px-2 md:px-4 border border-[#73726C] hover:border-[#879EAD] rounded-full md:text-base text-xs"
       >
         <MessengerHover text={title} isHovered={isHovered} />
         <svg

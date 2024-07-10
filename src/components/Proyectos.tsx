@@ -1,5 +1,5 @@
 import GenericButton from "./ui/Buttons/GenericButton";
-import proyectos from "/proyectos.png"
+import wo from "/wo.png"
 import { useTranslation } from "react-i18next";
 
 export const Proyectos = () => {
@@ -12,8 +12,8 @@ export const Proyectos = () => {
       </div>
       <div className="relative">
         <img
-          src={proyectos}
-          className="object-cover h-[500px] w-[750px] opacity-75 rounded-sm"
+          src={wo}
+          className="object-cover h-[600px] w-[850px] opacity-75 rounded-sm "
           alt="Proyectos"
         />
         <div className="md:flex md:items-center mt-6">
