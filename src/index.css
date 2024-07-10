@@ -432,3 +432,20 @@ body {
 .error {
   background-color: red;
 }
+.lista{
+  display: flex;
+list-style: none;
+height: 300px;
+overflow-x: scroll;
+padding: 20px 0;
+flex: 0 0 600px;
+margin: 0 auto;
+}
+.listaHijo{
+  flex: 0 0 200px;
+margin: 0 20px 0 0;
+
+}
+.listaHijo:last-of-type {
+  margin: 0;
+  }
