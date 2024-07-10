@@ -18,8 +18,6 @@ import { LanguageToggle } from "./mode-toggle-language";
 import MessengerHover from "./MessengerHover";
 import { useTranslation } from "react-i18next";
 
-// Importa la imagen dt.png
-
 interface RouteProps {
   href: string;
   label: string;
@@ -48,14 +46,15 @@ export const Navbar = () => {
     <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between items-center">
-          <NavigationMenuItem className="flex justify-start max-w-[100px] md:w-full">
+          <NavigationMenuItem className="flex justify-start items-center md:justify-start md:items-start">
             <div className="font-bold text-xl flex">
-              <img
-                src={"/DT-BLACK.png"}
-                alt="DuoTech Logo"
-                className="w-20 h-10 md:w-72 md:h-40 mt-4 object-contain"
-                // Ajusta el tamaño de la imagen y usa object-contain para mantener la proporción
-              />
+              <a href="/hero">  {/* Enlace a tu componente Hero */}
+                <img
+                  src={"/DT-BLACK.png"}
+                  alt="DuoTech Logo"
+                  className="w-20 h-10 object-contain sm:mt-0 md:mt-0 md:w-20 md:h-24"
+                />
+              </a>
             </div>
           </NavigationMenuItem>
 
