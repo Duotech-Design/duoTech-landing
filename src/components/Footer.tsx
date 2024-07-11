@@ -120,14 +120,14 @@ export const Footer = () => {
               </div>
               <div>
                 <a
-                  href="mailto:info@duotechdesign.com"
+                  href="mailto:duotechdesign@gmail.com"
                   className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("__@duotechdesign.com")}
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <MessengerHover
-                    text="info@duotechdesign.com"
-                    isHovered={hoveredItem === "__@duotechdesign.com"}
+                    text="duotechdesign@gmail.com"
+                    isHovered={hoveredItem === "duotechdesign@gmail.com"}
                   />
                 </a>
               </div>

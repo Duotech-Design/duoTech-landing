@@ -41,7 +41,7 @@ export const ServiciosCards = () => {
 
   const pricingList: CotizacionProps[] = [
     {
-      title: "ONE PAGE WEBSITE",
+      title: "LANDING PAGE",
       popular: 0,
       price: 0,
       description: t("services_cards.card_1.description"),
@@ -58,7 +58,7 @@ export const ServiciosCards = () => {
       ],
     },
     {
-      title: "LANDING PAGE",
+      title: "ECOMMERCE WEBSITE",
       popular: 1,
       price: 5,
       description: t("services_cards.card_2.description"),
@@ -74,7 +74,7 @@ export const ServiciosCards = () => {
         t("services_cards.card_2.benefistList.benefit_8"),
       ],
     }, {
-      title: "ONE PAGE WEBSITE",
+      title: "DIGITAL INVITE ",
       popular: 0,
       price: 0,
       description: t("services_cards.card_1.description"),
@@ -91,7 +91,7 @@ export const ServiciosCards = () => {
       ],
     },
     {
-      title: "LANDING PAGE",
+      title: "PLATFORM",
       popular: 1,
       price: 5,
       description: t("services_cards.card_2.description"),
