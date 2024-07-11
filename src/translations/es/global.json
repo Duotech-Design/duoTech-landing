@@ -46,13 +46,13 @@
         "title": "Escoge la mejor opción para tu negocio.",
         "button": "Contáctanos",
         "card_1": {
-            "title": "DISEÑO WEB",
-            "description_front_card": "Asegura una impresión memorable desde el primer día con nuestro servicio de one page web, ofreciendo una presentación atractiva y efectiva.",
-            "description": "Una pag. con efecto parallax. Solución web eficiente que condensa toda la información esencial de tu negocio en una única página, ideal para proyectos y promociones puntuales, ofreciendo una experiencia de navegación directa y concisa para tus visitantes.",
+            "title": "DISEÑO WEB", 
+            "description_front_card": "Asegura una impresión memorable con nuestras páginas web atractivas y efectivas. Te ayudamos a destacar, atraer más clientes y optimizar tu presencia en línea con un diseño único y resultados en SEO garantizados. ",
+            "description": "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
             "benefistList": {
                 "benefit_1": "Propuesta de diseño.",
                 "benefit_2": "Diseño responsivo (Desktop, tablet y mobile).",
-                "benefit_3": "Hasta 4 paginas",
+                "benefit_3": "Hasta 8 paginas",
                 "benefit_4": "Formulario de contacto personalizado.",
                 "benefit_5": "Secciones personalizadas.",
                 "benefit_6": "Links a redes sociales",
@@ -62,17 +62,50 @@
         },
         "card_2": {
             "title": "DESARROLLO",
-            "description_front_card": "Proporcionamos a tu negocio un lenguaje gráfico unificado y auténtico que conecta con tu audiencia en todos los puntos de contacto.",
-            "description": "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
+            "description_front_card": "Transforma tu negocio con una tienda online atractiva y segura. Aumenta tus ventas y alcanza nuevos mercados con nuestras soluciones de e-commerce optimizadas para SEO. ",
+            "description": "Desarrollo de tiendas online personalizadas para maximizar ventas, con experiencia de usuario fluida, pagos seguros y optimización SEO",
             "benefistList": {
-                "benefit_1": "Pag. con 10 secciones.",
-                "benefit_2": "Propuesta de diseño.",
+                "benefit_1": "Diseño Personalizado, adaptada a la identidad de tu marca.",
+                "benefit_2": "Diseño responsivo (Desktop, tablet y mobile).",
+                "benefit_3": "Pagos en Línea: Integración segura",
+                "benefit_4": "Gestión de Productos: Añade, elimina y actualiza productos fácilmente.",
+                "benefit_5": "Carrito de Compras",
+                "benefit_6": "SEO Optimizado",
+                "benefit_7": "Análisis y Reportes",
+                "benefit_8": "Integración con Redes Sociales",
+                "benefit_9": "Soporte Técnico."
+            }
+        },
+
+        "card_3": {
+            "title": "DESARROLLO",
+            "description_front_card": "Creación de invitaciones digitales personalizadas con seguimiento en tiempo real de la asistencia de los invitados",
+            "description": "Servicio de invitaciones personalizadas en el cual tú decides el diseño y nosotros nos encargamos de enviarlas automáticamente a tus invitados.",
+            "benefistList": {
+                "benefit_1": "Envío automático de invitaciones.",
+                "benefit_2": "Diseños personalizados y atractivos.",
+                "benefit_3": "Envio personalizado a cada invitado.",
+                "benefit_4": "Seguimiento detallado de RSVP",
+                "benefit_5": "Dashboard de seguimiento para novios o wedding planner",
+                "benefit_6": "Amigable con el medio ambiente.",
+                "benefit_7": "Diseño responsivo (Desktop, tablet y mobile)."
+              
+            }
+        },
+
+        "card_4": {
+            "title": "DESARROLLO",
+            "description_front_card": "Nuestra página web empresarial es una solución personalizada que se adapta específicamente a las necesidades de tu empresa, herramienta a medida que optimiza procesos y mejora el control sobre tus operaciones diarias.",
+            "description": "Imagínala como un sistema diseñado exclusivamente para ti, donde cada función y detalle se adapta para optimizar tus operaciones diarias.",
+            "benefistList": {
+                "benefit_1": "Personalización completa.",
+                "benefit_2": "Funcionalidades amplias y flexibles para facilitar la gestión interna.",
                 "benefit_3": "Diseño responsivo (Desktop, tablet y mobile).",
-                "benefit_4": "Formulario de contacto personalizado.",
-                "benefit_5": "Secciones personalizadas",
-                "benefit_6": "Links a redes sociales",
-                "benefit_7": "Links de Whatsapp.",
-                "benefit_8": "Codigo QR de tu pag."
+                "benefit_4": "Seguridad avanzada para proteger datos sensibles.",
+                "benefit_5": "Soporte técnico especializado y mantenimiento continuo.",
+                "benefit_6": "Escalabilidad para crecer conforme a las necesidades del negocio.",
+                "benefit_7": "LMejora en la comunicación interna y externa."
+            
             }
         }
     },
