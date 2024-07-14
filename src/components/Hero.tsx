@@ -1,11 +1,14 @@
+// Hero.tsx
 import React, { useState, useEffect } from "react";
 import AnimatedButton from "./ui/Buttons/AnimatedButton";
 import Messenger from "./Messenger";
 import { Cotiza } from "./Cotiza";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@/components/theme-provider";
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation("global");
+  const { theme } = useTheme(); // Obtener el tema actual
   const [showCotiza, setShowCotiza] = useState(false);
 
   const handleOpenCotiza = () => {
@@ -39,7 +42,11 @@ export const Hero: React.FC = () => {
         <div className="mt-96 flex flex-col items-center justify-center">
           <main className="headings text-center font-medium">
             <div className="animated-subtitle lg:text-9xl first-heading text-5xl md:text-8xl">
-              <img src="/dt.png" alt="Duotech Black" className="inline w-3/4 md:w-2/3 lg:w-1/2" />
+              <img
+                src={theme === "dark" ? "/duotech-blue.png" : "/dt.png"} // Condicional para la imagen
+                alt={theme === "dark" ? "Duotech Blue" : "Duotech Black"} // Condicional para el alt
+                className="inline w-3/4 md:w-2/3 lg:w-1/2"
+              />
             </div>
           </main>
           <span className="mt-8 flex justify-center text-base md:text-xl">
