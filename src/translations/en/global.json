@@ -46,13 +46,13 @@
       "title": "Choose the best option for your business.",
       "button": "Contact us",
       "card_1": {
-        "title": "WEB DESIGN",
-        "description_front_card": "Make a strong first impression with our one-page website service, ensuring your launch is memorable and effective from the start.",
-        "description": "A page with parallax effect. Efficient web solution that condenses all the essential information of your business into a single page, ideal for projects and promotional events, offering a direct and concise browsing experience for your visitors.",
+        "title": "LANDING PAGE",
+        "description_front_card": "Ensure a memorable impression with our web pages. Stand out, attract more customers, and optimize your online presence with unique design and guaranteed SEO. Our design converts visitors into potential customers and highlights your business's value.",
+        "description": "",
         "benefistList": {
           "benefit_1": "Design proposal.",
           "benefit_2": "Responsive design (Desktop, tablet, and mobile).",
-          "benefit_3": "Up to 4 pages.",
+          "benefit_3": "Up to 8 pages.",
           "benefit_4": "Custom contact form.",
           "benefit_5": "Custom sections.",
           "benefit_6": "Social media links.",
@@ -62,17 +62,47 @@
       },
       "card_2": {
         "title": "DEVELOPMENT",
-        "description": "Web design focused on capturing attention and converting visitors into potential customers, optimizing the user experience, and highlighting your business's value proposition on a single page.",
-        "description_front_card": "Boost your conversions with a compelling landing page designed to captivate and engage visitors from the moment they arrive.",
+        "description": "Transform your business with a secure and attractive online store. Boost sales and reach new markets with our SEO-optimized e-commerce solutions.",
+        "description_front_card": "",
         "benefistList": {
-          "benefit_1": "Page with 10 sections.",
-          "benefit_2": "Design proposal.",
-          "benefit_3": "Responsive design (Desktop, tablet, and mobile).",
-          "benefit_4": "Custom contact form.",
-          "benefit_5": "Custom sections.",
-          "benefit_6": "Social media links.",
-          "benefit_7": "WhatsApp links.",
-          "benefit_8": "QR code of your page."
+          "benefit_1": "Custom Design, tailored to match your brand's identity.",
+          "benefit_2": "Responsive design (Desktop, tablet, and mobile).",
+          "benefit_3": "Online Payments:",
+          "benefit_4": "Product Management, easily add, remove, and update products.",
+          "benefit_5": "Shopping Cart.",
+          "benefit_6": "SEO Optimized.",
+          "benefit_7": "Analytics and Reports.",
+          "benefit_8": "Social Media Integration.",
+          "benefit_9": "Technical Support."
+        }
+      },
+      "card_3": {
+        "title": "DEVELOPMENT",
+        "description": "Create personalized digital invitations with real-time guest attendance tracking. You choose the design, and we handle the automatic sending to your guests.",
+        "description_front_card": " ",
+        "benefistList": {
+          "benefit_1": "Automatic invitation sending.",
+          "benefit_2": "Attractive and personalized designs.",
+          "benefit_3": "Custom delivery for each guest.",
+          "benefit_4": "Detailed RSVP tracking.",
+          "benefit_5": "Tracking dashboard for couples or wedding planners.",
+          "benefit_6": "Environmentally friendly.",
+          "benefit_7": "Responsive design (desktop, tablet, and mobile)."
+       
+        }
+      },
+
+      "card_4": {
+        "title": "DEVELOPMENT",
+        "description": "Experience a custom solution designed to fit your company’s unique needs, optimizing your processes and enhancing daily operations with tailored features and details.",
+        "description_front_card": "",
+        "benefistList": {
+          "benefit_1": "Complete personalization.",
+          "benefit_2": "Extensive and flexible functionalities to facilitate internal management.",
+          "benefit_3": "Advanced security to protect sensitive data.",
+          "benefit_4": "Specialized technical support and continuous maintenance.",
+          "benefit_5": "Scalability to grow according to business needs.",
+          "benefit_6": "Improved internal and external communication."
         }
       }
     },

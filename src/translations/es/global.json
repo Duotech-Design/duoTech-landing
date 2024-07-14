@@ -47,8 +47,8 @@
         "button": "Contáctanos",
         "card_1": {
             "title": "DISEÑO WEB", 
-            "description_front_card": "Asegura una impresión memorable con nuestras páginas web atractivas y efectivas. Te ayudamos a destacar, atraer más clientes y optimizar tu presencia en línea con un diseño único y resultados en SEO garantizados. ",
-            "description": "Diseño web enfocado en captar la atención y convertir visitantes en clientes potenciales, optimizando la experiencia del usuario y destacando la propuesta de valor de tu negocio en una sola página.",
+            "description_front_card": "Asegura una impresión memorable con nuestras páginas web atractivas y efectivas. Optimiza tu presencia en línea con diseño único y SEO garantizado, convirtiendo visitantes en clientes potenciales. ",
+            "description": "",
             "benefistList": {
                 "benefit_1": "Propuesta de diseño.",
                 "benefit_2": "Diseño responsivo (Desktop, tablet y mobile).",
@@ -62,8 +62,8 @@
         },
         "card_2": {
             "title": "DESARROLLO",
-            "description_front_card": "Transforma tu negocio con una tienda online atractiva y segura. Aumenta tus ventas y alcanza nuevos mercados con nuestras soluciones de e-commerce optimizadas para SEO. ",
-            "description": "Desarrollo de tiendas online personalizadas para maximizar ventas, con experiencia de usuario fluida, pagos seguros y optimización SEO",
+            "description_front_card": "Transforma tu negocio con una tienda en línea segura y atractiva. Aumenta ventas y alcanza nuevos mercados con nuestras soluciones de comercio electrónico optimizadas para SEO. ",
+            "description": "",
             "benefistList": {
                 "benefit_1": "Diseño Personalizado, adaptada a la identidad de tu marca.",
                 "benefit_2": "Diseño responsivo (Desktop, tablet y mobile).",
@@ -79,8 +79,8 @@
 
         "card_3": {
             "title": "DESARROLLO",
-            "description_front_card": "Creación de invitaciones digitales personalizadas con seguimiento en tiempo real de la asistencia de los invitados",
-            "description": "Servicio de invitaciones personalizadas en el cual tú decides el diseño y nosotros nos encargamos de enviarlas automáticamente a tus invitados.",
+            "description_front_card": "Creación de invitaciones digitales personalizadas con seguimiento en tiempo real de la asistencia. Tú decides el diseño y nosotros las enviamos automáticamente a tus invitados.",
+            "description": "",
             "benefistList": {
                 "benefit_1": "Envío automático de invitaciones.",
                 "benefit_2": "Diseños personalizados y atractivos.",
@@ -95,16 +95,16 @@
 
         "card_4": {
             "title": "DESARROLLO",
-            "description_front_card": "Es una solución personalizada que se adapta específicamente a las necesidades de tu empresa, una herramienta a medida que optimiza procesos.",
-            "description": "Imagínala como un sistema diseñado exclusivamente para ti, donde cada función y detalle se adapta para optimizar tus operaciones diarias.",
+            "description_front_card": "Es una solución personalizada para tu empresa, optimizando procesos con una herramienta a medida, diseñada exclusivamente para mejorar tus operaciones diarias.",
+            "description": "",
             "benefistList": {
                 "benefit_1": "Personalización completa.",
                 "benefit_2": "Funcionalidades amplias y flexibles para facilitar la gestión interna.",
-                "benefit_3": "Diseño responsivo (Desktop, tablet y mobile).",
-                "benefit_4": "Seguridad avanzada para proteger datos sensibles.",
-                "benefit_5": "Soporte técnico especializado y mantenimiento continuo.",
-                "benefit_6": "Escalabilidad para crecer conforme a las necesidades del negocio.",
-                "benefit_7": "LMejora en la comunicación interna y externa."
+                "benefit_3": "Seguridad avanzada para proteger datos sensibles.",
+                "benefit_4": "Soporte técnico especializado y mantenimiento continuo.",
+                "benefit_5": "Escalabilidad para crecer conforme a las necesidades del negocio.",
+                "benefit_6": "Mejora en la comunicación interna y externa."
+            
             
             }
         }
