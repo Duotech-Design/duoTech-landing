@@ -1,3 +1,4 @@
+// Navbar.tsx
 import { useState } from "react";
 import {
   NavigationMenu,
@@ -17,6 +18,7 @@ import { ModeToggle } from "./mode-toggle";
 import { LanguageToggle } from "./mode-toggle-language";
 import MessengerHover from "./MessengerHover";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@/components/theme-provider";
 
 interface RouteProps {
   href: string;
@@ -28,6 +30,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const { t } = useTranslation("global");
+  const { theme } = useTheme(); // Obtener el tema actual
+
   const routeList: RouteProps[] = [
     {
       href: "#a",
@@ -42,6 +46,7 @@ export const Navbar = () => {
       label: t("navbar.contact"),
     },
   ];
+
   return (
     <header className="bg-alison sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
@@ -50,7 +55,7 @@ export const Navbar = () => {
             <div className="font-bold text-xl flex">
               <a href="/hero">  {/* Enlace a tu componente Hero */}
                 <img
-                  src={"/DT-BLACK.png"}
+                  src={theme === "dark" ? "/dt-blue.png" : "/DT-BLACK.png"} // Condicional para la imagen
                   alt="DuoTech Logo"
                   className="w-20 h-10 object-contain sm:mt-0 md:mt-0 md:w-20 md:h-24"
                 />
