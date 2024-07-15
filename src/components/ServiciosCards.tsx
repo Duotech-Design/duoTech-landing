@@ -3,6 +3,7 @@ import { useState } from "react";
 import imageCard2 from "/imageCard2.jpg";
 import imageCard from "/imageCard.png";
 import GenericButton2 from "./ui/Buttons/GenericButton2";
+import GenericButton1 from "./ui/Buttons/GenericButton";
 import { useTranslation } from "react-i18next";
 import { Cotiza } from "./Cotiza";
 
@@ -151,6 +152,10 @@ export const ServiciosCards = () => {
               <div className="card-content absolute bottom-4 left-4 text-white">
                 <h2 className="text-2xl font-bold">{feature.title}</h2>
                 <p className="hidden">{feature.description}</p>
+                <div className="hidden buttons mt-4 space-x-2">
+                  <GenericButton1 title={t("services_cards.button2")} />
+                  <GenericButton2 title={t("services.button")} onClick={handleOpenCotiza} />
+                </div>
               </div>
             </div>
           ))}

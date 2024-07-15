@@ -64,6 +64,17 @@ body {
   display: none;
 }
 
+.card-container:hover .card-content .buttons {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.card-content .buttons {
+  opacity: 0;
+  display: none;
+}
+
 
 /*
 .flip-card {

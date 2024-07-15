@@ -45,6 +45,7 @@
     "services_cards": {
         "title": "Escoge la mejor opción para tu negocio.",
         "button": "Contáctanos",
+        "button2": "Mas informacion",
         "card_1": {
             "title": "DISEÑO WEB", 
             "description_front_card": "Asegura una impresión memorable con nuestras páginas web atractivas y efectivas. Optimiza tu presencia en línea con diseño único y SEO garantizado, convirtiendo visitantes en clientes potenciales. ",

@@ -88,7 +88,7 @@ export const Footer = () => {
               </div>
               <div>
                 <a
-                  href="https://wa.me/524445443817?text=Quiero%20más%20información%20sobre..."
+                  href="https://wa.me/528123842401?text=Quiero%20más%20información%20sobre..."
                   className="flex items-center gap-2 opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("+52 8123842401")}
                   onMouseLeave={() => setHoveredItem(null)}
