@@ -149,7 +149,7 @@ export const Footer = () => {
               </div>
               <div>
                 <a
-                  href="#"
+                  href="https://www.pinterest.com.mx/DuoTechDesignWeb/"
                   className="animated-link opacity-60 hover:opacity-100"
                   onMouseEnter={() => setHoveredItem("PINTEREST")}
                   onMouseLeave={() => setHoveredItem(null)}
