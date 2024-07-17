@@ -2,6 +2,7 @@
 import { useState } from "react";
 import imageCard2 from "/imageCard2.jpg";
 import imageCard from "/imageCard.png";
+import digitalInvite from "/digitalInvite.png"
 import GenericButton2 from "./ui/Buttons/GenericButton2";
 import GenericButton1 from "./ui/Buttons/GenericButton";
 import { useTranslation } from "react-i18next";
@@ -121,7 +122,7 @@ export const ServiciosCards = () => {
     {
       title: "DIGITAL INVITE",
       description: t("services_cards.card_3.description_front_card"),
-      image: imageCard2,
+      image: digitalInvite,
     },
     {
       title: "WEB EMPRESARIAL",
