@@ -127,11 +127,7 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
 
   return (
     <section id="cotiza" className="relative bg-gray-800">
-      <img
-        src="/backgroundCotiza.png"
-        alt="Background"
-        className="absolute inset-0 object-cover w-screen h-screen"
-      />
+     
       <ToastContainer />
       <div className="absolute md:top-10 md:right-10 top-5 right-5 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
         <button
