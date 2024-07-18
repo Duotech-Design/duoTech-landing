@@ -127,7 +127,6 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
 
   return (
     <section id="cotiza" className="relative bg-gray-800">
-     
       <ToastContainer />
       <div className="absolute md:top-10 md:right-10 top-5 right-5 text-white md:text-xl text-sm cursor-pointer flex items-center z-50">
         <button
@@ -201,6 +200,8 @@ export const Cotiza = ({ onClose }: { onClose: () => void }) => {
           <br /> {t("cotiza.content_2")}
         </p>
       </div>
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-no-repeat bg-cover opacity-50 z-40" style={{ backgroundImage: "url('/13.png')" }}></div>
+      <div className="absolute top-0 right-0 w-1/4 h-1/4 bg-no-repeat bg-cover opacity-50 z-40" style={{ backgroundImage: "url('/8.png')" }}></div>
     </section>
   );
 };
