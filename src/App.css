@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* *=========== Default theme =========== */
 /* @layer base {
   :root {
@@ -120,7 +119,6 @@
   }
 }
 
-
 .inconsolata-miUniquifier {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
@@ -135,8 +133,6 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
-
 
 @layer base {
   * {
