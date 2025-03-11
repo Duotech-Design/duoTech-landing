@@ -1,56 +1,66 @@
-//import { Cotiza } from "./components/Cotiza";
-//import { FAQ } from "./components/Contacto";
-//+++++++++++++++++++++++++++++++++++++++++++++
-// import { About } from "./components/About";
-// import { Servicios } from "./components/Servicios";
-// import { Footer } from "./components/Footer";
-// import { Hero } from "./components/Hero";
-// import { Navbar } from "./components/Navbar";
-// import { ScrollToTop } from "./components/ScrollToTop";
 import "./App.css";
-// import { Contacto } from "./components/Contacto";
-// import { Us } from "./components/Us";
-// import { ServiciosCards } from "./components/ServiciosCards";
-// import { Proyectos } from "./components/Proyectos";
-// import { useInViewport } from "./lazyLoadedComponent/useInViewport";
+import SocialIcons from "./components/SocialIcons";
+import Countdown from "./components/Countdown";
 
 function App() {
-  //const { isInViewport, ref } = useInViewport();
   return (
     <>
-      <div className="container mx-auto flex min-h-screen w-full items-center justify-center bg-transparent">
-        <div className="space-y-4 text-center">
-          <h1 className="text-2xl font-semibold text-gray-700">
-            ¡Página en Construcción!
-          </h1>
-          <p className="text-gray-500">
-            Estamos trabajando para traer algo increíble. ¡Vuelve pronto!
+      <SocialIcons />
+
+      <div
+        className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center"
+        style={{
+          backgroundImage: `url('/bbCountdown.webp')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: 'rgba(0, 0, 0, 0.2)',
+          backdropFilter: 'blur(4px)',
+        }}
+      >
+        {/* Contenido principal */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="text-center space-y-8">
+            <div className="space-y-4 bg-white/40 p-8 rounded-2xl shadow-lg">
+              <h1 className="text-4xl font-semibold text-gray-800 tracking-wide uppercase">
+                WE'RE STILL BUILDING
+              </h1>
+              <h2 className="text-4xl font-semibold text-gray-800 tracking-wide uppercase">
+                SOMETHING <span className="text-black italic">AWESOME</span>.
+              </h2>
+            </div>
+            <Countdown />
+          </div>
+        </div>
+
+        {/* Sección inferior */}
+        <div className="absolute bottom-8 w-full flex flex-col items-center gap-4">
+          <p 
+            className="text-2xl font-medium uppercase tracking-wide text-center"
+            style={{ color: '#21260D' }}
+          >
+            BE THE FIRST TO KNOW WHEN WE LAUNCH.
           </p>
+
+          {/* Nuevo diseño del formulario */}
+          <form className="w-full max-w-sm">
+            <div className="flex items-center rounded-full overflow-hidden border-2 border-[#70731F] shadow-md">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 px-6 py-3 bg-white/90 focus:outline-none text-gray-800"
+                style={{ minWidth: '200px' }}
+              />
+              <button
+                type="submit"
+                className="px-8 py-3 bg-[#70731F] hover:bg-[#5a5f19] transition-colors text-[#21260D] font-semibold uppercase tracking-wide whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-      {/* <Navbar />
-      <Hero />
-      <About /> */}
-      {/* <div ref={ref}>{isInViewport && <Us />}</div> */}
-      {/*<HowItWorks /> */}
-      {/* <Servicios />
-      <div id="a"></div>
-      <ServiciosCards />
-      <div id="b"></div>
-      <Proyectos />
-      <div id="c"></div> */}
-      {/*
-      <Cotiza />
-      <Services />
-      <Portafolio />
-      <Sponsors />
-      <Cta />
-    */}
-      {/* <Team />*/}
-      {/*<Newsletter />*/}
-      {/* <Contacto />
-      <Footer />
-      <ScrollToTop /> */}
     </>
   );
 }
