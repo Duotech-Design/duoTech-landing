@@ -18,6 +18,13 @@ function App() {
           backdropFilter: 'blur(4px)',
         }}
       >
+        {/* Íconos de redes sociales */}
+        <div className="absolute top-4 right-12 flex gap-3 opacity-70">
+          <img src="/Fb.png" alt="Facebook" className="w-8 h-8" />
+          <img src="/Wa.png" alt="WhatsApp" className="w-8 h-8" />
+          <img src="/Ig.png" alt="Instagram" className="w-8 h-8" />
+        </div>
+
         {/* Contenido principal */}
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center space-y-8">
