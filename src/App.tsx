@@ -24,7 +24,7 @@ function App() {
             ¡Página en Construcción!
           </h1>
           <p className="text-gray-500">
-            Estamos trabajando para traer algo increíble. ¡Vuelve pronto!
+            Estamos trabajando para traer algo increíble. ¡Vuelve pronto!. 
           </p>
         </div>
       </div>
