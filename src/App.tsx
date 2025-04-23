@@ -1,5 +1,4 @@
 import "./App.css";
-import SocialIcons from "./components/SocialIcons";
 import Countdown from "./components/Countdown";
 
 
