@@ -1,6 +1,6 @@
 export const Navbar = () => {
   return (
-    <nav className="font-montserrat flex items-center justify-between border-b border-gray-300 bg-[#e5dfd5] px-4 py-4 text-[#21260D] md:px-10">
+    <nav className="font-ace flex items-center justify-between border-b border-gray-300 bg-[#e5dfd5] px-4 py-4 text-[#21260D] md:px-10">
       {/* Logo */}
       <div className="flex items-center space-x-2">
         <img src="/DTsmall.png" alt="Logo" className="h-10 w-auto" />

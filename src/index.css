@@ -1,4 +1,19 @@
-/* Hero.css */
+@font-face {
+  font-family: "Ace Sans";
+  src: url("/fonts/AceSans.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Other Font";
+  src: url("/fonts/Second.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,7 +23,8 @@ html {
 }
 
 body {
-  font-family: "Inconsolata", monospace;
+  /* font-family: "Inconsolata", monospace; */
+  font-family: "Ace Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -105,7 +121,7 @@ body {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #879EAD;
+  background-color: #879ead;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -146,7 +162,7 @@ body {
 }
 
 .flip-card-front {
-  background-color: #EDECE2;
+  background-color: #edece2;
   color: black;
   display: flex;
   flex-direction: column;
@@ -154,7 +170,7 @@ body {
 }
 
 .flip-card-back {
-  background-color: #EDECE2;
+  background-color: #edece2;
   color: black;
   transform: rotateY(180deg);
   display: flex;
@@ -218,7 +234,7 @@ body {
 
 .cotiza-input:focus {
   outline: none;
-  border-bottom: 2px solid #879EAD;
+  border-bottom: 2px solid #879ead;
 }
 
 .cotiza-button {
@@ -264,7 +280,7 @@ body {
 
 .flier-2 {
   position: fixed;
-  top: 60%; 
+  top: 60%;
   width: 20%;
   height: 20%;
   object-fit: contain;
@@ -297,7 +313,7 @@ body {
 
 .flier-6 {
   position: fixed;
-  top: 20%; 
+  top: 20%;
   width: 50%;
   height: 30%;
   object-fit: contain;
@@ -305,55 +321,65 @@ body {
   z-index: 999;
 }
 
-@keyframes fly-around-1 {   
-  0% {     
-    transform: translate(0, 0) rotate(0deg) scale(1);   
-  }   
-  12.5% {     
-    transform: translate(15vw, calc(0.01vh * var(--scroll-offset))) rotate(45deg) scale(1.1);   
-  }   
-  25% {     
-    transform: translate(30vw, calc(0.02vh * var(--scroll-offset))) rotate(90deg) scale(1.4);   
-  }   
-  37.5% {     
-    transform: translate(45vw, calc(0.01vh * var(--scroll-offset))) rotate(135deg) scale(1.1);   
-  }   
-  50% {     
-    transform: translate(60vw, calc(0.01vh * var(--scroll-offset))) rotate(180deg) scale(1);   
-  }   
-  62.5% {     
-    transform: translate(75vw, calc(0.01vh * var(--scroll-offset))) rotate(225deg) scale(0.9);   
-  }   
-  75% {     
-    transform: translate(85vw, calc(0.01vh * var(--scroll-offset))) rotate(270deg) scale(1);   
-  }   
-  87.5% {     
-    transform: translate(100vw, calc(0.01vh * var(--scroll-offset))) rotate(315deg) scale(1.1);   
-  }   
-  100% {     
-    transform: translate(0, calc(0.01vh * var(--scroll-offset))) rotate(360deg) scale(1);   
-  } 
+@keyframes fly-around-1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  12.5% {
+    transform: translate(15vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(45deg) scale(1.1);
+  }
+  25% {
+    transform: translate(30vw, calc(0.02vh * var(--scroll-offset)))
+      rotate(90deg) scale(1.4);
+  }
+  37.5% {
+    transform: translate(45vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(135deg) scale(1.1);
+  }
+  50% {
+    transform: translate(60vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(180deg) scale(1);
+  }
+  62.5% {
+    transform: translate(75vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(225deg) scale(0.9);
+  }
+  75% {
+    transform: translate(85vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(270deg) scale(1);
+  }
+  87.5% {
+    transform: translate(100vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(315deg) scale(1.1);
+  }
+  100% {
+    transform: translate(0, calc(0.01vh * var(--scroll-offset))) rotate(360deg)
+      scale(1);
+  }
 }
-
 
 @keyframes fly-around-2 {
   0% {
     transform: translate(100vw, 0) rotate(0deg) scale(1);
   }
   25% {
-    transform: translate(70vw, calc(0.02vh * var(--scroll-offset))) rotate(90deg) scale(1.4);
+    transform: translate(70vw, calc(0.02vh * var(--scroll-offset)))
+      rotate(90deg) scale(1.4);
   }
   50% {
-    transform: translate(50vw, calc(0.01vh * var(--scroll-offset))) rotate(180deg) scale(1);
+    transform: translate(50vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(180deg) scale(1);
   }
   75% {
-    transform: translate(60vw, calc(0.01vh * var(--scroll-offset))) rotate(225deg) scale(0.9);
+    transform: translate(60vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(225deg) scale(0.9);
   }
   100% {
-    transform: translate(100vw, calc(0.01vh * var(--scroll-offset))) rotate(360deg) scale(1);
+    transform: translate(100vw, calc(0.01vh * var(--scroll-offset)))
+      rotate(360deg) scale(1);
   }
 }
-
 
 @keyframes fly-around-3 {
   0% {
@@ -417,17 +443,18 @@ body {
 }
 
 .animated-subtitle {
-  transform: translateY(calc(-1px * var(--scroll-offset))) scale(calc(1 + var(--scroll-offset) * 0.002));
+  transform: translateY(calc(-1px * var(--scroll-offset)))
+    scale(calc(1 + var(--scroll-offset) * 0.002));
   transition: transform 0.1s linear;
 }
 .start {
   background-color: transparent;
 }
 .loading {
-  background-color: #879EAD;
+  background-color: #879ead;
 }
 .success {
-  background-color: #879EAD;
+  background-color: #879ead;
 }
 .error {
   background-color: red;

@@ -2,7 +2,7 @@ import React from "react";
 
 export const ServicesSection: React.FC = () => {
   return (
-    <section className="flex w-full flex-col items-center bg-[#8b8460] px-4 py-16 text-white">
+    <section className="font-ace flex w-full flex-col items-center bg-[#8b8460] px-4 py-16 text-white">
       {/* Títulos principales */}
       <div className="mb-8 flex items-center space-x-8 text-center text-lg font-light md:text-2xl">
         <span>WebSiTE DESIGN</span>

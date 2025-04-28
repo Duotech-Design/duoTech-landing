@@ -56,6 +56,8 @@ export const theme = {
     },
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'],
+      ace: ['"Ace Sans"', 'sans-serif'],
+      other: ['"Other Font"', 'sans-serif'],
     },
     borderRadius: {
       lg: "var(--radius)",

@@ -6,8 +6,10 @@ export const WebPresenceIntro: React.FC = () => {
       <div className="grid w-full max-w-6xl grid-cols-1">
         {/* Columna izquierda: título y descripción */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-normal tracking-wide">WEB PRESENCE</h2>
-          <p className="max-w-md text-sm leading-relaxed">
+          <h2 className="font-other text-4xl font-normal tracking-wide">
+            WEB PRESENCE
+          </h2>
+          <p className="font-ace max-w-md text-sm leading-relaxed">
             PARA NEGOCIOS QUE QUIEREN ELEVAR SU MARCA EN EL MUNDO DIGITAL,
             CREAMOS SITIOS WEB QUE NO SOLO SE VEN INCREÍBLES, SINO QUE TAMBIÉN
             CONECTAN CON TU AUDIENCIA Y GENERAN RESULTADOS. NOS ENFOCAMOS EN
