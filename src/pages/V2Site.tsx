@@ -1,9 +1,14 @@
 import { Footer } from "@/v2/components/footer/footer";
 import { Navbar } from "@/v2/components/navbar/Navbar";
+import { ContactSection } from "@/v2/components/sections/Contact";
+import { MobileAppsSection } from "@/v2/components/sections/MobileApps";
+import { PortfolioTable } from "@/v2/components/sections/PortafolioTable";
+import { WebPresence } from "@/v2/components/sections/WebPresence";
+import { AboutDuoTech } from "@/v2/components/subsections/AboutDuoTech";
+import { CtaIdeaSection } from "@/v2/components/subsections/CtaIdeaSection";
 import { HeroSection } from "@/v2/components/subsections/HeroSection";
 import { ServicesSection } from "@/v2/components/subsections/ServicesSection";
-import { WebPresenceDetails } from "@/v2/components/subsections/WebPreseceDetails";
-import { WebPresenceIntro } from "@/v2/components/subsections/WebPresenceSection";
+import { ServicesSectionOption } from "@/v2/components/subsections/ServicesSectionOption";
 
 export const V2Site: React.FC = () => {
   return (
@@ -12,8 +17,13 @@ export const V2Site: React.FC = () => {
       <main className="flex-1">
         <HeroSection />
         <ServicesSection />
-        <WebPresenceIntro />
-        <WebPresenceDetails />
+        <ServicesSectionOption />
+        <AboutDuoTech />
+        <CtaIdeaSection />
+        <WebPresence />
+        <MobileAppsSection />
+        <PortfolioTable />
+        <ContactSection />
       </main>
       <Footer />
     </div>

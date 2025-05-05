@@ -7,10 +7,10 @@ export const HeroSection = () => {
       </div>
 
       {/* Texto descriptivo */}
-      <p className="font-ace mt-10 max-w-4xl text-sm leading-relaxed tracking-wide text-[#21260D] text-black">
-        <span className="font-ace font-medium">DUO TECH</span> ES UN ESTUDIO
-        CREATIVO INDEPENDIENTE QUE DISEÑA MARCAS, SITIOS WEB Y APPS QUE
-        CONECTAN. <br />
+      <p className="mt-10 max-w-4xl text-justify font-ace text-base leading-relaxed tracking-wide text-[#21260D] text-black">
+        <span className="font-other text-2xl font-semibold">DUO TECH </span> ES
+        UN ESTUDIO CREATIVO INDEPENDIENTE QUE DISEÑA MARCAS, SITIOS WEB Y APPS
+        QUE CONECTAN. <br />
         COMBINAMOS DISEÑO, TECNOLOGÍA Y ESTRATEGIA PARA IMPULSAR TU NEGOCIO.
       </p>
     </section>

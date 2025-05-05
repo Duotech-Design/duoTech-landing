@@ -1,29 +1,27 @@
 import React from "react";
 
-export const WebPresenceIntro: React.FC = () => {
+export const MobilePresenceIntro: React.FC = () => {
   return (
     <section className="flex w-full justify-center bg-[#e5dfd5] px-6 py-16 text-black">
       <div className="grid w-full max-w-6xl grid-cols-1">
         {/* Columna izquierda: título y descripción */}
         <div className="space-y-6">
-          <h2 className="text-3xl font-normal tracking-wide">WEB PRESENCE</h2>
+          <h2 className="text-3xl font-normal tracking-wide">MOBILE APPS</h2>
           <p className="max-w-md font-ace text-sm leading-relaxed">
-            Para negocios que quieren elevar su marca en el mundo digital,
-            creamos sitios web que no solo se ven increíbles, sino que también
-            conectan con tu audiencia y generan resultados. Nos enfocamos en
-            diseño, funcionalidad y experiencia de usuario para que tu presencia
-            online refleje la esencia de tu marca de manera auténtica y
-            profesional.
+            Haz crecer tu negocio con apps móviles hechas a tu medida. Diseñamos
+            y desarrollamos aplicaciones nativas pensando en tus usuarios desde
+            el primer clic. No usamos plantillas: cada app es única, funcional y
+            pensada para enamorar.
           </p>
         </div>
 
         {/* Columna derecha: servicios y flecha */}
         <div className="mt-8 flex items-start justify-center text-sm tracking-wide">
           <div className="flex flex-col items-start justify-center space-y-2 text-base tracking-wide md:pl-96">
-            <span>LANDINGPAGE</span>
-            <span>CORPORATE WEBSITE</span>
-            <span>ECOMMERCE</span>
-            <span>CMS INTEGRATIONS</span>
+            <span>RESEARCH & UX DESIGN</span>
+            <span>VISUAL & ANIMATION</span>
+            <span>BACKEND DEVELOPMENT</span>
+            <span>MOBILE DEVELOPMENT</span>
           </div>
           <div className="mx-12 my-auto">
             {/* Aquí embebemos directamente el SVG */}
